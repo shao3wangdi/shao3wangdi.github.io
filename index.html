@@ -46,7 +46,7 @@ http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
 
 
 <div class="main">
-    <a href="https://cemse.kaust.edu.sa/"> <img src="CEMSE.png"> </a>
+    <a href="https://cemse.kaust.edu.sa/"> <img src="CEMSE.png" width="800" height="100" class="center"> </a>
 <h1 style="text-align: center;"><i>Di Wang's Homepage
 </i></h1>
 Chinese: 王帝<br/>
@@ -61,8 +61,9 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 <hr>
 <h3><a name="bio">Short Bio</a></h3>
 <p> 
-     <img src="diwang.jpg" alt="" style="float:left; height:190px; margin:10px; width:130px" > 
+     <img src="diwang.jpg" alt="" style="float:left; height:200px; margin:10px; width:135px" > 
      I am currently an Assistant Professor of Computer Science in the Division of Computer, Electrical and Mathematical Sciences and Engineering (CEMSE) at the King Abdullah University of Science and Technology (KAUST). And I am also the PI of <a href="https://cemse.kaust.edu.sa/part"> Privacy-Awareness, Responsibility and Trustworthy (PART) Lab </a>. 
+<p> 
     Before that, I got my Ph.D degree in Computer Science at <a href="
     https://www.buffalo.edu/">
     The State University of New York (SUNY) at Buffalo</a> under supervision of <a href="
@@ -72,7 +73,7 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
     Mathematics at <a href="http://www.sdu.edu.cn/">Shandong University</a> in 2014.</br> </br>
     
     My most recent resume (last updated in December, 2020) can be found <a href="cv_web.pdf">here</a>. 
-
+</p>
     <p>
         Dissertation: <a href="papers/Dissertation.pdf">Some Fundamental Machine Learning Problems in the Differential Privacy Model</a>. 
     </p>
@@ -143,72 +144,7 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 <li>Youming Tao (Undergraduate at Shandong University), 01/2021-</li>
 </ul>
 
-<hr>
-<h3> <a name="manu">Manuscripts</a>   </h3>
-(<span>&#9733;</span> my Master/PhD/Intern/Visiting students)
-<ol>
 
-    <li><i>
-        One-shot Private Fair Learning: From Exponential to Quasi-polynomial Sample Complexity.</i><a href="papers/MSML2021_Fair.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#MSML2021_Fair" id="36_arrows" class="arrows" onclick="expand_collapse('36');">&#9660</a>
-    <div id="36" style="display:none;"><p> 
-
-
-
-    </p></div> </br> <strong>Di Wang</strong>. </br>
-</li>
-
-</br> 
-    <li><i>
-        On Facility Location Problem in the Central and Local Differential Privacy Model.</i><a href="papers/nips21.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#NIPS2021" id="38_arrows" class="arrows" onclick="expand_collapse('38');">&#9660</a>
-    <div id="38" style="display:none;"><p> 
-        We revisit the facility location problem in the differential privacy (DP) model and solve several open problems proposed by previous work. In the first part we focus on the problem in the central $\epsilon$-DP model. Under the hierarchically well-separated tree (HST) metric and the super-set output setting, \citet{prev2019} showed a lower bound of $\Omega(\frac{1}{\sqrt{\epsilon}})$  on the approximation ratio, and an algorithm achieving $O(\frac{1}{\epsilon})$ approximation in the case of uniform facility cost.  %improve over these results by closing the gap between the upper and lower bound, {\em i.e.,} 
-        In this paper, we show that there is an $\epsilon$-DP algorithm with $O(\frac{1}{\sqrt{\epsilon}})$ approximation ratio for the general non-uniform facility cost setting. So, not only our result closes the gap between the upper and lower bounds, but also it extends the result of \citeauthor{prev2019} to the non-uniform case.
-        
-        In the second part of the paper, we focus on the problem in the local DP (LDP) model. In the problem, whether a client participates in the facility location instance is the private information that needs to be protected. Under the HST metric, we show that there is a non-interactive algorithm achieving $O(\frac{N^{\frac{1}{4}}}{\epsilon^2})$ approximation ratio, where $N$ is the size of the metric. On the negative side, we show a lower bound of $\Omega(\frac{N^{\frac{1}{4}}}{\sqrt{\epsilon}})$ on the approximation ratio for any non-interactive $\epsilon$-LDP algorithm. So our ratio is tight in terms of $N$.
-    </p></div> </br>[<strong>alphabetic order</strong>]  <strong>Yunus Esencayi</strong>,  <strong>Marco Gaboardi</strong>, <strong>Shi Li</strong> and <strong>Di Wang</strong>  </br>
-</li>
-</br>
-<li><i>Differentially Private Pairwise Learning Revisited.</i><a href="papers/DASFAA_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#DASFAA_pairwise" id="35_arrows" class="arrows" onclick="expand_collapse('35');">&#9660</a>
-    <div id="35" style="display:none;"><p>  
-            Instead of learning with pointwise loss functions, learning with pairwise loss functions (pairwise learning) has received much attention recently as it is more capable of modeling the relative relationship between pairs of samples.   However, most of the existing algorithms for pairwise learning fail to take into consideration the privacy issue in their design.  To address this  issue, previous work studied pairwise learning in the Differential Privacy (DP) model. However, their utilities (population errors) are far from optimal. To address the sub-optimal utility issue, in this paper, we proposed new $(\epsilon, \delta)$ or $\epsilon$-DP algorithms for pairwise learning. Specifically, when the loss functions are Lipschitz, smooth and strongly convex, we show that the output of our algorithm achieves an expected population error of $O(\frac{1}{n}+\frac{d\log\frac{1}{\delta}}{n^2\epsilon^2})$ and $O(\frac{1}{n}+\frac{d^2}{n^2\epsilon^2})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively, where $n$ is the sample size and $d$ is the dimension of the underlying space. 
-            Moreover, for general convex case,  the output of our algorithm achieves an expected population error  of $O(\frac{1}{\sqrt{n}}+\frac{\sqrt{d \log\frac{1}{\delta}}}{n\epsilon})$ and $O(\frac{1}{\sqrt{n}}+\frac{d}{n\epsilon})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively. It is also notable that these upper bounds are {\bf optimal} ({\em i.e.,} match the lower bounds). We also conduct extensive experiments on real-world datasets to evaluate the proposed algorithms, experimental results support our theoretical analysis and show the priority of our algorithms. 
-</br>    
-    </p></div> </br> Zhiyu Xue<sup>*</sup><sup><span>&#9733;</span></sup>, Shaoyang Yang<sup>*</sup><sup><span>&#9733;</span></sup>, Mengdi Huai and <u><strong>Di Wang</strong></u>. (* equal contribution) </br>
-
-</li>
-</br> 
-        <li><i>
-                Differentially Private (Gradient) Expectation Maximization Algorithm with Statistical Guarantees.</i><a href="papers/UAI2021_EM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#AAAI2021_EM" id="34_arrows" class="arrows" onclick="expand_collapse('34');">&#9660</a>
-            <div id="34" style="display:none;"><p> 
-                    As one popular technique for estimating the maximum likelihood 
-                    of mixture models or incomplete data problems, (Gradient) Expectation Maximization (EM) algorithm presents a challenge for preserving privacy of sensitive data. While although there are already some Differentially Private (DP) variants of (Gradient) EM algorithm, however, unlike in the non-private case, there is still no finite sample statistical guarantees. To address this issue, in this paper we propose the first DP variant of (Gradient) EM algorithm with statistical guarantees.  Moreover, we apply our general framework to three canonical models: Gaussian Mixture Model (GMM), Mixture of Regressions Model (MRM) and Linear Regression with Missing Covariates (RMC). Specifically, for GMM in the DP model, our estimation error is near optimal in some cases. And for other two models in the DP model, we provide the first finite sample statistical guarantees.  Our theory is supported by thorough numerical results. 
-            </p></div> </br> <strong>Di Wang<sup>*</sup></strong>, <a href="https://dblp.uni-trier.de/pers/hd/d/Ding:Jiahao"><strong>Jiahao Ding</strong></a><sup>*</sup>, Zejun Xie<sup><span>&#9733;</span></sup>, <a href="http://www2.egr.uh.edu/~mpan2/">Miao Pan</a> and Jinhui Xu (* equal contribution). </br>
-        </li>
-    </br>
-
-        <li><i>Towards Assessment of Randomized Mechanisms for
-            Certifying Adversarial Robustness.</i><a href="papers/NeurIPS2020_RandomSmoothing.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#NIPS2020_random" id="28_arrows" class="arrows" onclick="expand_collapse('28');">&#9660</a>
-            <div id="28" style="display:none;"><p> 
-                As a certified defensive technique, randomized smoothing has received considerable attention due to its scalability to large datasets and neural networks. However, several important questions remain unanswered, such as (i) whether the Gaussian mechanism is an appropriate option for certifying $\ell_2$-norm robustness, and (ii) whether there is an appropriate randomized mechanism to certify $\ell_\infty$-norm robustness 
-                for high-dimensional datasets. To shed light on these questions, the main difficulty is how to assess each randomized mechanism. In this paper, we propose a generic framework, which connects the existing frameworks in (Lecuyer et al. 2018; Li et al. 2019), to assess randomized mechanisms. 
-                Under our framework, for a mechanism which can certify a certain extent of robustness, we define the magnitude ({\em i.e.,} the expected $\ell_\infty$ norm) of the randomized noise it adds as the metric for assessing its appropriateness. We also derive lower bounds on the metric for $\ell_2$-norm and $\ell_\infty$-norm cases as the criteria for assessment.
-                Based on our framework, we assess the Gaussian and Exponential mechanisms by comparing the magnitude of noise added by these mechanisms and the corresponding criteria. We first conclude that the Gaussian mechanism is an appropriate option to certify $\ell_2$-norm robustness. Moreover, surprisingly, we also show that the Gaussian mechanism is also an appropriate option for certifying $\ell_\infty$-norm robustness, instead of the Exponential mechanism.
-                Finally, we verify our theoretical results by evaluations on CIFAR10 and ImageNet. 
-            </p></div> </br> <a href="https://scholar.google.com/citations?user=DDP03z4AAAAJ&hl=en"><strong>Tianhang Zheng</strong></a><sup>*</sup>, <strong>Di Wang<sup>*</sup></strong>, <a href="https://iqua.ece.toronto.edu/bli/">Baochun Li</a> and Jinhui Xu (* equal contribution). </br>
-        </li>
-
-    </br>
-
-
- 
-
-
-</ol>
-
-
-
-
-</ol>
 <hr>
 <h3> <a name="pubs_con">Selected Publications</a> [<a href="Publication.html">Full List</a>] [<a  href="https://scholar.google.com/citations?user=5hGRe_QAAAAJ&hl=en&authuser=1&oi=sra">Google Scholar</a>] [<a href="https://dblp.uni-trier.de/pid/18/5410-15.html">DBLP</a>] </h3> 
 <ol>
@@ -349,7 +285,72 @@ in the NLDP model with public unlabeled data.
 
 
 </ol>
+<hr>
+<h3> <a name="manu">Manuscripts</a>   </h3>
+(<span>&#9733;</span> my Master/PhD/Intern/Visiting students)
+<ol>
 
+    <li><i>
+        One-shot Private Fair Learning: From Exponential to Quasi-polynomial Sample Complexity.</i><a href="papers/MSML2021_Fair.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#MSML2021_Fair" id="36_arrows" class="arrows" onclick="expand_collapse('36');">&#9660</a>
+    <div id="36" style="display:none;"><p> 
+
+
+
+    </p></div> </br> <strong>Di Wang</strong>. </br>
+</li>
+
+</br> 
+    <li><i>
+        On Facility Location Problem in the Central and Local Differential Privacy Model.</i><a href="papers/nips21.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#NIPS2021" id="38_arrows" class="arrows" onclick="expand_collapse('38');">&#9660</a>
+    <div id="38" style="display:none;"><p> 
+        We revisit the facility location problem in the differential privacy (DP) model and solve several open problems proposed by previous work. In the first part we focus on the problem in the central $\epsilon$-DP model. Under the hierarchically well-separated tree (HST) metric and the super-set output setting, \citet{prev2019} showed a lower bound of $\Omega(\frac{1}{\sqrt{\epsilon}})$  on the approximation ratio, and an algorithm achieving $O(\frac{1}{\epsilon})$ approximation in the case of uniform facility cost.  %improve over these results by closing the gap between the upper and lower bound, {\em i.e.,} 
+        In this paper, we show that there is an $\epsilon$-DP algorithm with $O(\frac{1}{\sqrt{\epsilon}})$ approximation ratio for the general non-uniform facility cost setting. So, not only our result closes the gap between the upper and lower bounds, but also it extends the result of \citeauthor{prev2019} to the non-uniform case.
+        
+        In the second part of the paper, we focus on the problem in the local DP (LDP) model. In the problem, whether a client participates in the facility location instance is the private information that needs to be protected. Under the HST metric, we show that there is a non-interactive algorithm achieving $O(\frac{N^{\frac{1}{4}}}{\epsilon^2})$ approximation ratio, where $N$ is the size of the metric. On the negative side, we show a lower bound of $\Omega(\frac{N^{\frac{1}{4}}}{\sqrt{\epsilon}})$ on the approximation ratio for any non-interactive $\epsilon$-LDP algorithm. So our ratio is tight in terms of $N$.
+    </p></div> </br>[<strong>alphabetic order</strong>]  <strong>Yunus Esencayi</strong>,  <strong>Marco Gaboardi</strong>, <strong>Shi Li</strong> and <strong>Di Wang</strong>  </br>
+</li>
+</br>
+<li><i>Differentially Private Pairwise Learning Revisited.</i><a href="papers/DASFAA_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#DASFAA_pairwise" id="35_arrows" class="arrows" onclick="expand_collapse('35');">&#9660</a>
+    <div id="35" style="display:none;"><p>  
+            Instead of learning with pointwise loss functions, learning with pairwise loss functions (pairwise learning) has received much attention recently as it is more capable of modeling the relative relationship between pairs of samples.   However, most of the existing algorithms for pairwise learning fail to take into consideration the privacy issue in their design.  To address this  issue, previous work studied pairwise learning in the Differential Privacy (DP) model. However, their utilities (population errors) are far from optimal. To address the sub-optimal utility issue, in this paper, we proposed new $(\epsilon, \delta)$ or $\epsilon$-DP algorithms for pairwise learning. Specifically, when the loss functions are Lipschitz, smooth and strongly convex, we show that the output of our algorithm achieves an expected population error of $O(\frac{1}{n}+\frac{d\log\frac{1}{\delta}}{n^2\epsilon^2})$ and $O(\frac{1}{n}+\frac{d^2}{n^2\epsilon^2})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively, where $n$ is the sample size and $d$ is the dimension of the underlying space. 
+            Moreover, for general convex case,  the output of our algorithm achieves an expected population error  of $O(\frac{1}{\sqrt{n}}+\frac{\sqrt{d \log\frac{1}{\delta}}}{n\epsilon})$ and $O(\frac{1}{\sqrt{n}}+\frac{d}{n\epsilon})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively. It is also notable that these upper bounds are {\bf optimal} ({\em i.e.,} match the lower bounds). We also conduct extensive experiments on real-world datasets to evaluate the proposed algorithms, experimental results support our theoretical analysis and show the priority of our algorithms. 
+</br>    
+    </p></div> </br> Zhiyu Xue<sup>*</sup><sup><span>&#9733;</span></sup>, Shaoyang Yang<sup>*</sup><sup><span>&#9733;</span></sup>, Mengdi Huai and <u><strong>Di Wang</strong></u>. (* equal contribution) </br>
+
+</li>
+</br> 
+        <li><i>
+                Differentially Private (Gradient) Expectation Maximization Algorithm with Statistical Guarantees.</i><a href="papers/UAI2021_EM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#AAAI2021_EM" id="34_arrows" class="arrows" onclick="expand_collapse('34');">&#9660</a>
+            <div id="34" style="display:none;"><p> 
+                    As one popular technique for estimating the maximum likelihood 
+                    of mixture models or incomplete data problems, (Gradient) Expectation Maximization (EM) algorithm presents a challenge for preserving privacy of sensitive data. While although there are already some Differentially Private (DP) variants of (Gradient) EM algorithm, however, unlike in the non-private case, there is still no finite sample statistical guarantees. To address this issue, in this paper we propose the first DP variant of (Gradient) EM algorithm with statistical guarantees.  Moreover, we apply our general framework to three canonical models: Gaussian Mixture Model (GMM), Mixture of Regressions Model (MRM) and Linear Regression with Missing Covariates (RMC). Specifically, for GMM in the DP model, our estimation error is near optimal in some cases. And for other two models in the DP model, we provide the first finite sample statistical guarantees.  Our theory is supported by thorough numerical results. 
+            </p></div> </br> <strong>Di Wang<sup>*</sup></strong>, <a href="https://dblp.uni-trier.de/pers/hd/d/Ding:Jiahao"><strong>Jiahao Ding</strong></a><sup>*</sup>, Zejun Xie<sup><span>&#9733;</span></sup>, <a href="http://www2.egr.uh.edu/~mpan2/">Miao Pan</a> and Jinhui Xu (* equal contribution). </br>
+        </li>
+    </br>
+
+        <li><i>Towards Assessment of Randomized Mechanisms for
+            Certifying Adversarial Robustness.</i><a href="papers/NeurIPS2020_RandomSmoothing.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#NIPS2020_random" id="28_arrows" class="arrows" onclick="expand_collapse('28');">&#9660</a>
+            <div id="28" style="display:none;"><p> 
+                As a certified defensive technique, randomized smoothing has received considerable attention due to its scalability to large datasets and neural networks. However, several important questions remain unanswered, such as (i) whether the Gaussian mechanism is an appropriate option for certifying $\ell_2$-norm robustness, and (ii) whether there is an appropriate randomized mechanism to certify $\ell_\infty$-norm robustness 
+                for high-dimensional datasets. To shed light on these questions, the main difficulty is how to assess each randomized mechanism. In this paper, we propose a generic framework, which connects the existing frameworks in (Lecuyer et al. 2018; Li et al. 2019), to assess randomized mechanisms. 
+                Under our framework, for a mechanism which can certify a certain extent of robustness, we define the magnitude ({\em i.e.,} the expected $\ell_\infty$ norm) of the randomized noise it adds as the metric for assessing its appropriateness. We also derive lower bounds on the metric for $\ell_2$-norm and $\ell_\infty$-norm cases as the criteria for assessment.
+                Based on our framework, we assess the Gaussian and Exponential mechanisms by comparing the magnitude of noise added by these mechanisms and the corresponding criteria. We first conclude that the Gaussian mechanism is an appropriate option to certify $\ell_2$-norm robustness. Moreover, surprisingly, we also show that the Gaussian mechanism is also an appropriate option for certifying $\ell_\infty$-norm robustness, instead of the Exponential mechanism.
+                Finally, we verify our theoretical results by evaluations on CIFAR10 and ImageNet. 
+            </p></div> </br> <a href="https://scholar.google.com/citations?user=DDP03z4AAAAJ&hl=en"><strong>Tianhang Zheng</strong></a><sup>*</sup>, <strong>Di Wang<sup>*</sup></strong>, <a href="https://iqua.ece.toronto.edu/bli/">Baochun Li</a> and Jinhui Xu (* equal contribution). </br>
+        </li>
+
+    </br>
+
+
+ 
+
+
+</ol>
+
+
+
+
+</ol>
 
 <!--
 <hr>
