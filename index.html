@@ -139,13 +139,14 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 <li>Lijie Hu (CS PhD), 01/2021-</li> </br>
 <li>Yulian Wu (CS PhD), 09/2021- </li> </br>
 <li>Chenglong Wang (CS PhD), 09/2021- </li></br>
+<li>Shaza Alawadi (AMCS PhD), 09/2021- </li></br>
 </ul>
 <h4>Master Students</h4>
 <h4>Visiting Students/Reaserch Interns</h4>
 <ul>
 <li>Shuo Ni (Master student at University of Southern California), 01/2021-06/2021</li></br>
-<li>Xingyu Jiang (Undergraduate at Harbin Institute of Technology Weihai), 01/2021-</li></br>
-<li>Youming Tao (Undergraduate at Shandong University), 01/2021-06/2021</li></br>
+<li>Xingyu Jiang (Undergraduate at Harbin Institute of Technology Weihai), 01/2021-05/2021</li></br>
+<li>Youming Tao (Undergraduate at Shandong University), 01/2021-08/2021</li></br>
 <li>Jinyan Su (Undergraduate at University of Electronic Science and Technology of China), 03/2021-</li></br>
 <li> Mingyi Zhou (Master student at University of Electronic Science and Technology of China), 04/2021-</li></br>
 <li>Junren Chen (Undergraduate at Sun Yat-sen University), 05/2021- </li></br>
@@ -280,12 +281,12 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 
 </ol>
 <hr>
-<h3> <a name="manu">Manuscripts</a>   </h3>
+<h3> <a name="manu">Manuscripts/Working on Papers</a>   </h3>
 (<span>&#9733;</span> my Master/PhD/Intern/Visiting students)
 <ol>
 
 <li><i>
-        Differentially Private Stochastic Convex Optimization Revistied.</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#HighDim_DPSCO" id="41_arrows" class="arrows" onclick="expand_collapse('41');">&#9660</a>
+        Faster Rates of Differentially Private Stochastic Convex Optimization.</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#HighDim_DPSCO" id="41_arrows" class="arrows" onclick="expand_collapse('41');">&#9660</a>
      <div id="41" style="display:none;"><p> 
 
      </p></div> </br> Jinyan Su<sup>*</sup><sup><span>&#9733;</span></sup> and <u><strong>Di Wang</strong></u>.  </br>
@@ -304,8 +305,10 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 </br>
 
     <li><i>
-        Heavy-tailed Multi-arm Bandits in (Local) Differential Privacy Model .</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#HighDim_DPSCO" id="40_arrows" class="arrows" onclick="expand_collapse('40');">&#9660</a>
+            Optimal Rates of (Locally) Differentially Private Heavy-tailed 
+            Multi-Armed Bandits.</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#HighDim_DPSCO" id="40_arrows" class="arrows" onclick="expand_collapse('40');">&#9660</a>
      <div id="40" style="display:none;"><p> 
+            In this paper we study the problem of stochastic multi-armed bandits (MAB) in the (local) differential privacy (DP/LDP) model. Unlike the previous results which need to assume bounded reward distributions, here we mainly focus on the case the reward distribution of each arm only has $(1+v)$-th moment with some $v\in (0, 1]$. In the first part, we study the problem in the central $\epsilon$-DP model. We first provide a near-optimal result by developing a private and robust Upper Confidence Bound (UCB) algorithm. Then, we improve the result via a private and robust version of the Successive Elimination (SE) algorithm. Finally, we show that the instance-dependent regret bound of our improved algorithm is optimal by showing its lower bound. In the second part of the paper, we study the problem in the $\epsilon$-LDP model. We propose an algorithm which could be seen as locally private and robust version of the SE algorithm,  and show it could achieve  (near) optimal rates for both  instance-dependent and instance-independent regrets. All of the above results can also reveal the differences between the problem of private MAB with bounded rewards and heavy-tailed rewards.  To achieve these (near) optimal rates, we develop several new hard instances and private robust estimators as byproducts, which might could be used to other related problems. Finally, experimental results also support our theoretical analysis and show the effectiveness of our algorithms.
 
      </p></div> </br> Youming Tao<sup>*</sup><sup><span>&#9733;</span></sup>, Yulian Wu<sup>*</sup><sup><span>&#9733;</span></sup>, Peng Zhao and <u><strong>Di Wang</strong></u>. (* equal contribution) </br>
  </li>
@@ -313,7 +316,7 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
         <li><i>
                 High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data.</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#HighDim_DPSCO" id="39_arrows" class="arrows" onclick="expand_collapse('39');">&#9660</a>
             <div id="39" style="display:none;"><p> 
-                    Stochastic Convex Optimization (SCO)  is one of the most fundamental problems in supervised learning and statistics. In this paper we provide the first study on the problem of Differentially Private Stochastic Convex Optimization (SCO) with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint. We show that if the loss function is smooth and has bounded second order moment, it is possible to get an error bound of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimensionality. Next, for LASSO with a distribution that has bounded fourth-order moment, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP.  In the second part, we study DP-SCO for sparse learning with heavy-tailed data. We first revisit sparse linear regression and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study general DP-SCO under the sparsity constraint, and showed that it is possible to achieve an error of $\tilde{O}(\frac{s^{*}\log d}{n\epsilon})$, if the loss function is smooth and strongly convex. Experiments on both synthetic and real-world data also outperform previous methods. 
+                    As one of the most fundamental problems in machine learning, statistics and differential privacy, Differentially Private Stochastic Convex Optimization (DP-SCO) has been extensively studied in recent years. However, most of the previous work can only handle either regular data distribution or irregular data in the low dimensional space case. To better understand the challenges arising from irregular data distribution, in this paper we provide the first study on the problem of DP-SCO with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint (such as the $\ell_1$-norm ball). We show that if the loss function is smooth and its gradient has bounded second order moment, it is possible to get an error bound of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimensionality of the underlying space. Next, for LASSO,  if the data  distribution that has bounded fourth-order moments, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP model.  In the second part of the paper, we study DP-SCO for sparse learning with heavy-tailed data. We first revisit the sparse linear regression and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*2}\log d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study a more general problem over the sparsity ({\em i.e.,} $\ell_0$-norm) constraint, and show that it is possible to achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, which is also near optimal up to a factor of $\tilde{O}{(\sqrt{s^*})}$,  if the loss function is smooth and strongly convex. 
             </p></div> </br> Lijie Hu<sup>*</sup><sup><span>&#9733;</span></sup>, Shuo Ni<sup>*</sup><sup><span>&#9733;</span></sup>, Hanshen Xiao and <u><strong>Di Wang</strong></u>. (* equal contribution) </br>
         </li>
      </br>
