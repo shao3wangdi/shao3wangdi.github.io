@@ -190,7 +190,7 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
             <div id="39" style="display:none;"><p> 
                     As one of the most fundamental problems in machine learning, statistics and differential privacy, Differentially Private Stochastic Convex Optimization (DP-SCO) has been extensively studied in recent years. However, most of the previous work can only handle either regular data distribution or irregular data in the low dimensional space case. To better understand the challenges arising from irregular data distribution, in this paper we provide the first study on the problem of DP-SCO with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint (such as the $\ell_1$-norm ball). We show that if the loss function is smooth and its gradient has bounded second order moment, it is possible to get an error bound of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimensionality of the underlying space. Next, for LASSO,  if the data  distribution that has bounded fourth-order moments, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP model.  In the second part of the paper, we study DP-SCO for sparse learning with heavy-tailed data. We first revisit the sparse linear regression and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*2}\log d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study a more general problem over the sparsity ({\em i.e.,} $\ell_0$-norm) constraint, and show that it is possible to achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, which is also near optimal up to a factor of $\tilde{O}{(\sqrt{s^*})}$,  if the loss function is smooth and strongly convex. 
             </p></div> </br> Lijie Hu, Shuo Ni, Hanshen Xiao and <u><strong>Di Wang</strong></u>. </br>
-           To appear in the 41st ACM Symposium on Principles of Database Systems (PODS 2022)
+           The 41st ACM Symposium on Principles of Database Systems (PODS 2022)
         </li>
      </br>
 
@@ -222,6 +222,8 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
                 where an upper bound is obtained by a label-privacy version of LDP-IHT. Experiments on real world and synthetic datasets confirm our theoretical analysis.
         </p></div> </br> <strong>Di Wang</strong> and Jinhui Xu. </br>
         IEEE Transactions on Information Theory, Volume 67, no. 2, Pages 1182-1200, Feb. 2021. </br>
+        The conference version appeared at ICML 2019
+        (<strong>Selected as Long Talk (Acceptance Rate: 140/3424= 4.1%) </strong>). </br>
     </li>
 </br>
     <li> <i>Empirical Risk Minimization in the Non-interactive Local
@@ -232,7 +234,7 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
             
         </p></div> </br> <strong>Di Wang</strong>, Marco Gaboardi,  Adam Smith and  Jinhui Xu. </br>
         Journal of Machine Learning Research, Volume 21, 200 (2020), Pages 1-39.
-        
+        The conference version appeared at NIPS/NeurIPS 2018 and ALT 2019. 
         </li>
       
 
@@ -273,34 +275,9 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
         </p></div> </br> <strong>Di Wang</strong>, <a href="https://cse.buffalo.edu/~changyou/">Changyou Chen</a> and  Jinhui Xu. </br>
         The 36th International Conference on Machine Learning (ICML 2019).
         </li>
-        </br>
-        <li> <i>On Sparse Linear Regression in the Local Differential Privacy Model.</i> <a href="papers/ICML2019_regression.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19m.html">Link</a>] Abstract<a href="#ICML2019_regression" id="9_arrows" class="arrows" onclick="expand_collapse('9');">&#9660</a>
-            <div id="9" style="display:none;"><p> In this paper, we study the sparse linear regression problem under the Local Differential Privacy (LDP) model. We first show that polynomial dependency on the dimensionality $p$ of the space is unavoidable for the estimation error in both non-interactive and sequential interactive local models, if the privacy of the whole dataset needs to be preserved.  Similar limitations also exist for other types of error measurements and in the relaxed local models. This indicates that differential privacy in high dimensional space is unlikely achievable for the problem. With the understanding of this limitation, we then present two algorithmic results. The first one is 
-                a sequential interactive LDP algorithm for the low dimensional sparse case, called Locally Differentially Private Iterative Hard Thresholding (LDP-IHT), which achieves a near optimal upper bound. This algorithm is actually rather general and can be used to solve quite a few other problems, such as (Local) DP-ERM with sparsity constraints and sparse regression with non-linear measurements.  The second one is for the restricted (high dimensional) case where only  the privacy  of the responses (labels) needs to be preserved. For this case, 
-                we show that the optimal rate of the error estimation can be made logarithmically depending on $p$ (i.e., $\log p$) in the local model, 
-                where an upper bound is obtained by a label-privacy version of LDP-IHT. Experiments on real world and synthetic datasets confirm our theoretical analysis. 
-            </p></div> </br> <strong>Di Wang</strong> and  Jinhui Xu.  </br> 
-           The 36th International Conference on Machine Learning (ICML 2019). </br>
-            <strong>Selected as Long Talk(Acceptance Rate: 140/3424= 4.1%) </strong>.
-       
-            </li>
 
 
         </br>
-        <li> <i>Empirical Risk Minimization in Non-interactive Local Differential Privacy Revisited.</i> <a href="papers/NeurIPS2018_NLDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/7375-empirical-risk-minimization-in-non-interactive-local-differential-privacy-revisited">Link</a>] 
-            Abstract<a href="#NeurIPS2018_NLDP" id="4_arrows" class="arrows" onclick="expand_collapse('4');">&#9660</a>
-            <div id="4" style="display:none;"><p>In this paper, we revisit the Empirical Risk Minimization problem in the non-interactive local model of differential privacy. In the case of constant or low dimensions ($p\ll n$), we first show that if the  loss function is $(\infty, T)$-smooth,  we can avoid a dependence of the  sample complexity, to achieve error $\alpha$, on the exponential of the dimensionality $p$ with base $1/\alpha$  (i.e., $\alpha^{-p}$),
-                which answers a question in (Smith et al 2017).  Our approach is based on polynomial approximation. Then, we propose player-efficient algorithms with $1$-bit communication complexity and $O(1)$ computation cost for each player. The error bound is asymptotically the same as the original one. With some additional assumptions, we also give an efficient algorithm for the server. 
-                In the case of high dimensions ($n\ll p$),
-               we show that if the loss function is a convex generalized linear function,  the error  can be bounded by using the Gaussian width of the constrained set, instead of $p$, which improves the one in    
-                 Smith et al.
-                 Our techniques can be extended to some related problems, such as $k$-way marginal queries and smooth queries. </p></div> </br> 
-                 <strong>Di Wang</strong>, <a href="http://www.acsu.buffalo.edu/~gaboardi/">Marco Gaboardi</a> and Jinhui Xu. </br>
-                 
-            Conference on Neural Information Processing Systems (NIPS/NeurIPS), 2018.
-            
-            </li>
-</br>
     </li>
     <li> <i>Differentially Private Empirical Risk Minimization Revisited: Faster and More General.</i> <a href="papers/NeurIPS2017_DPERM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/6865-differentially-private-empirical-risk-minimization-revisited-faster-and-more-general">Link</a>] Abstract<a href="#NeurIPS2017_DPERM" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9660</a>
         <div id="1" style="display:none;"><p>In this paper we study the differentially private Empirical Risk Minimization (ERM) problem in different settings. For smooth (strongly) convex loss function with or without (non)-smooth regularization, we give algorithms that achieve either optimal or near optimal utility bounds with less gradient complexity compared with previous work.  For ERM with smooth convex loss function in high-dimensional ($p\gg n$) setting, we give an algorithm which achieves the upper bound with less gradient complexity than previous ones. At last, we generalize the expected excess empirical risk from convex loss functions to non-convex ones satisfying the Polyak-Lojasiewicz condition and give a tighter upper bound on   
