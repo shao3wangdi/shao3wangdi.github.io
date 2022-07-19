@@ -142,19 +142,20 @@ The 25th International Conference on Artificial Intelligence and Statistics (AIS
         <li><i>Estimating Smooth GLM in Non-interactive Local Differential Privacy Model with Public Unlabeled Data</i><a href="papers/JMLRGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [Link</a>] Abstract<a href="#JMLR2022_GLM" id="51_arrows" class="arrows" onclick="expand_collapse('51');">&#9660</a>
             <div id="51" style="display:none;"><p>  
         
-                In this paper, we study the problem of estimating smooth Generalized Linear Models (GLM) in the Non-interactive Local Differential Privacy (NLDP) model. 
-        Different from its classical setting, our model allows the server to process 
-        some additional public but unlabeled data. 
-        We first show that there is an $(\epsilon, \delta)$-NLDP algorithm for 
-        GLM (under some mild assumptions), if each data record is i.i.d sampled from some sub-Gaussian distribution with bounded $\ell_1$-norm. 
-        The sample complexity of both 
-        public and private data, for the algorithm to achieve an  $\alpha$  estimation error (in $\ell_\infty$-norm), is $\tilde{O}(p^2\alpha^{-2}\epsilon^{-2})$ if $\alpha$ is not too small (i.e., $\alpha\geq \Omega(\frac{1}{\sqrt{p}})$), where $p$ is the dimensionality of the data. This is a significant improvement over the previously known quasi-polynomial (in $\alpha$) or exponential (in $p$) complexity  of convex GLM with no public data.
-        We then extend our idea to the non-linear regression problem and show 
-        a similar phenomenon for it.
-        Finally, we demonstrate the practicality of our algorithms through experiments on both synthethic and real world datasets. 
-        To our best knowledge, this is the first paper showing the existence of efficient and practical 
-        algorithms for GLM and non-linear regression 
-        in the NLDP model with public unlabeled data.
+                In this paper, we study the problem of estimating smooth Generalized Linear Models (GLMs) in the Non-interactive Local Differential Privacy (NLDP) model. 
+                Different from its classical setting, our model allows the server to access 
+                some additional public but unlabeled data. In the first part of the paper we focus on GLMs. Specifically,
+                we first consider the case where each data record is i.i.d. sampled from a zero-mean multivariate Gaussian distribution. Motivated by the Stein's lemma, we present an $(\epsilon, \delta)$-NLDP algorithm for 
+                 GLMs. Moreover, the sample complexity of the 
+                public and private data for the algorithm to achieve an $\ell_2$-norm estimation error of  $\alpha$ (with high probability) is ${O}(p \alpha^{-2})$ and $\tilde{O}(p^3\alpha^{-2}\epsilon^{-2})$ respectively, where $p$ is the dimension of the feature vector. This is a significant improvement over the previously known exponential or quasi-polynomial in $\alpha^{-1}$, or exponential in $p$ sample complexities  of  GLMs with no public data. Then we consider a more general setting where each data record is i.i.d. sampled from some sub-Gaussian distribution with bounded $\ell_1$-norm. Based on a variant of Stein's lemma, we propose an $(\epsilon, \delta)$-NLDP algorithm for 
+                 GLMs (under some mild assumptions). The sample complexity of the 
+                public and private data for the algorithm to achieve an $\ell_\infty$-norm estimation error of $\alpha$ is ${O}(p^2\alpha^{-2})$ and $\tilde{O}(p^2\alpha^{-2}\epsilon^{-2})$  respectively, if $\alpha$ is not too small 
+                ({\em i.e.,} $\alpha\geq \Omega(\frac{1}{\sqrt{p}})$). In the second part of the paper, we extend our idea to the non-linear regression problem and show 
+                similar results for it under the multivariate Gaussian and sub-Gaussian cases.
+                Finally, we demonstrate the effectiveness of our algorithms through experiments on both synthetic and real world datasets. 
+                To our best knowledge, this is the first paper showing the existence of efficient and effective 
+                algorithms for GLMs and non-linear regression 
+                in the NLDP model with public unlabeled data.
         </br>    
             </p></div> </br> <strong>Di Wang<sup>*</sup></strong>,  
             Lijie Hu<sup>*</sup><sup><span>&#9733;</span></sup>,  <a href="https://huanyuzhang.github.io/">Huanyu Zhang</a><sup>*</sup>, Marco Gaboardi and Jinhui Xu. (* equal contribution) </br>
