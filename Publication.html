@@ -55,7 +55,19 @@ http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
 .arrows{text-decoration:none;color:silver;}
 </style>
 </head>
-
+<head>
+    <style type="text/css">
+      ol li { counter-increment: mycounter; }
+      ol.start { counter-reset: mycounter; }
+      ol.continue { /*counter-reset: mycounter 2; */}
+      ol li { 
+          counter-increment: mycounter;
+          list-style-type: none;
+      }
+      ol li:before { content: counter(mycounter) ". "; }
+    </style>
+  </head>
+  
 
 <div class="main">
 <h2 style="text-align: center;"><i>Di Wang's Publications </br> &nbsp; &nbsp;   
