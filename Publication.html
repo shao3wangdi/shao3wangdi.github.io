@@ -102,7 +102,39 @@ To address this issue, we provide the first study on GEP in the differential pri
          </li>
           </br> 
 
-
+          <h4><i>Journal Papers</i></h4>
+          <li><i>
+              High Dimensional Sparse Statistical Estimation Under One-bit Quantization.</i><a href="papers/TIT2023_onebit.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2202.13157">Link</a>] Abstract<a href="#TIT2023_onebit" id="32_arrows" class="arrows" onclick="expand_collapse('32');">&#9660</a>
+           <div id="32" style="display:none;"><p> 
+              In this paper, we consider several fundamental machine learning and (sparse) statistical estimation problems from i.i.d samples of a sub-Gaussian or heavy-tailed distribution. Instead of having the full knowledge of the samples, we focus on the scenario where each entry of these the samples is quantized to one or two  bits, which plays a critical role in signal processing or machine learning applications. Specifically, we give the  first  study on the problems of (sparse) covariance matrix estimation, sparse linear regression and low-rank matrix completion. For covariance matrix estimation, compared with the previous results, we extend to the heavy-tailed case where the underlying distribution has bounded fourth order moments. Moreover, we extend to the high dimensional sparse (and heavy-tailed) cases by providing several new estimators which consist of four steps: Truncating, Dithering, Quantizing and Thresholding. For sparse linear model and low-rank matrix completion, we propose new quadratic objective functions for one-bit quantized samples based on our previous estimators.  For all of our estimators we also derive estimation errors. Especially, in the sub-Gaussian case, all of our estimators could achieve near optimal rates in the unquantized cases. 
+              Finally, extensive experiments on synthetic and real-world data have been carried out to support our theories. 
+           </p></div> </br> Junren Chen</sup><sup><span>&#9733;</span></sup>, Cheng-Long Wang</sup><sup><span>&#9733;</span></sup>,  <a href="https://hkumath.hku.hk/~mng/">Michael Kwok Po NG</a>  and <u><strong>Di Wang</strong></u>.  </br>
+           Minor Revision, IEEE Transactions on Information Theory.  </br>
+       </li>
+      </br> 
+              <li><i>Generalized Linear Models in Non-interactive Local
+                  Differential Privacy with Public Data.</i><a href="papers/JMLR2023_GLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [<a href="https://arxiv.org/abs/1910.00482">Link</a>] Abstract<a href="#JMLR2023_GLM" id="31_arrows" class="arrows" onclick="expand_collapse('31');">&#9660</a>
+                  <div id="31" style="display:none;"><p>  
+              
+                      In this paper, we study the problem of estimating smooth Generalized Linear Models (GLMs) in the Non-interactive Local Differential Privacy (NLDP) model. 
+                      Different from its classical setting, our model allows the server to access 
+                      some additional public but unlabeled data. In the first part of the paper we focus on GLMs. Specifically,
+                      we first consider the case where each data record is i.i.d. sampled from a zero-mean multivariate Gaussian distribution. Motivated by the Stein's lemma, we present an $(\epsilon, \delta)$-NLDP algorithm for 
+                       GLMs. Moreover, the sample complexity of the 
+                      public and private data for the algorithm to achieve an $\ell_2$-norm estimation error of  $\alpha$ (with high probability) is ${O}(p \alpha^{-2})$ and $\tilde{O}(p^3\alpha^{-2}\epsilon^{-2})$ respectively, where $p$ is the dimension of the feature vector. This is a significant improvement over the previously known exponential or quasi-polynomial in $\alpha^{-1}$, or exponential in $p$ sample complexities  of  GLMs with no public data. Then we consider a more general setting where each data record is i.i.d. sampled from some sub-Gaussian distribution with bounded $\ell_1$-norm. Based on a variant of Stein's lemma, we propose an $(\epsilon, \delta)$-NLDP algorithm for 
+                       GLMs (under some mild assumptions). The sample complexity of the 
+                      public and private data for the algorithm to achieve an $\ell_\infty$-norm estimation error of $\alpha$ is ${O}(p^2\alpha^{-2})$ and $\tilde{O}(p^2\alpha^{-2}\epsilon^{-2})$  respectively, if $\alpha$ is not too small 
+                      ({\em i.e.,} $\alpha\geq \Omega(\frac{1}{\sqrt{p}})$). In the second part of the paper, we extend our idea to the non-linear regression problem and show 
+                      similar results for it under the multivariate Gaussian and sub-Gaussian cases.
+                      Finally, we demonstrate the effectiveness of our algorithms through experiments on both synthetic and real world datasets. 
+                      To our best knowledge, this is the first paper showing the existence of efficient and effective 
+                      algorithms for GLMs and non-linear regression 
+                      in the NLDP model with public unlabeled data.
+              </br>    
+                  </p></div> </br> <strong>Di Wang<sup>*</sup></strong>,  
+                  Lijie Hu<sup>*</sup><sup><span>&#9733;</span></sup>,  <a href="https://huanyuzhang.github.io/">Huanyu Zhang</a><sup>*</sup>, Marco Gaboardi and Jinhui Xu. (* equal contribution) </br>
+                  Minor Revision, Journal of Machine Learning Research. 
+              </li>
 
 </ol>
 
@@ -202,39 +234,7 @@ The 25th International Conference on Artificial Intelligence and Statistics (AIS
            ACM CCS 2021 Workshop on  Privacy Preserving Machine Learning. </br>
         </li>
   
-    <h4><i>Journal Papers</i></h4>
-    <li><i>
-        High Dimensional Sparse Statistical Estimation Under One-bit Quantization.</i><a href="papers/TIT2023_onebit.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2202.13157">Link</a>] Abstract<a href="#TIT2023_onebit" id="32_arrows" class="arrows" onclick="expand_collapse('32');">&#9660</a>
-     <div id="32" style="display:none;"><p> 
-        In this paper, we consider several fundamental machine learning and (sparse) statistical estimation problems from i.i.d samples of a sub-Gaussian or heavy-tailed distribution. Instead of having the full knowledge of the samples, we focus on the scenario where each entry of these the samples is quantized to one or two  bits, which plays a critical role in signal processing or machine learning applications. Specifically, we give the  first  study on the problems of (sparse) covariance matrix estimation, sparse linear regression and low-rank matrix completion. For covariance matrix estimation, compared with the previous results, we extend to the heavy-tailed case where the underlying distribution has bounded fourth order moments. Moreover, we extend to the high dimensional sparse (and heavy-tailed) cases by providing several new estimators which consist of four steps: Truncating, Dithering, Quantizing and Thresholding. For sparse linear model and low-rank matrix completion, we propose new quadratic objective functions for one-bit quantized samples based on our previous estimators.  For all of our estimators we also derive estimation errors. Especially, in the sub-Gaussian case, all of our estimators could achieve near optimal rates in the unquantized cases. 
-        Finally, extensive experiments on synthetic and real-world data have been carried out to support our theories. 
-     </p></div> </br> Junren Chen</sup><sup><span>&#9733;</span></sup>, Cheng-Long Wang</sup><sup><span>&#9733;</span></sup>,  <a href="https://hkumath.hku.hk/~mng/">Michael Kwok Po NG</a>  and <u><strong>Di Wang</strong></u>.  </br>
-     Minor Revision, IEEE Transactions on Information Theory.  </br>
- </li>
-</br> 
-        <li><i>Generalized Linear Models in Non-interactive Local
-            Differential Privacy with Public Data.</i><a href="papers/JMLR2023_GLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [<a href="https://arxiv.org/abs/1910.00482">Link</a>] Abstract<a href="#JMLR2023_GLM" id="31_arrows" class="arrows" onclick="expand_collapse('31');">&#9660</a>
-            <div id="31" style="display:none;"><p>  
-        
-                In this paper, we study the problem of estimating smooth Generalized Linear Models (GLMs) in the Non-interactive Local Differential Privacy (NLDP) model. 
-                Different from its classical setting, our model allows the server to access 
-                some additional public but unlabeled data. In the first part of the paper we focus on GLMs. Specifically,
-                we first consider the case where each data record is i.i.d. sampled from a zero-mean multivariate Gaussian distribution. Motivated by the Stein's lemma, we present an $(\epsilon, \delta)$-NLDP algorithm for 
-                 GLMs. Moreover, the sample complexity of the 
-                public and private data for the algorithm to achieve an $\ell_2$-norm estimation error of  $\alpha$ (with high probability) is ${O}(p \alpha^{-2})$ and $\tilde{O}(p^3\alpha^{-2}\epsilon^{-2})$ respectively, where $p$ is the dimension of the feature vector. This is a significant improvement over the previously known exponential or quasi-polynomial in $\alpha^{-1}$, or exponential in $p$ sample complexities  of  GLMs with no public data. Then we consider a more general setting where each data record is i.i.d. sampled from some sub-Gaussian distribution with bounded $\ell_1$-norm. Based on a variant of Stein's lemma, we propose an $(\epsilon, \delta)$-NLDP algorithm for 
-                 GLMs (under some mild assumptions). The sample complexity of the 
-                public and private data for the algorithm to achieve an $\ell_\infty$-norm estimation error of $\alpha$ is ${O}(p^2\alpha^{-2})$ and $\tilde{O}(p^2\alpha^{-2}\epsilon^{-2})$  respectively, if $\alpha$ is not too small 
-                ({\em i.e.,} $\alpha\geq \Omega(\frac{1}{\sqrt{p}})$). In the second part of the paper, we extend our idea to the non-linear regression problem and show 
-                similar results for it under the multivariate Gaussian and sub-Gaussian cases.
-                Finally, we demonstrate the effectiveness of our algorithms through experiments on both synthetic and real world datasets. 
-                To our best knowledge, this is the first paper showing the existence of efficient and effective 
-                algorithms for GLMs and non-linear regression 
-                in the NLDP model with public unlabeled data.
-        </br>    
-            </p></div> </br> <strong>Di Wang<sup>*</sup></strong>,  
-            Lijie Hu<sup>*</sup><sup><span>&#9733;</span></sup>,  <a href="https://huanyuzhang.github.io/">Huanyu Zhang</a><sup>*</sup>, Marco Gaboardi and Jinhui Xu. (* equal contribution) </br>
-            Minor Revision, Journal of Machine Learning Research. 
-        </li>
+ 
     </ol>
 
     <h3><i>2021</i></h3>
