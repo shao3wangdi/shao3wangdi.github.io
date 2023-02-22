@@ -78,9 +78,24 @@ http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
 <h3><i>2023</i></h3>
 <ol class="start">
     <h4><i>Conference Papers</i></h4>
+
+<li> <i>Practical Differentially Private and Byzantine-resilient Federated Learning. </i><a href="papers/SIGMOD2023_Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#SIGMOD2023_Byzantine" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
+    <div id="43" style="display:none;"><p> 
+        Privacy and Byzantine resilience are two indispensable requirements for a federated learning (FL) system. Although there have been extensive studies on privacy and Byzantine security in their own track, solutions that consider both remain sparse. This is due to difficulties in reconciling privacy-preserving and Byzantine-resilient algorithms.
+
+        In this work, we propose a solution to such a two-fold issue. We use our version of differentially private stochastic gradient descent (DP-SGD) algorithm to preserve privacy and then apply our Byzantine-resilient algorithms. We note that while existing works follow this general approach, an in-depth analysis on the interplay between DP and Byzantine resilience has been ignored, leading to unsatisfactory performance. Specifically, for the random noise introduced by DP, previous works strive to reduce its seemingly detrimental impact on the Byzantine aggregation. In contrast, we leverage the random noise to construct a first-stage aggregation that effectively rejects many existing Byzantine attacks. Moreover, based on another property of our DP variant, we form a second-stage aggregation which provides a final sound filtering. Our protocol follows the principle of co-designing both DP and Byzantine resilience.
+        
+        We provide both theoretical proof and empirical experiments to show our protocol is effective: retaining high accuracy while preserving the DP guarantee and Byzantine resilience. Compared with the previous work, our protocol 1) achieves significantly higher accuracy even in a high privacy regime; 2) works well even when up to 90% distributive workers are Byzantine.
+    </p></div> Zihang Xiang<sup><span>&#9733;</span></sup>, <a href="https://tianhao.wang/">Tianhao Wang </a>,  <a href="https://wanyu-lin.github.io/">Wanyu Lin</a>  and  <u><strong>Di Wang</strong></u>. </br>
+    International Conference on Management of Data (SIGMOD 2023). </br>
+
+
+
+</li>
+        </br> 
     <li><i>
         Privacy-preserving Sparse Generalized Eigenvalue Problem.</i><a href="papers/AISTATS2023_GEP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#AISTATS2023_GEP" id="42_arrows" class="arrows" onclick="expand_collapse('42');">&#9660</a>
-             <div id="41" style="display:none;"><p> 
+             <div id="42" style="display:none;"><p> 
                 In this paper we study the (sparse) Generalized Eigenvalue Problem (GEP), which arises in a
 number of modern statistical learning models, such as principal component analysis (PCA), canonical correlation analysis (CCA), Fisher's discriminant analysis (FDA) and sliced inverse regression (SIR). Existing techniques for GEP all fail to consider the protection of sensitive information in the training set. Models learned by such methods can implicitly
 memorize the details of sensitive information. 
