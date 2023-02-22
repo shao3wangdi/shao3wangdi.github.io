@@ -190,7 +190,20 @@ Thuwal, Saudi Arabia, 23955-6900<br/>
 <hr>
 <h3> <a name="pubs_con">Selected Publications(In the last 3 years)</a> [<a href="Publication.html">Full List</a>] [<a  href="https://scholar.google.com/citations?user=5hGRe_QAAAAJ&hl=en&authuser=1&oi=sra">Google Scholar</a>] [<a href="https://dblp.uni-trier.de/pid/18/5410-15.html">DBLP</a>] </h3> 
 <ol>
-
+    <li> <i>Practical Differentially Private and Byzantine-resilient Federated Learning. </i><a href="papers/SIGMOD2023_Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#SIGMOD2023_Byzantine" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
+        <div id="43" style="display:none;"><p> 
+            Privacy and Byzantine resilience are two indispensable requirements for a federated learning (FL) system. Although there have been extensive studies on privacy and Byzantine security in their own track, solutions that consider both remain sparse. This is due to difficulties in reconciling privacy-preserving and Byzantine-resilient algorithms.
+    
+            In this work, we propose a solution to such a two-fold issue. We use our version of differentially private stochastic gradient descent (DP-SGD) algorithm to preserve privacy and then apply our Byzantine-resilient algorithms. We note that while existing works follow this general approach, an in-depth analysis on the interplay between DP and Byzantine resilience has been ignored, leading to unsatisfactory performance. Specifically, for the random noise introduced by DP, previous works strive to reduce its seemingly detrimental impact on the Byzantine aggregation. In contrast, we leverage the random noise to construct a first-stage aggregation that effectively rejects many existing Byzantine attacks. Moreover, based on another property of our DP variant, we form a second-stage aggregation which provides a final sound filtering. Our protocol follows the principle of co-designing both DP and Byzantine resilience.
+            
+            We provide both theoretical proof and empirical experiments to show our protocol is effective: retaining high accuracy while preserving the DP guarantee and Byzantine resilience. Compared with the previous work, our protocol 1) achieves significantly higher accuracy even in a high privacy regime; 2) works well even when up to 90% distributive workers are Byzantine.
+        </p></div> Zihang Xiang<sup><span>&#9733;</span></sup>, <a href="https://tianhao.wang/">Tianhao Wang </a>,  <a href="https://wanyu-lin.github.io/">Wanyu Lin</a>  and  <u><strong>Di Wang</strong></u>. </br>
+        International Conference on Management of Data (SIGMOD 2023). </br>
+    
+    
+    
+    </li>
+            </br> 
     <li><i>
         Truthful Generalized Linear Models.</i><a href="papers/TrustfulGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#TrustfulGLM" id="51_arrows" class="arrows" onclick="expand_collapse('51');">&#9660</a>
          <div id="51" style="display:none;"><p> 
