@@ -1,14 +1,21 @@
 
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
 
 <head>
-
-    <script type="text/javascript"
-    async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--   <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"> -->
-    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+    <meta charset="utf-8" />
+    <title>Di Wang's Homepage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
+    <!-- GLOBAL STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Times New Roman:300,400,500,600,700" rel="stylesheet"
+        type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111471287-1"></script>
 <script>
@@ -24,515 +31,185 @@
   <script type="text/javascript"
     src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
-<title>Di Wang's Homepage</title>
-
 <style>
-
-
-
-
-</style>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!--########################### 
-Expand/Collapse JS and CSS code for use 
-in the HEAD section of your document.
-Written by Dick Ervasti. Learn More at:
-http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
-##################################-->
-<script type="text/javascript">
-    function expand_collapse(id) {
-       var e = document.getElementById(id);
-       var f = document.getElementById(id+"_arrows");
-       if(e.style.display == 'none'){
-          e.style.display = 'block';
-          f.innerHTML = '&#9650';
-       }
-       else {
-          e.style.display = 'none';
-          f.innerHTML = '&#9660';
-       }
+    .lighter {
+      font-weight: lighter;
     }
-</script>
-<!--
-<style type="text/css">
-.arrows{text-decoration:none;color:silver;}
+
+    .normal {
+      font-weight: normal;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .bolder {
+      font-weight: bolder;
+    }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<link rel="stylesheet" src="css/light-theme.css" id="theme-stylesheet">
---> 
 </head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+
+<body id="body" data-spy="scroll" data-target=".header">
+
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-middle">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="index.html">Home</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="http://www.pradalab.org">PRADA Lab</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                href="http://www.pradalab.org/research.html">Research</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="group.html">Group Members</a></li>       
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="publications.html">Publications</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="teaching.html">Teaching&Talks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <style>
+            body {background-color: powderblue;}
+            h2 {color: goldenrod;}
+          </style>
+    </header>
+    <!--========== END HEADER ==========-->
 
 
+    <!--========== SLIDER ==========-->
+    <div class="promo-block">
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="margin-b-10" align="center">
+                        <img src="img/photo.jpg" alt="" style="float:center; height:250px; margin:20px; width:180px" > 
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="margin-b-0">
+                        <h2 style="color:#34568B">Di Wang<br /></h2>
+                        <p style="color:#000000"><b> Email: <a href="mailto: di.wang@kaust.edu.sa" style="color:#6B5B95">di.wang@kaust.edu.sa</a><br />
+                            Website: [<a href="https://shao3wangdi.github.io/" style="color:#6B5B95">中文主页</a>]  [<a href="https://cemse.kaust.edu.sa/part" style="color:#6B5B95">PRADA Lab</a>][<a href="https://cemse.kaust.edu.sa/cs/people/person/di-wang" style="color:#6B5B95">KAUST Personal</a>]<br />
 
-<div class="main">
-    <a href="https://cemse.kaust.edu.sa/"> <img src="CEMSE.png" width="800" height="100" class="center"> </a>
-<h1 style="text-align: center;"><p style="font-family:verdana">Di Wang's Homepage</p>
-</h1>
-Chinese: 王帝<br/>
-Al Khawarizmi Building 1, Room 4243 <br/>
-Division of CEMSE
-<br/>King Abdullah University of Science and Technology<br/>
-Thuwal, Saudi Arabia, 23955-6900<br/>
-<b>Email</b> : <i><a href="mailto: di.wang@kaust.edu.sa">di.wang@kaust.edu.sa</a></i><br/>
-<b>Website</b>: [<a href="https://cemse.kaust.edu.sa/cs/people/person/di-wang">KAUST Personal</a>][<a href="https://shao3wangdi.github.io/">Personal</a>]  [<a href="https://cemse.kaust.edu.sa/part">Laboratory</a>] <br/>
-<b>Tel:</b> <i>+966 (012) 8080645</i>
-<br/>  
-<div class="mb-5" id="theme-toggler"></div>
-<hr>
-<h3><a name="bio">Short Bio</a></h3>
-<p> 
-     <img src="diwang1.jpg" alt="" style="float:left; height:200px; margin:10px; width:155px" > 
-     I am currently an Assistant Professor of Computer Science in the Division of Computer, Electrical and Mathematical Sciences and Engineering (CEMSE) at the King Abdullah University of Science and Technology (KAUST), start from Spring 2021. I am also the PI of <a href="https://cemse.kaust.edu.sa/part"> Privacy-Awareness, Responsibility and Trustworthy (PART) Lab </a> , a member of Computational Bioscience Research Center (CBRC) and an affiliated faculty with the SDAIA-KAUST Center of Excellence in Data Science and Artificial Intelligence
-     (SDAIA-KAUST AI). 
-<p> 
-    Before that, I got my Ph.D degree in Computer Science at <a href="
-    https://www.buffalo.edu/">
-    The State University of New York (SUNY) at Buffalo in 2020</a> under supervision of <a href="
-    https://www.cse.buffalo.edu//~jinhui/"> Dr. Jinhui Xu </a>. Before my Ph.D study I took
-    my Master degree in Mathematics at <a href="http://www.uwo.ca/">
-     University of Western Ontario</a> in 2015, and I received my Bachelor degree in Mathematics and Applied
-    Mathematics at <a href="http://www.sdu.edu.cn/">Shandong University</a> in 2014.</br> </br>
-    
-    My most recent resume (last updated in January, 2022) can be found <a href="CV_DiWang.pdf">here</a>. 
-</p>
- <p>
-    Dissertation: <a href="papers/Dissertation.pdf">Some Fundamental Machine Learning Problems in the Differential Privacy Model</a>. 
-</p>
+CV:  <a href="CV_DiWang.pdf">CV</a> (last updated in January, 2022)<br/> 
+                            Address: <br />
+                            Al Khawarizmi Building 1, Room 4243 <br/>
+                            Division of CEMSE<br/>
+                            King Abdullah University of Science and Technology<br/>
+                            Thuwal, Saudi Arabia, 23955-6900<br/>  </b>
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
 
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- About -->
 
-
-     <p style="color:red;"><strong>
-         Current Openings:</strong> I am always looking for Postdocs, PhD students, internship and visiting students (all are fully funded). If you are interested in working with me, <strong style="color:green">please send me your CV and transcripts before applying.</strong> See <a href="PhD.html">PhD</a>  and <a href="Postdoc.html">Postdoc</a> for details. 
-    </p>
-</p>
+    <div id="about">
+        <div class="container">
+            <h2>Biography</h2>
+            <p style="color:#000000"> <b>I am currently an Assistant Professor of Computer Science in the Division of Computer, Electrical and Mathematical Sciences and Engineering (CEMSE) at the King Abdullah University of Science and Technology (KAUST), start from Spring 2021. I am also the PI of <a href="https://www.pradalab.org"  style="color:#5B5EA6"> Provable Responsible AI and Data Analytics (PRADA) Lab </a> , a member of Computational Bioscience Research Center (CBRC) and an affiliated faculty with the SDAIA-KAUST Center of Excellence in Data Science and Artificial Intelligence
+                (SDAIA-KAUST AI). </b> </p>
 
 
+            <p style="color:#000000">  <b> Before that, I got my Ph.D degree in Computer Science at the<a href="
+               https://www.buffalo.edu/" style="color:#5B5EA6">
+               State University of New York (SUNY) at Buffalo in 2020</a> under supervision of <a href="
+               https://www.cse.buffalo.edu//~jinhui/" style="color:#5B5EA6"> Dr. Jinhui Xu </a>. Before my Ph.D study I took
+               my Master degree in Mathematics at <a href="http://www.uwo.ca/" style="color:#5B5EA6">
+                University of Western Ontario</a> in 2015, and I received my Bachelor degree in Mathematics and Applied
+               Mathematics at <a href="http://www.sdu.edu.cn/" style="color:#5B5EA6">Shandong University</a> in 2014. </b> </br></p>
 
-<hr>
-<h3><a name="area">Current Research Interests</a></h3>
-<li> <strong>Responsible Computing</strong>: privacy, fairness, truthfulness, explainability, reproducibility, faithfulness </li></br>
-<li> <strong>Statistical Learning Theory</strong>: high dimensional statistics, reinforcement learning, quantum machine learning </li></br>
-<li><strong>Machine Learning</strong>: topological deep learning, geometric deep learning</li></br>
-<li><strong>AI for Science</strong>: optics, photonics, biomedicine, crystal</li></br>
+               <h2 style="color:#955251">News</h2>
+               <div class="section-seperator">
+                   <div class="margin-b-30"></div>
+                   <div class="infoblock">
+                       <div class="blockcontent">
+   <p style="color:#000000"><b>
+                            Open Positions
+                             </b><b style="color:#0000E3"> </b>:   I am always looking for Postdocs, PhD students, internship and visiting students. If you are interested in working with me, <strong style="color:green">please send me your CV and transcripts before applying.</strong> 
 
-<hr>
-<h3> <a name="teach">Teaching</a> </h3>
-<ul>
-    <li>CS 325: Private Data Analysis, Fall 2022 @KAUST</li>
-    <li>CS 229: Machine Learning, Spring 2022, Spring 2023@KAUST</li>
-    <li>CS 394S: Contemporary Topics in Computer Security: Differential Privacy, Fall 2021 @KAUST</li>
-    <li>Short Course: Selected Topics in Private Machine Learning and Statistics, January 2021 @ECNU.</li>
-    <li> CSE 474/574: Introduction to Machine Learning, Summer 2019 @SUNY at Buffalo.</li>
-</ul>
-
-<hr>
-<h3> <a name="reward">Awards</a> </h3>
-<ul>
-    <li>Best Paper Award, Asian Conference on Machine Learning 2022</li>
-    <li>Invited to The ACM Transactions on Database Systems special issue on Best of PODS 2022</li>
-    <li>CSE Best Doctoral Dissertation Award in 2020, SUNY at Buffalo</li>
-    <li>SEAS Dean's Graduate Achievement Award in 2019,  SUNY at Buffalo</li>
-    <li>Best CSE Graduate Research Award in 2018, SUNY at Buffalo</li>
-</ul>
-
-
-
-<hr>
-<h3>Current Group Memebers [<a href="past_member.html">Past Group Members</a>] </h3>
-<h4>Visiting Professsor</h4>
-<ul>
-    <li><a href="https://web.ics.purdue.edu/~vaneet/">Vaneet Aggarwal</a> (Professor at  Purdue University) </li>
-</ul>
-<h4>Visiting Scholar</h4>
-<ul>
-    <li>Xiaodong Miao</li>
-</ul>
-<h4> Postdocs</h4>
-<ul>
-    <li>Yan Hu (PhD, University of Padova), 12/2021-</li></br>
-    <li><a href="https://jxiao.wang/">Junxiao Wang</a> (PhD, Dalian University of Technology), 02/2023- </li></br>
-    <li><a href="https://scholar.google.com.au/citations?hl=en&user=Kj0S5aYAAAAJ">Muhammad Asif Ali</a> (PhD, University of New South Wales), 01/2023-</li></br>
-</ul>
-<h4> PhD Students</h4>
-<ul>
-<li>Xiaochuan Gou (CS PhD, M.S 	National Chiao Tung University), 09/2020- , Co-advised with Xiangliang Zhang </li></br>
-<li>Zihang Xiang (CS PhD, M.S Shanghai Jiao Tong University), 01/2021-</li> </br>
-<li><a href="https://sites.google.com/view/lijiehu/homepage">Lijie Hu</a> (CS PhD, M.S Renmin University of China), 01/2021-</li> </br>
-<li><a href="https://yulianwu.github.io/">Yulian Wu</a> (CS PhD, M.S East China Normal University), 09/2021- </li> </br>
-<li> <a href="https://sites.google.com/view/chlwr">Cheng-Long Wang</a> (CS PhD, M.S Northwestern Polytechnical University), 09/2021- </li></br>
-<li>Liangyu Wang (CS PhD, M.S The Chinese University of Hong Kong), 01/2023-</li></br> 
-</ul>
-<h4>Master Students</h4>
-<ul>
-<li> Liyang Zhu (CS MS/PhD, B.S McGill University), 09/2022-    </li></br>
-</ul>
-<h4>Collaborative PhD Students</h4>
-<ul>
-<li>Youming Tao (MS/PhD student, Shandong University)</li></br>
-<li>Meng Ding (PhD student, University at Buffalo)</li></br>
-<li>Minghua Wang (PhD student, University at Buffalo)</li>
-</ul>
-<h4>Visiting Students</h4>
-<ul>
-    <li>Amina Manseur (Undergraduate student, Ecole Centrale de Marseille) </li>
-</ul>
-<h4>Remote Research Interns</h4>
-<ul>
-<li>Haocheng Qin (Undergraduate, Southern University of Science and Technology) </li></br>
-<li>Changqi Sun (Master student,  Dongguan University of Technology)</li></br>
-<li>Yicheng Mao (Master student,  KU Leuven)</li>
-</ul>
+                        <p style="color:#000000"><b>
+                            <font size="5">N</font>ews
+                             </b><b style="color:#0000E3"> (Mar 2023) </b>:  New personal website!</p>
+                           <p style="color:#000000"><b>
+                                   <font size="5">N</font>ews
+                               </b><b style="color:#0000E3"> (Mar 2023) </b>:  Our paper "A Theory to Instruct Differentially-Private Learning via Clipping Bias Reduction" has been conditionally accepted at the 44th IEEE Symposium on
+                               Security and Privacy (S&P 2023). Congratulations to Zihang!</p>
+   
+                       </div>
+                   </div>
+               </div>
 
 
-<hr>
-<h3> <a name="pubs_con">Selected Publications(In the last 3 years)</a> [<a href="Publication.html">Full List</a>] [<a  href="https://scholar.google.com/citations?user=5hGRe_QAAAAJ&hl=en&authuser=1&oi=sra">Google Scholar</a>] [<a href="https://dblp.uni-trier.de/pid/18/5410-15.html">DBLP</a>] </h3> 
-<ol>
-    <li> <i>On Practical Differentially Private and Byzantine-resilient Federated Learning. </i><a href="papers/SIGMOD2023_Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#SIGMOD2023_Byzantine" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
-        <div id="43" style="display:none;"><p> 
-            Privacy and Byzantine resilience are two indispensable requirements for a federated learning (FL) system. Although there have been extensive studies on privacy and Byzantine security in their own track, solutions that consider both remain sparse. This is due to difficulties in reconciling privacy-preserving and Byzantine-resilient algorithms.
-    
-            In this work, we propose a solution to such a two-fold issue. We use our version of differentially private stochastic gradient descent (DP-SGD) algorithm to preserve privacy and then apply our Byzantine-resilient algorithms. We note that while existing works follow this general approach, an in-depth analysis on the interplay between DP and Byzantine resilience has been ignored, leading to unsatisfactory performance. Specifically, for the random noise introduced by DP, previous works strive to reduce its seemingly detrimental impact on the Byzantine aggregation. In contrast, we leverage the random noise to construct a first-stage aggregation that effectively rejects many existing Byzantine attacks. Moreover, based on another property of our DP variant, we form a second-stage aggregation which provides a final sound filtering. Our protocol follows the principle of co-designing both DP and Byzantine resilience.
-            
-            We provide both theoretical proof and empirical experiments to show our protocol is effective: retaining high accuracy while preserving the DP guarantee and Byzantine resilience. Compared with the previous work, our protocol 1) achieves significantly higher accuracy even in a high privacy regime; 2) works well even when up to 90% distributive workers are Byzantine.
-        </p></div> </br> Zihang Xiang, <a href="https://tianhao.wang/">Tianhao Wang </a>,  <a href="https://wanyu-lin.github.io/">Wanyu Lin</a>  and  <u><strong>Di Wang</strong></u>. </br>
-        International Conference on Management of Data (SIGMOD 2023). </br>
-    
-    
-    
-    </li>
-            </br> 
-    <li><i>
-        Truthful Generalized Linear Models.</i><a href="papers/TrustfulGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#TrustfulGLM" id="51_arrows" class="arrows" onclick="expand_collapse('51');">&#9660</a>
-         <div id="51" style="display:none;"><p> 
-            In this paper we study estimating Generalized Linear Models (GLMs) in the case where the agents (individuals) are strategic or self-interested and they concern about their privacy when reporting data. Compared with the classical setting, here we aim to  design mechanisms that can both incentivize most agents to truthfully report their data and preserve the privacy of individuals' reports, while their outputs should also close to the underlying parameter. In the first part of the paper, we consider the case where the covariates are sub-Gaussian and the responses are heavy-tailed where they only have the finite fourth moments. First, motivated by the stationary condition of the 
-            maximizer of the likelihood function, we derive a novel private and closed form estimator. Based on the estimator, we propose a mechanism which has the following properties via some appropriate design of the computation and payment scheme for several canonical models such as linear regression, logistic regression and Poisson regression:  (1) the mechanism is $o(1)$-jointly differentially private (with probability at least $1-o(1)$); (2) it is an $o(\frac{1}{n})$-approximate Bayes Nash equilibrium for a $(1-o(1))$-fraction of agents to truthfully report their data, where $n$ is the number of agents; (3) the output could achieve an error of $o(1)$ to the underlying parameter; (4) it is individually rational for a $(1-o(1))$ fraction of agents in the mechanism ; (5) the payment budget required from the analyst to run the mechanism
-            is $o(1)$. In the second part, we consider the linear regression model under more general setting where both covariates and responses are heavy-tailed and only have finite fourth moments. By using an $\ell_4$-norm shrinkage operator, we propose a private estimator and payment scheme which have similar properties as in the sub-Gaussian case.  
-         </p></div> </br> Yuan Qiu, <a href="https://dblp.org/pid/149/9402.html">Jinyan Liu</a>   and   <u><strong>Di Wang</strong></u>. </br>
-         The 18th Conference on Web and Internet Economics (WINE 2022)
-     </li>
-      </br> 
+                   <h2 style="color:#FF6F61">Research Areas</h2>
+                   <p style="color:#000000"> <b>I am interested in trustworthy machine learning, machine learning theory and AI for Science. Please see my <a href="publications.html" style="color:#5CACEE"><u>Publications</u></a> and <a
+                        href="http://www.pradalab.org" style="color:#5CACEE"><u>Research</u></a> for details. </b></p> 
+                  <li style="color:#000000"> <b><strong>Responsible Computing</strong>:</b> privacy, fairness, truthfulness, explainability, reproducibility, faithfulness </li></br>
+                  <li style="color:#000000"><b><strong>Statistical Learning Theory</strong>:</b>  high dimensional statistics, reinforcement learning, quantum machine learning </li></br>
+                  <li style="color:#000000"><b><strong>Machine Learning</strong>: </b> topological deep learning, geometric deep learning</li></br>
+                  <li style="color:#000000"><b><strong>AI for Science</strong>:</b> optics, photonics, biomedicine, crystal</li></br> 
+   
+                  <h2 style="color:#55B4B0">Awards</h2>
+                 <li style="color:#000000"> <b><strong>Best Paper Award, Asian Conference on Machine Learning 2022</strong></b> </li></br>
+                 <li style="color:#000000"><b><strong>Invited to The ACM Transactions on Database Systems special issue on Best of PODS 2022</b></li></br>
+                 <li style="color:#000000"><b><strong>CSE Best Doctoral Dissertation Award in 2020, SUNY at Buffalo</b></li></br>
+                 <li style="color:#000000"><b><strong>SEAS Dean's Graduate Achievement Award in 2019,  SUNY at Buffalo</strong></b> </li></br>
+                 <li style="color:#000000"><b><strong>Best CSE Graduate Research Award in 2018, SUNY at Buffalo</strong></b> </li></br>
+          
+        </div>
+    </div>
 
-    <li><i>
-        High Dimensional Statistical Estimation under Uniformly
-Dithered One-bit Quantization.</i><a href="papers/Onebit.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2202.13157">Link</a>] Abstract<a href="#onebit" id="42_arrows" class="arrows" onclick="expand_collapse('42');">&#9660</a>
-     <div id="42" style="display:none;"><p> 
-        In this paper, we consider several fundamental machine learning and (sparse) statistical estimation problems from i.i.d samples of a sub-Gaussian or heavy-tailed distribution. Instead of having the full knowledge of the samples, we focus on the scenario where each entry of these the samples is quantized to one or two  bits, which plays a critical role in signal processing or machine learning applications. Specifically, we give the  first  study on the problems of (sparse) covariance matrix estimation, sparse linear regression and low-rank matrix completion. For covariance matrix estimation, compared with the previous results, we extend to the heavy-tailed case where the underlying distribution has bounded fourth order moments. Moreover, we extend to the high dimensional sparse (and heavy-tailed) cases by providing several new estimators which consist of four steps: Truncating, Dithering, Quantizing and Thresholding. For sparse linear model and low-rank matrix completion, we propose new quadratic objective functions for one-bit quantized samples based on our previous estimators.  For all of our estimators we also derive estimation errors. Especially, in the sub-Gaussian case, all of our estimators could achieve near optimal rates in the unquantized cases. 
-        Finally, extensive experiments on synthetic and real-world data have been carried out to support our theories. 
-     </p></div> </br> Junren Chen, Cheng-Long Wang,  <a href="https://hkumath.hku.hk/~mng/">Michael Kwok Po NG</a>  and <u><strong>Di Wang</strong></u>.  </br>
-     Minor Revision, IEEE Transactions on Information Theory.  </br>
- </li>
-</br>
-    <li><i>
-        Faster Rates of  Private Stochastic Convex Optimization.</i><a href="papers/ALT2022_SCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v167/su22a.html">Link</a>]   Abstract<a href="#fasterdpsco" id="41_arrows" class="arrows" onclick="expand_collapse('41');">&#9660</a>
-     <div id="41" style="display:none;"><p> 
-       In this paper, we revisit the problem of Differentially Private Stochastic Convex Optimization (DP-SCO) and provide excess population risks for some special classes of functions that are faster than the previous results of general convex and strongly convex functions. In the first part of the paper, we study the case where the population risk function satisfies the Tysbakov Noise Condition (TNC) with some parameter $\theta>1$. Specifically, we first show that under some mild assumptions on the loss functions, there is an algorithm whose output could achieve an upper bound of $\tilde{O}((\frac{1}{\sqrt{n}}+\frac{d}{n\epsilon})^\frac{\theta}{\theta-1}) $ and $\tilde{O}((\frac{1}{\sqrt{n}}+\frac{\sqrt{d\log(1/\delta)}}{n\epsilon})^\frac{\theta}{\theta-1})$ for $\epsilon$-DP and $(\epsilon, \delta)$-DP, respectively when $\theta\geq 2$, here $n$ is the sample size and $d$ is the dimension of the space. Then we address the inefficiency issue, improve the upper bounds by $\text{Poly}(\log n)$ factors and extend to the case where $\theta\geq \bar{\theta}>1$ for some known $\bar{\theta}$. Next we show that the excess population risk of population functions satisfying TNC with parameter $\theta\geq 2$ is always lower bounded by  $\Omega((\frac{d}{n\epsilon})^\frac{\theta}{\theta-1}) $ and $\Omega((\frac{\sqrt{d\log(1/\delta)}}{n\epsilon})^\frac{\theta}{\theta-1})$ for $\epsilon$-DP and $(\epsilon, \delta)$-DP, respectively, which matches our upper bounds. In the second part, we focus on a special case where the population risk function is strongly convex. Unlike the previous studies, here we assume the loss function is {\em non-negative} and {\em the optimal value of population risk is sufficiently small}. With these additional assumptions, we propose a new method whose output could achieve an upper bound of $O(\frac{d\log(1/\delta)}{n^2\epsilon^2}+\frac{1}{n^{\tau}})$ and $O(\frac{d^2}{n^2\epsilon^2}+\frac{1}{n^{\tau}})$ for any $\tau> 1$ in $(\epsilon,\delta)$-DP and $\epsilon$-DP model respectively if the sample size $n$ is sufficiently large. These results circumvent their corresponding lower bounds in \cite{feldman2020private} for general strongly convex functions.   Finally, we conduct experiments of our new methods on real world data. Experimental results also provide new insights into established theories.
-     </p></div> </br> <a href="https://jinyansu1.github.io/">Jinyan Su</a>, Lijie Hu and <u><strong>Di Wang</strong></u>.  </br>
-    The 33rd International Conference on Algorithmic Learning Theory (ALT 2022)
- </li>
-        </br>
-        <li><i>
-            On Facility Location Problem in Local Differential Privacy Model.</i><a href="papers/AISTATS2022_Facility.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> </a> [<a href="https://proceedings.mlr.press/v151/cohen-addad22a.html">Link</a>]Abstract<a href="#AISTATS2022b" id="38_arrows" class="arrows" onclick="expand_collapse('38');">&#9660</a>
-        <div id="38" style="display:none;"><p> 
-             This paper studies the facility location problem, where the given input is combined of (1) a metric space (V, d), (2) facility cost f_i for each facility, We study the uncapacitated facility location (UFL) problem under the constraints imposed by the local differential privacy (LDP). Recently, Gupta et al. (2009) and Esencayi et al. (2019) proposed lower and upper bounds for the UFL problem on the central differential privacy (DP) model where a curator first collects all data before being processed. In this paper, we focus on the LDP model, where we protect a client's participation in the facility location instance. Under the HST metric, we show that there is a non-interactive $\epsilon$-LDP algorithm achieving $O(n^{1/4}/\epsilon^2)$-approximation ratio, where n is the size of the metric. On the negative side, we show a lower bound of $\Omega(n^{1/4}/\sqrt{\epsilon})$ on the approximation ratio for any non-interactive $\epsilon$-LDP algorithm. Thus, our results are tight up to a factor of $\epsilon$. Moreover, unlike previous results, our results generalize for non-uniform facility costs.
-        </p></div> </br>[<strong>alphabetic order</strong>] <a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a>, Yunus Esencayi,  <a href="https://dblp.org/pid/76/8243.html">Chenglin Fan</a>, Marco Gaboradi, Shi Li
-        and <u><strong>Di Wang</strong></u>.   </br> 
-        The 25th International Conference on Artificial Intelligence and Statistics (AISTATS 2022).
-        </li>
-    </br>  
-        <li><i>
-            Optimal Rates of (Locally) Differentially Private Heavy-tailed 
-            Multi-Armed Bandits.</i><a href="papers/AISTATS2022_MAB.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> </a> [<a href="https://proceedings.mlr.press/v151/tao22a.html">Link</a>] Abstract<a href="#heavytailMAB" id="40_arrows" class="arrows" onclick="expand_collapse('40');">&#9660</a>
-     <div id="40" style="display:none;"><p> 
-            In this paper we study the problem of stochastic multi-armed bandits (MAB) in the (local) differential privacy (DP/LDP) model. Unlike the previous results which need to assume bounded reward distributions, here we mainly focus on the case the reward distribution of each arm only has $(1+v)$-th moment with some $v\in (0, 1]$. In the first part, we study the problem in the central $\epsilon$-DP model. We first provide a near-optimal result by developing a private and robust Upper Confidence Bound (UCB) algorithm. Then, we improve the result via a private and robust version of the Successive Elimination (SE) algorithm. Finally, we show that the instance-dependent regret bound of our improved algorithm is optimal by showing its lower bound. In the second part of the paper, we study the problem in the $\epsilon$-LDP model. We propose an algorithm which could be seen as locally private and robust version of the SE algorithm,  and show it could achieve  (near) optimal rates for both  instance-dependent and instance-independent regrets. All of the above results can also reveal the differences between the problem of private MAB with bounded rewards and heavy-tailed rewards.  To achieve these (near) optimal rates, we develop several new hard instances and private robust estimators as byproducts, which might could be used to other related problems. Finally, experimental results also support our theoretical analysis and show the effectiveness of our algorithms.
-    
-     </p></div> </br> Youming Tao<sup>*</sup>, Yulian Wu<sup>*</sup>, <a href="http://www.lamda.nju.edu.cn/zhaop/">Peng Zhao</a> and <u><strong>Di Wang</strong></u>. (* equal contribution) </br> The 25th International Conference on Artificial Intelligence and Statistics (AISTATS 2022).  </br> 
-     <strong>Selected as an Oral paper (Acceptance Rate: 44/1685=2.6%). </strong>
-    </li>
-    </br>
+    <!-- End About -->
 
-        <li><i>
-                High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data.</i><a href="papers/HighDim_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3517804.3524144">Link</a>] Abstract<a href="#HighDim_DPSCO" id="39_arrows" class="arrows" onclick="expand_collapse('39');">&#9660</a>
-            <div id="39" style="display:none;"><p> 
-                    As one of the most fundamental problems in machine learning, statistics and differential privacy, Differentially Private Stochastic Convex Optimization (DP-SCO) has been extensively studied in recent years. However, most of the previous work can only handle either regular data distribution or irregular data in the low dimensional space case. To better understand the challenges arising from irregular data distribution, in this paper we provide the first study on the problem of DP-SCO with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint (such as the $\ell_1$-norm ball). We show that if the loss function is smooth and its gradient has bounded second order moment, it is possible to get an error bound of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimensionality of the underlying space. Next, for LASSO,  if the data  distribution that has bounded fourth-order moments, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP model.  In the second part of the paper, we study DP-SCO for sparse learning with heavy-tailed data. We first revisit the sparse linear regression and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*2}\log d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study a more general problem over the sparsity ({\em i.e.,} $\ell_0$-norm) constraint, and show that it is possible to achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, which is also near optimal up to a factor of $\tilde{O}{(\sqrt{s^*})}$,  if the loss function is smooth and strongly convex. 
-            </p></div> </br> Lijie Hu, Shuo Ni, Hanshen Xiao and <u><strong>Di Wang</strong></u>. </br>
-           The 41st ACM Symposium on Principles of Database Systems (PODS 2022). </br>
-           <strong>Invited to The ACM Transactions on Database Systems special issue on Best of PODS 2022.</strong></br>
-        </li>
-     </br>
+    <!--========== END PAGE LAYOUT ==========-->
 
-        <li><i>Estimating Smooth GLM in Non-interactive Local Differential Privacy Model with Public Unlabeled Data</i><a href="papers/ALT2021_GLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [<a href="http://proceedings.mlr.press/v132/wang21a.html">Link</a>] Abstract<a href="#ALT2021_GLM" id="22_arrows" class="arrows" onclick="expand_collapse('22');">&#9660</a>
-            <div id="22" style="display:none;"><p>  
-        
-                In this paper, we study the problem of estimating smooth Generalized Linear Models (GLM) in the Non-interactive Local Differential Privacy (NLDP) model. 
-        Different from its classical setting, our model allows the server to process 
-        some additional public but unlabeled data. 
-        We first show that there is an $(\epsilon, \delta)$-NLDP algorithm for 
-        GLM (under some mild assumptions), if each data record is i.i.d sampled from some sub-Gaussian distribution with bounded $\ell_1$-norm. 
-        The sample complexity of both 
-        public and private data, for the algorithm to achieve an  $\alpha$  estimation error (in $\ell_\infty$-norm), is $\tilde{O}(p^2\alpha^{-2}\epsilon^{-2})$ if $\alpha$ is not too small (i.e., $\alpha\geq \Omega(\frac{1}{\sqrt{p}})$), where $p$ is the dimensionality of the data. This is a significant improvement over the previously known quasi-polynomial (in $\alpha$) or exponential (in $p$) complexity  of convex GLM with no public data.
-        We then extend our idea to the non-linear regression problem and show 
-        a similar phenomenon for it.
-        Finally, we demonstrate the practicality of our algorithms through experiments on both synthethic and real world datasets. 
-        To our best knowledge, this is the first paper showing the existence of efficient and practical 
-        algorithms for GLM and non-linear regression 
-        in the NLDP model with public unlabeled data.
-        </br>    
-    </p></div> </br> <strong>Di Wang<sup>*</sup></strong>,  
-    Lijie Hu<sup>*</sup>,  <a href="https://huanyuzhang.github.io/">Huanyu Zhang</a><sup>*</sup>, Marco Gaboardi and Jinhui Xu. (* equal contribution) </br>
-            Minor Revision, Journal of Machine Learning Research.  </br>
-           Abstract version appeared at The 32nd International Conference on Algorithmic Learning Theory (ALT 2021).
-        </li>
-    </br>
-    <li> <i>On Sparse Linear Regression in the Local Differential Privacy Model.</i> <a href="papers/TIT2020_regression.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/9269994">Link</a>] Abstract<a href="#TIT2020_regression" id="20_arrows" class="arrows" onclick="expand_collapse('20');">&#9660</a>
-        <div id="20" style="display:none;"><p> In this paper, we study the sparse linear regression problem in the Local Differential Privacy (LDP) model. We first show that polynomial dependency on the dimensionality $p$ of the space is unavoidable for the estimation error in both non-interactive and sequential interactive local models, if the privacy of the whole dataset needs to be preserved.  Similar limitations also exist for other types of error measurements and in the relaxed local models. This indicates that differential privacy in high dimensional space is unlikely achievable for the problem. With the understanding of this limitation, we then present two algorithmic results. The first one is 
-                a sequential interactive LDP algorithm for the low dimensional sparse case, called Locally Differentially Private Iterative Hard Thresholding (LDP-IHT), which achieves a near optimal upper bound. This algorithm is actually rather general and can be used to solve quite a few other problems, such as (Local) DP-ERM with sparsity constraints and sparse regression with non-linear measurements.  The second one is for the restricted (high dimensional) case where only  the privacy  of the responses (labels) needs to be preserved. For this case, 
-                we show that the optimal rate of the error estimation can be made logarithmically depending on $p$ (i.e., $\log p$) in the local model, 
-                where an upper bound is obtained by a label-privacy version of LDP-IHT. Experiments on real world and synthetic datasets confirm our theoretical analysis.
-        </p></div> </br> <strong>Di Wang</strong> and Jinhui Xu. </br>
-        IEEE Transactions on Information Theory, Volume 67, no. 2, Pages 1182-1200, Feb. 2021. </br>
-        The conference version appeared at ICML 2019
-        (<strong>Selected as Long Talk </strong>). </br>
-    </li>
-</br>
-    <li> <i>Empirical Risk Minimization in the Non-interactive Local
-        Model of Differential Privacy.</i> <a href="papers/JMLR2020_LDPERM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.jmlr.org/papers/v21/19-253.html">Link</a>] Abstract<a href="#JMLR2020_LDPERM" id="16_arrows" class="arrows" onclick="expand_collapse('16');">&#9660</a>
-        <div id="16" style="display:none;"><p> In this paper, we study the Empirical Risk Minimization (ERM) problem in the non-interactive Local Differential Privacy (LDP) model.  We first show that if the loss function is $(\infty, T)$-smooth, by using the Bernstein polynomial approximation we can avoid a dependency of the  sample complexity, to achieve error $\alpha$, on the exponential of the dimensionality $p$ with base $1/\alpha$  (i.e., $\alpha^{-p}$).
-            This answers a question from (Smith et.al., 2017).   Then, we propose player-efficient algorithms with $1$-bit communication complexity and $O(1)$ computation cost for each player. The error bound of these algorithms is asymptotically the same as the original one. With some additional assumptions, we also give an algorithm which is more efficient for the server. Based on different types of polynomial approximations, we propose (efficient) non-interactive locally differential private algorithms for learning the set of k-way marginal queries and the set of smooth queries. Moreover, we study the case of  $1$-Lipschitz generalized linear convex loss functions and show that there is an $(\epsilon, \delta)$-LDP algorithm whose sample complexity for achieving error $\alpha$ is only linear in the dimensionality $p$ and quasi-polynomial in other terms. To prove this, we first show that the conclusion holds for the hinge loss function. Then, we extend the result to any $1$-Lipschitz generalized linear convex loss functions by showing that every such a function can be approximated by a linear combination of hinge loss functions and some linear functions. Our results use a polynomial of inner product approximation technique. Then we apply our technique to the Euclidean median problem and show that its sample complexity needs only to be quasi-polynomial in $p$, which is the first result with a sub-exponential sample complexity in $p$ for non-generalized linear loss functions. 
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="content container">
+            <div class="col-xs-6">
+                <p></p>
+            </div>
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
 
-            
-        </p></div> </br> <strong>Di Wang</strong>, Marco Gaboardi,  Adam Smith and  Jinhui Xu. </br>
-        Journal of Machine Learning Research, Volume 21, 200 (2020), Pages 1-39. </br>
-        The conference version appeared at NIPS/NeurIPS 2018 and ALT 2019. 
-        </li>
-      
-
-</br>  
-<li><i>On Differentially Private Stochastic Convex Optimization with Heavy-tailed Data</i><a href="papers/ICML2020_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v119/wang20y.html">Link</a>] Abstract<a href="#ICML2020_heavy" id="27_arrows" class="arrows" onclick="expand_collapse('27');">&#9660</a>
-    <div id="27" style="display:none;"><p> 
-        In this paper, we consider the problem of designing Differentially Private (DP) algorithms for Stochastic Convex Optimization (SCO) on heavy-tailed data. The irregularity of such data violates some key assumptions used in almost all existing DP-SCO and DP-ERM methods, resulting in failure to provide the DP guarantees. To better understand this type of challenges, we provide in this paper a comprehensive study of DP-SCO under various settings. First, we consider the case where the loss function is strongly convex and smooth. For this case, we propose a method based on the sample-and-aggregate framework, which has an excess population risk of $\tilde{O}(\frac{d^3}{n\epsilon^4})$ (after omitting other factors), where $n$ is the sample size and $d$ is the dimensionality of the data. Then, we show that with some additional assumptions on the loss functions, it is possible to reduce the \textit{expected} excess population risk to $\tilde{O}(\frac{ d^2}{ n\epsilon^2 })$. To lift these additional conditions, we also provide a gradient smoothing and trimming based scheme to achieve excess population risks of $\tilde{O}(\frac{ d^2}{n\epsilon^2})$ and $\tilde{O}(\frac{d^\frac{2}{3}}{(n\epsilon^2)^\frac{1}{3}})$ for strongly convex and general convex loss functions, respectively, \textit{with high probability}. Experiments on both synthetic and real-world datasets suggest that our algorithms can effectively deal with the challenges caused by data irregularity.
-    </p></div> </br> <strong>Di Wang<sup>*</sup></strong>, <a href="https://dblp.org/pers/x/Xiao:Hanshen.html"><strong>Hanshen Xiao</strong></a><sup>*</sup>, <a href="https://people.csail.mit.edu/devadas/">Srini Devadas</a> and Jinhui Xu (* equal contribution). </br>
-   The 37th International Conference on Machine Learning (ICML 2020).
-</li>
-<!--
-</br>
-<li><i>Facility Location Problem in Differential Privacy Model Revisited.</i><a href="papers/NeurIPS2019_facility.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/9056-facility-location-problem-in-differential-privacy-model-revisited">Link</a>] Abstract<a href="#NeurIPS2019_facility" id="23_arrows" class="arrows" onclick="expand_collapse('23');">&#9660</a>
-    <div id="23" style="display:none;"><p> 
-        In this paper we study the uncapacitated facility location problem in the
-        model of differential privacy (DP) with uniform facility
-        cost. Specifically, we first show that, under the \emph{hierarchically well-separated tree (HST) metrics} and the super-set output setting that was introduced in (Gupta et al 2010), there is an $\epsilon$-DP
-        algorithm that achieves an $O(\frac{1}{\epsilon})$
-        (expected multiplicative) approximation ratio; this implies an
-        $O(\frac{\log n}{\epsilon})$
-        approximation ratio for the general metric case, where $n$ is the size of the input metric. These bounds improve
-        the best-known results given by (Gupta et al 2010).  In particular, our approximation ratio for HST-metrics is independent of $n$, and the ratio for general metrics is independent of the aspect ratio of the input metric. On the negative side, we show that the approximation ratio of any $\epsilon$-DP algorithm is lower bounded by $\Omega(\frac{1}{\sqrt{\epsilon}})$, even for instances on HST metrics with uniform facility cost, under the super-set output setting. The lower bound shows that the dependence of the approximation ratio for HST metrics on $\epsilon$ can not be removed or greatly improved. Our novel methods and techniques for both the upper and lower bound may find additional applications.
-    </p></div> </br>[<strong>alphabetic order</strong>] <a href="https://www.acsu.buffalo.edu/~yunusese/"> <strong>Yunus Esencayi</strong></a>,  <strong>Marco Gaboardi</strong>, <a href="https://cse.buffalo.edu/~shil/"><strong>Shi Li</strong></a> and <strong>Di Wang</strong>  </br>
-
-    Conference on Neural Information Processing Systems (NIPS/NeurIPS), 2019.
-</li>
-
-    </br>
-
-    <li><i>Differentially Private Empirical Risk Minimization with Non-convex Loss Functions.</i><a href="papers/ICML2019_nonconvex.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19c.html">Link</a>] Abstract<a href="#ICML2019_nonconvex" id="10_arrows" class="arrows" onclick="expand_collapse('10');">&#9660</a>
-        <div id="10" style="display:none;"><p> 
-                We study the problem of Empirical Risk Minimization (ERM) with (smooth) non-convex loss functions under the differential-privacy (DP) model. Existing approaches for this problem mainly adopt gradient norms to measure the error, which in general cannot guarantee the quality of the solution. To address this issue, 
-                we first study the expected excess empirical (or population) risk, which was primarily used as the utility to measure the quality for convex loss functions. Specifically, we show that
-                the excess empirical (or population) risk can be upper bounded by $\tilde{O}(\frac{d\log (1/\delta)}{\log n\epsilon^2})$ in the $(\epsilon, \delta)$-DP settings, where $n$ is the data size and $d$ is the dimensionality of the space. 
-                The $\frac{1}{\log n}$ term in the empirical risk bound can be further improved to $\frac{1}{n^{\Omega(1)}}$ (when $d$ is a constant) by a highly non-trivial analysis on the time-average error. 
-                To obtain more efficient solutions, we also consider the connection between achieving differential privacy and finding approximate local minimum. 
-                Particularly, we show that when the size $n$ is large enough, there are $(\epsilon, \delta)$-DP algorithms which can find an approximate local minimum of the empirical risk with high probability in both the constrained and non-constrained settings. 
-                These results indicate that one can escape saddle points privately.
-        </p></div> </br> <strong>Di Wang</strong>, <a href="https://cse.buffalo.edu/~changyou/">Changyou Chen</a> and  Jinhui Xu. </br>
-        The 36th International Conference on Machine Learning (ICML 2019).
-        </li>
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
 
-        </br>
-    </li>
+    <!-- CORE PLUGINS -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="js/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-    <li> <i>Differentially Private Empirical Risk Minimization Revisited: Faster and More General.</i> <a href="papers/NeurIPS2017_DPERM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/6865-differentially-private-empirical-risk-minimization-revisited-faster-and-more-general">Link</a>] Abstract<a href="#NeurIPS2017_DPERM" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9660</a>
-        <div id="1" style="display:none;"><p>In this paper we study the differentially private Empirical Risk Minimization (ERM) problem in different settings. For smooth (strongly) convex loss function with or without (non)-smooth regularization, we give algorithms that achieve either optimal or near optimal utility bounds with less gradient complexity compared with previous work.  For ERM with smooth convex loss function in high-dimensional ($p\gg n$) setting, we give an algorithm which achieves the upper bound with less gradient complexity than previous ones. At last, we generalize the expected excess empirical risk from convex loss functions to non-convex ones satisfying the Polyak-Lojasiewicz condition and give a tighter upper bound on   
-            the utility than the one in (Zhang et al 2017).
-        </p></div> </br> 
-        <strong>Di Wang</strong>, <a href="https://dblp.org/pers/y/Ye:Minwei.html">Minwei Ye</a> and <a href="
-        https://www.cse.buffalo.edu//~jinhui/">Jinhui Xu</a>. </br>
-        Conference on Neural
-        Information Processing Systems (NIPS/NeurIPS), 2017.
+</body>
+<!-- END BODY -->
 
-        
-        </li>
-
--->
-
-</ol>
-<!--
-<hr>
-<h3> <a name="manu">Manuscripts</a>   </h3>
-<ol>
-    <li><i>
-        Efficiently Estimating Generalized Linear Models in the Non-interactive LDP Model.</i><a href="papers/hignlaplacian.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#hignlaplacian" id="56_arrows" class="arrows" onclick="expand_collapse('56');">&#9660</a>
-          <div id="55" style="display:none;"><p> 
-     
-          </p></div> </br>  <u><strong>Di Wang</strong></u>. </br>
-      </li>
- </br>
-        <li><i>
-                Improved Private Word Embedding via the High Dimensional Truncated Laplacian Mechanism.</i><a href="papers/hignlaplacian.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#hignlaplacian" id="55_arrows" class="arrows" onclick="expand_collapse('55');">&#9660</a>
-                  <div id="55" style="display:none;"><p> 
-             
-                  </p></div> </br> Tao Yang  and  <u><strong>Di Wang</strong></u>. </br>
-              </li>
-         </br>
-
-        <li><i>
-               On Differentially Private Stochastic Convex Optimization with Gaussian Width.</i><a href="papers/GaussianWidth.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#GaussianWidth" id="53_arrows" class="arrows" onclick="expand_collapse('53');">&#9660</a>
-                 <div id="53" style="display:none;"><p> 
-            
-                 </p></div> </br> Jinyan Su, <a href="https://staff.ie.cuhk.edu.hk/~chzhao/">Changhong Zhao</a>  and  <u><strong>Di Wang</strong></u>. </br>
-             </li>
-        </br>
-
-
-    <li><i>
-        Differentially Private Non-convex Learning: From Generalized Linear Models to Neural Networks.</i><a href="papers/DPNN.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#DPNN" id="52_arrows" class="arrows" onclick="expand_collapse('52');">&#9660</a>
-         <div id="52" style="display:none;"><p> 
-    
-         </p></div> </br> Hanpu Shen, Cheng-Long Wang  and  <u><strong>Di Wang</strong></u>. </br>
-     </li>
-    </br>
-
-    <li><i>
-        Trustful High Dimensional Generliazed Linear Model.</i><a href="papers/TrustfulGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#TrustfulGLM" id="51_arrows" class="arrows" onclick="expand_collapse('51');">&#9660</a>
-         <div id="51" style="display:none;"><p> 
-    
-         </p></div> </br> Yuan Qiu, <a href="https://dblp.org/pid/149/9402.html">Jinyan Liu</a>   and   <u><strong>Di Wang</strong></u>. </br>
-     </li>
-    </br>
-    <li><i>
-        Pratical Byzantine-resilient and Differentially Private
-        Federated Learning.</i><a href="papers/Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#Byzantine" id="46_arrows" class="arrows" onclick="expand_collapse('46');">&#9660</a>
-         <div id="46" style="display:none;"><p> 
-    
-         </p></div> </br> Zihang Xiang, <a href="https://tianhao.wang/">Tianhao Wang</a>, <a href="https://wanyu-lin.github.io/">Wanyu Lin</a> and <u><strong>Di Wang</strong></u>.  </br>
-     </li>
-    </br>
-    <li><i>
-        Privacy-preserving Sparse Generalized Eigenvalue Problem.</i><a href="papers/DPGEP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#DPGEP" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
-         <div id="43" style="display:none;"><p> 
-            We study the (sparse) Generalized Eigenvalue Problem (GEP), which  arises in a
-            number of modern statistical learning models, such as canonical correlation analysis (CCA), Fisher discriminant analysis (FDA) and sliced inverse regression (SIR).  Existing techniques for GEP
-            all fail to consider the protection of sensitive information in the training set. Models learned by such algorithms can implicitly
-            memorize the details of sensitive information. 
-            %, which offers opportunity for malicious parties to infer it from the learned models.
-            To address this issue, we provide the first study on GEP in the differential privacy (DP) model under both deterministic and stochastic settings. In the low dimension case, we provide an $(\epsilon, \delta)$-DP method namely DP-Rayleigh Flow and show if the initial vector is closed enough to the optimal vector, its output has an error of $\tilde{O}(\frac{d}{n}+\frac{d\log \frac{1}{\delta}}{n^2\epsilon^2})$ for many statistical models, where $d$ is the dimension and $n$ is the sample size. Next, we discuss how to find such a initial parameter privately and efficiently.  In the high dimensional sparse case, we propose the DP-Truncated Rayleigh Flow method whose output could achieve the error of $\tilde{O}(\frac{s\log d}{n}+\frac{s\log d\log \frac{1}{\delta}}{n^2\epsilon^2})$, where $s$ is the sparsity constraint. Moreover, we show that these errors in the stochastic setting are near optimal. Finally, to give a separation between $\epsilon$-DP and $(\epsilon, \delta)$-DP, we also provide the lower bound  $\Omega(\frac{d}{n}+\frac{d^2}{n^2\epsilon^2})$ and  $\Omega(\frac{s\log d}{n}+\frac{s^2\log^2 d}{n^2\epsilon^2})$ of private minimax risk for principal component analysis (PCA), CCA and SIR, which are special cases of GEP,  under statistical setting in $\epsilon$-DP and in low and high dimensional case, respectively. Experiments on both synthetic and real-world data also support our theoretical analysis. 
-         </p></div> </br> Lijie Hu<sup>*</sup>, Zihang Xiang<sup>*</sup>, <a href="https://dblp.org/pid/32/2360.html">Jiabin Liu</a>  and <u><strong>Di Wang</strong></u>. (* equal contribution) </br>
-     </li>
-    </br>
-
-
-    <li><i>
-        High Dimensional Sparse Statistical Estimation Under One-bit Quantization.</i><a href="papers/Onebit.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2202.13157">Link</a>] Abstract<a href="#HighDim_DPSCO" id="42_arrows" class="arrows" onclick="expand_collapse('42');">&#9660</a>
-     <div id="42" style="display:none;"><p> 
-        In this paper, we consider several fundamental machine learning and (sparse) statistical estimation problems from i.i.d samples of a sub-Gaussian or heavy-tailed distribution. Instead of having the full knowledge of the samples, we focus on the scenario where each entry of these the samples is quantized to one or two  bits, which plays a critical role in signal processing or machine learning applications. Specifically, we give the  first  study on the problems of (sparse) covariance matrix estimation, sparse linear regression and low-rank matrix completion. For covariance matrix estimation, compared with the previous results, we extend to the heavy-tailed case where the underlying distribution has bounded fourth order moments. Moreover, we extend to the high dimensional sparse (and heavy-tailed) cases by providing several new estimators which consist of four steps: Truncating, Dithering, Quantizing and Thresholding. For sparse linear model and low-rank matrix completion, we propose new quadratic objective functions for one-bit quantized samples based on our previous estimators.  For all of our estimators we also derive estimation errors. Especially, in the sub-Gaussian case, all of our estimators could achieve near optimal rates in the unquantized cases. 
-        Finally, extensive experiments on synthetic and real-world data have been carried out to support our theories. 
-     </p></div> </br> Junren Chen, Cheng-Long Wang,  <a href="https://hkumath.hku.hk/~mng/">Michael Kwok Po NG</a>  and <u><strong>Di Wang</strong></u>.  </br>
- </li>
-</br>
-<li><i>
-    PPML-Omics: A Privacy-Preserving Federated Machine Learning System Protects Patients' Privacy from Omic Data.</i><a href="papers/PPML-Omics.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1.abstract">Link</a>] Abstract<a href="#PPML-Omics" id="54_arrows" class="arrows" onclick="expand_collapse('54');">&#9660</a>
-      <div id="54" style="display:none;"><p> 
-        Modern machine learning models towards various tasks with omic data analysis give rise to threats of privacy leakage of patients involved in those datasets. Despite the advances in different privacy technologies, existing methods tend to introduce too much noise, which hampers model accuracy and usefulness. Here, we built a secure and privacy-preserving machine learning (PPML) system by combining federated learning (FL), differential privacy (DP) and shuffling mechanism. We applied this system to analyze data from three sequencing technologies, and addressed the privacy concern in three major tasks of omic data, namely cancer classification with bulk RNA-seq, clustering with single-cell RNA-seq, and the integration of spatial gene expression and tumour morphology with spatial transcriptomics, under three representative deep learning models. We also examined privacy breaches in depth through privacy attack experiments and demonstrated that our PPML-Omics system could protect patients' privacy. In each of these applications, our system was able to outperform state-of-the-art systems under the same level of privacy guarantee, demonstrating the versatility of the system in simultaneously balancing the privacy-preserving capability and utility in omic data analysis. Furthermore, we gave the theoretical proof of the privacy-preserving capability of our system, suggesting the first mathematically guaranteed model with robust and generalizable empirical performance.
-      </p></div> </br> Juexiao Zhou<sup>*</sup>, Siyuan Chen<sup>*</sup>, Yulian Wu<sup>*</sup>, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu,  Zihang Xiang, Zongxiao Li, Ningning Chen, Wenkai Han, <u><strong>Di Wang</strong></u> and <u><strong>Xin Gao</strong></u>. </br>
-  </li>
-</br>
-
-
-<li><i>
-    On PAC Learning Halfspaces in Non-interactive Local Privacy Model with Public
-Unlabeled Data.</i><a href="papers/NLDPhalf.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> Abstract<a href="#NLDPhalf" id="45_arrows" class="arrows" onclick="expand_collapse('45');">&#9660</a>
-     <div id="45" style="display:none;"><p> 
-        In this paper, we study the problem of PAC learning halfspaces in the non-interactive local differential privacy model (NLDP).  To breach the barrier of exponential sample complexity, previous results studied a relaxed setting where the server has access to some additional public but unlabeled data. We continue along this direction. Specifically, we consider the  problem under the standard setting instead of the large margin setting studied before. Under different mild assumptions on the underlying data distribution, we propose two approaches that are based on the Massart noise model and self-supervised learning, and show that it is possible to achieve sample complexities that are only linear in the dimension and polynomial in other terms for both private and public data, which significantly improve the previous results. Our methods  might could also be used to other private PAC learning problems.  
-     </p></div> </br> Jinyan Su and <u><strong>Di Wang</strong></u>.  </br>
- </li>
-</br>
-
-<li><i>
-    Differentially Private Expectation Maximization Algorithm with Statistical Guarantees.</i><a href="papers/MLJ2022_EM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> [<a href="https://arxiv.org/abs/2010.13520v2">Link</a>] </a> Abstract<a href="#UAI2021_EM" id="34_arrows" class="arrows" onclick="expand_collapse('34');">&#9660</a>
-<div id="34" style="display:none;"><p> 
-        As one popular technique for estimating the maximum likelihood 
-        of mixture models or incomplete data problems, (Gradient) Expectation Maximization (EM) algorithm presents a challenge for preserving privacy of sensitive data. While although there are already some Differentially Private (DP) variants of (Gradient) EM algorithm, however, unlike in the non-private case, there is still no finite sample statistical guarantees. To address this issue, in this paper we propose the first DP variant of (Gradient) EM algorithm with statistical guarantees.  Moreover, we apply our general framework to three canonical models: Gaussian Mixture Model (GMM), Mixture of Regressions Model (MRM) and Linear Regression with Missing Covariates (RMC). Specifically, for GMM in the DP model, our estimation error is near optimal in some cases. And for other two models in the DP model, we provide the first finite sample statistical guarantees.  Our theory is supported by thorough numerical results. 
-</p></div> </br> <strong>Di Wang<sup>*</sup></strong>, <a href="https://dblp.uni-trier.de/pers/hd/d/Ding:Jiahao"><strong>Jiahao Ding</strong></a><sup>*</sup>, Lijie Hu, Zejun Xie, <a href="http://www2.egr.uh.edu/~mpan2/">Miao Pan</a> and Jinhui Xu (* equal contribution). </br>
-
-</li>
-</br>
-
-
-        <li><i>Towards Assessment of Randomized Mechanisms for
-            Certifying Adversarial Robustness.</i><a href="papers/NeurIPS2020_RandomSmoothing.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> [<a href="https://arxiv.org/abs/2005.07347v3">Link</a>] </a> Abstract<a href="#NIPS2020_random" id="28_arrows" class="arrows" onclick="expand_collapse('28');">&#9660</a>
-            <div id="28" style="display:none;"><p> 
-                As a certified defensive technique, randomized smoothing has received considerable attention due to its scalability to large datasets and neural networks. However, several important questions remain unanswered, such as (i) whether the Gaussian mechanism is an appropriate option for certifying $\ell_2$-norm robustness, and (ii) whether there is an appropriate randomized mechanism to certify $\ell_\infty$-norm robustness 
-                for high-dimensional datasets. To shed light on these questions, the main difficulty is how to assess each randomized mechanism. In this paper, we propose a generic framework, which connects the existing frameworks in (Lecuyer et al. 2018; Li et al. 2019), to assess randomized mechanisms. 
-                Under our framework, for a mechanism which can certify a certain extent of robustness, we define the magnitude ({\em i.e.,} the expected $\ell_\infty$ norm) of the randomized noise it adds as the metric for assessing its appropriateness. We also derive lower bounds on the metric for $\ell_2$-norm and $\ell_\infty$-norm cases as the criteria for assessment.
-                Based on our framework, we assess the Gaussian and Exponential mechanisms by comparing the magnitude of noise added by these mechanisms and the corresponding criteria. We first conclude that the Gaussian mechanism is an appropriate option to certify $\ell_2$-norm robustness. Moreover, surprisingly, we also show that the Gaussian mechanism is also an appropriate option for certifying $\ell_\infty$-norm robustness, instead of the Exponential mechanism.
-                Finally, we verify our theoretical results by evaluations on CIFAR10 and ImageNet. 
-            </p></div> </br> <a href="https://scholar.google.com/citations?user=DDP03z4AAAAJ&hl=en"><strong>Tianhang Zheng</strong></a><sup>*</sup>, <strong>Di Wang<sup>*</sup></strong>, <a href="https://iqua.ece.toronto.edu/bli/">Baochun Li</a> and Jinhui Xu (* equal contribution). </br>
-        </li>
-
-    </br>
-
-
- 
-
-
-</ol>
-
-
-
-
-</ol>
--->
-<!--
-<hr>
-<h3> <a name="prof">Professional Experience</a> </h3>
-<ul>
-<li> Spring 2019: Visiting Graduate Student,  <a href="https://simons.berkeley.edu/programs/privacy2019">Data Privacy: Foundations and Applications</a>, Simons Institute for the Theory of Computing,  University of California, Berkeley. </li></br>
-<li> Summer 2018: Graduate Research Intern, <a href="https://privacytools.seas.harvard.edu/">Harvard University Privacy Tools Project</a>, Harvard University and Boston University, Mentor: <a href="http://www.cse.psu.edu/~ads22/">Adam Smith</a>. </li></br>
-
-</ul>
--->
-
-<!--
-<hr>
-<h3> <a name="talks">Invited Talks</a> </h3>
-<ul>
-    <li>School of Cyber Science and Technology, Zhejiang University</li></br>
-    <li>School of Computing and Information Systems, University of Melbourne</li></br>
-    <li>Department of Computer Science and Engineering, Chinese University of Hong Kong</li></br>
-    <li>Department of Computer Science, Dalhousie University</li></br>
-    <li>CISPA-Helmholtz Center for Information Security</li></br>
-    <li>Department of Computing, Hong Kong Polytechnic University</li></br>
-    <li>Department of Computer Science, University of Memphis</li></br>
-    <li>School of Computer Science, University of Sydney</li></br>
-    <li>Department of Computing, Imperial College London</li></br>
-    <li>Department of Computer Science, University College London</li></br>
-    <li>King Abdullah University of Science and Technology</li></br>
-    <li>Department of Computing and Software, McMaster University</li></br>
-    <li>School of Computer Science, University of Birmingham</li></br>
-    <li>Department of Computer Science, University of Warwick</li></br>
-    <li>Department of Computer Science, City University of Hong Kong</li></br>
-    <li>School of Information System, Singapore Management University</li></br>
-    <li>Department of Computer Science and Engineering, Hong Kong University of Science and Technology</li></br>
-    <li>Department of Computer Science, University of Surrey</li></br>
-    <li>Department of Computer Science, McGill University</li></br>
-    <li>School of Computer Sicence, University of Science and Technology China</li></br>
-    <li>School of Computer Science, Nanjing University </li></br>
-    <li>Department of Computer Science, University of Alberta</li></br>
-
-</ul>
-<script src="js/script.js"></script> -->
+</html>
