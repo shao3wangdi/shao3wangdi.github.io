@@ -278,7 +278,7 @@ h3, h4 {
 }
 
 .promo-block {
-    background: #fafafa;
+    background-color: #fafafa;
     padding-top: 90px
 }
 
@@ -781,7 +781,9 @@ h3, h4 {
 .container-sm:after {
     clear: both
 }
-
+.container-bg {
+    background-image: url('img/logo.png');
+}
 @media (min-width: 768px) {
     .container-sm {
         width: 750px
