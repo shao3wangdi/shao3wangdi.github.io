@@ -39,8 +39,8 @@ p {
 }
 
 em, li, li a {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     color: #515769
 }
 
@@ -479,11 +479,11 @@ h3, h4 {
 }
 
 .header .nav-item-child {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #515769;
     line-height: 75px;
-    padding: 3px 30px 3px 30px;
+    padding: 3px 10px 3px 20px;
     transition-duration: .3s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.7, 1, .7, 1)
