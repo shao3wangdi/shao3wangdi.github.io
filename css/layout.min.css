@@ -462,7 +462,7 @@ h3, h4 {
 }
 
 .header .navbar-nav {
-    padding-left: 0;
+    padding-left: 30;
     margin-bottom: 0;
     list-style: none
 }
