@@ -61,7 +61,8 @@ a, a > tt {
 }
 
 a:hover {
-	border-bottom: 1px gray underline;
+	color: red;
+	text-decoration: blue  underline;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
