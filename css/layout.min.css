@@ -50,7 +50,7 @@ a {
 
 a:active, a:focus, a:hover {
     color: red;
-    border-bottom: 1px gray underline;
+    text-decoration: underline;
 }
 
 .link {
