@@ -35,9 +35,6 @@ a {
     background-color: transparent
 }
 
-a:active, a:hover {
-    outline: 0
-}
 
 abbr[title] {
     border-bottom: 1px dotted
@@ -1371,7 +1368,7 @@ a {
 
 a:focus, a:hover {
     color: #23527c;
-    text-decoration: underline
+    text-decoration: blue underline;
 }
 
 a:focus {
