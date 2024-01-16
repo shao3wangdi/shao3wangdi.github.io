@@ -183,14 +183,14 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 </br>
 
 
-                                <li><b style="color:#0000E3">[<i>Arxiv</i>]</b> <i><b>	
-                                    An LLM can Fool Itself: A Prompt-Based Adversarial Attack</i><a href="papers/Arxiv_PromptAttack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.13345">Link</a>]  Abstract<a href="#Arxiv_PromptAttack" id="64_arrows" class="arrows" onclick="expand_collapse('64');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                    An LLM can Fool Itself: A Prompt-Based Adversarial Attack</i><a href="papers/ICLR2024_PromptAttack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.13345">Link</a>]  Abstract<a href="#ICLR2024_PromptAttack" id="64_arrows" class="arrows" onclick="expand_collapse('64');">&#9660</a>
                                     <div id="64" style="display:none;"><p> 
                                         The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack (PromptAttack). PromptAttack converts adversarial textual attacks into an attack prompt that can cause the victim LLM to output the adversarial sample to fool itself. The attack prompt is composed of three important components: (1) original input (OI) including the original sample and its ground-truth label, (2) attack objective (AO) illustrating a task description of generating a new sample that can fool itself without changing the semantic meaning, and (3) attack guidance (AG) containing the perturbation instructions to guide the LLM on how to complete the task by perturbing the original sample at character, word, and sentence levels, respectively. Besides, we use a fidelity filter to ensure that PromptAttack maintains the original semantic meanings of the adversarial examples. Further, we enhance the attack power of PromptAttack by ensembling adversarial examples at different perturbation levels. Comprehensive empirical results using Llama2 and GPT-3.5 validate that PromptAttack consistently yields a much higher attack success rate compared to AdvGLUE and AdvGLUE++. Interesting findings include that a simple emoji can easily mislead GPT-3.5 to make wrong predictions.
                                     </p></div> </br>
                                     Xilie Xu, Keyi Kong, Ning Liu, Lizhen Cui, Di Wang, Jingfeng Zhang, and Mohan Kankanhalli
                                     </br>
-                                    Under review</br></b>
+                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
                                 
                                 </br>
 
@@ -224,7 +224,56 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
 
                                 <h2>2024</h2>
                                 <h4><i>Conference Papers</i></h4>
-                          
+                        
+                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                    Faithful Vision-Language Interpretation via Concept Bottleneck Models</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="71_arrows" class="arrows" onclick="expand_collapse('71');">&#9660</a>
+                                    <div id="71" style="display:none;"><p> 
+                                        The demand for transparency in healthcare and finance has led to interpretable machine learning (IML) models, notably the concept bottleneck models (CBMs), valued for its potential in performance and insights into deep neural networks. However, CBM's reliance on manually annotated data poses challenges. Label-free CBM has emerged to address this, but they remain unstable, affecting their faithfulness as explanatory tools. To address this inherent instability issue, we introduce a formal definition for an alternative concept called the Faithful Vision-Language Concept (FVLC) models. We present a methodology for constructing an FVLC that satisfies four critical properties. Our extensive experimentation, conducted on four benchmark datasets using Label-free CBM model architectures, demonstrates that our FVLC outperforms other baselines in terms of stability against input and concept set perturbations. Our approach incurs minimal accuracy degradation compared to the vanilla CBM, making it a promising solution for reliable and faithful model interpretation.
+                                    </p></div> </br>
+                                    Songning Lai<sup><span>&#9733;</span>*</sup>, Lijie Hu<sup><span>&#9733;</span>*</sup>, Junxiao Wang,  Laure Berti-Equille, and <u><strong>Di Wang</strong></u>
+                                    </br>
+                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                
+                                </br>   
+
+                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                    Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</i><a href="papers/ICLR2024_LDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.07367">Link</a>]  Abstract<a href="#ICLR2024_LDP" id="70_arrows" class="arrows" onclick="expand_collapse('70');">&#9660</a>
+                                    <div id="70" style="display:none;"><p> 
+                                        In this paper, we revisit 
+                                        the problem of sparse linear regression in the local differential privacy (LDP) model. Existing research in the non-interactive and sequentially local models has focused on obtaining the lower bounds for the case where the underlying parameter is $1$-sparse, and extending such bounds to the more general $k$-sparse case has proven to be challenging. Moreover, it is unclear whether efficient non-interactive LDP (NLDP) algorithms exist. To address these issues, 
+                                        we first consider the problem in the $\epsilon$ non-interactive LDP model and provide a lower bound of $\Omega(\frac{\sqrt{dk\log d}}{\sqrt{n}\epsilon})$ on the $\ell_2$-norm estimation error for sub-Gaussian data, where $n$ is the sample size and $d$ is the dimension of the space. 
+                                        We propose an innovative NLDP algorithm, the very first of its kind for the problem. As a remarkable outcome, this algorithm also yields a novel and highly efficient estimator as a valuable by-product. Our algorithm achieves an upper bound of $\tilde{O}({\frac{d\sqrt{k}}{\sqrt{n}\epsilon}})$ for the estimation error when the data is sub-Gaussian, which can be further improved by a factor of  $O(\sqrt{d})$ if the server has additional public but unlabeled data. 
+                                        For the sequentially interactive LDP model, we show a similar lower bound of $\Omega({\frac{\sqrt{dk}}{\sqrt{n}\epsilon}})$. As for the upper bound, we rectify a previous method and show that it is possible to achieve a bound of $\tilde{O}(\frac{k\sqrt{d}}{\sqrt{n}\epsilon})$. Our findings reveal fundamental differences between the non-private case, central DP model, and local DP model in the sparse linear regression problem.
+                                    </p></div> </br>
+                                    Liyang Zhu<sup><span>&#9733;</span>*</sup>, Meng Ding<sup><span>&#9733;</span>*</sup>, Vaneet Aggarwal, Jinhui Xu, and <u><strong>Di Wang</strong></u>
+                                    </br>
+                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                
+                                </br>                              
+
+                                
+                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                    Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach</i><a href="papers/ICLR2024_NTK.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.06112">Link</a>]  Abstract<a href="#ICLR2024_NTK" id="69_arrows" class="arrows" onclick="expand_collapse('69');">&#9660</a>
+                                    <div id="69" style="display:none;"><p> 
+                                        Adversarial training (AT) is a canonical method for enhancing the robustness of deep neural networks (DNNs). However, recent studies empirically demonstrated that it suffers from robust overfitting, i.e., a long time AT can be detrimental to the robustness of DNNs. This paper presents a theoretical explanation of robust overfitting for DNNs. Specifically, we non-trivially extend the neural tangent kernel (NTK) theory to AT and prove that an adversarially trained wide DNN can be well approximated by a linearized DNN. Moreover, for squared loss, closed-form AT dynamics for the linearized DNN can be derived, which reveals a new AT degeneration phenomenon: a long-term AT will result in a wide DNN degenerates to that obtained without AT and thus cause robust overfitting. Based on our theoretical results, we further design a method namely Adv-NTK, the first AT algorithm for infinite-width DNNs. Experiments on real-world datasets show that Adv-NTK can help infinite-width DNNs enhance comparable robustness to that of their finite-width counterparts, which in turn justifies our theoretical findings.
+                                    </p></div> </br>
+                                    Shaopeng Fu<sup><span>&#9733;</span></sup> and <u><strong>Di Wang</strong></u>
+                                    </br>
+                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                
+                                </br>
+
+                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                    An LLM can Fool Itself: A Prompt-Based Adversarial Attack</i><a href="papers/ICLR2024_PromptAttack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.13345">Link</a>]  Abstract<a href="#ICLR2024_PromptAttack" id="64_arrows" class="arrows" onclick="expand_collapse('64');">&#9660</a>
+                                    <div id="64" style="display:none;"><p> 
+                                        The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack (PromptAttack). PromptAttack converts adversarial textual attacks into an attack prompt that can cause the victim LLM to output the adversarial sample to fool itself. The attack prompt is composed of three important components: (1) original input (OI) including the original sample and its ground-truth label, (2) attack objective (AO) illustrating a task description of generating a new sample that can fool itself without changing the semantic meaning, and (3) attack guidance (AG) containing the perturbation instructions to guide the LLM on how to complete the task by perturbing the original sample at character, word, and sentence levels, respectively. Besides, we use a fidelity filter to ensure that PromptAttack maintains the original semantic meanings of the adversarial examples. Further, we enhance the attack power of PromptAttack by ensembling adversarial examples at different perturbation levels. Comprehensive empirical results using Llama2 and GPT-3.5 validate that PromptAttack consistently yields a much higher attack success rate compared to AdvGLUE and AdvGLUE++. Interesting findings include that a simple emoji can easily mislead GPT-3.5 to make wrong predictions.
+                                    </p></div> </br>
+                                    Xilie Xu, Keyi Kong, Ning Liu, Lizhen Cui, Di Wang, Jingfeng Zhang, and Mohan Kankanhalli
+                                    </br>
+                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                
+                                </br>
+                                
                                 <li><b style="color:#0000E3">[<i>VLDB, CCF A</i>]</b> <b><i>
                                     Privacy Amplification via Shuffling: Unified, Simplified, and Tightened  </i><a href="papers/VLDB2024_SDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_SDP" id="67_arrows" class="arrows" onclick="expand_collapse('67');">&#9660</a>
                                  <div id="67" style="display:none;"><p> 
