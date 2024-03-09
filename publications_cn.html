@@ -275,7 +275,21 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
 
                                 <h2>2024</h2>
                                 <h4><i>Conference Papers</i></h4>
-                        
+                                <li><b style="color:#0000E3">[<i>IEEE S&P, CCF A</i>]</b> <i><b>	
+                                    Preserving Node-level Privacy in Graph Neural Networks
+</i><a href="papers/Oakland2024_heter.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#Oakland2024_heter" id="80_arrows" class="arrows" onclick="expand_collapse('80');">&#9660</a>
+                                    <div id="79" style="display:none;"><p> 
+                                        Differential privacy (DP) has seen immense applications in learning on tabular, image, and sequential data where instance-level privacy is concerned. In learning on graphs, contrastingly, works on node-level privacy are highly sparse. Challenges arise as existing DP protocols hardly apply to the message-passing mechanism in Graph Neural Networks (GNNs).
+
+                                        In this study, we propose a solution that specifically addresses the issue of node-level privacy. Our protocol consists of two main components: 1) a sampling routine called HeterPoisson, which employs a specialized node sampling strategy and a series of tailored operations to generate a batch of sub-graphs with desired properties, and 2) a randomization routine that utilizes symmetric multivariate Laplace (SML) noise instead of the commonly used Gaussian noise. Our privacy accounting shows this particular combination provides a non-trivial privacy guarantee. In addition, our protocol enables GNN learning with good performance, as demonstrated by experiments on five real-world datasets; compared with existing baselines, our method shows significant advantages, especially in the high privacy regime. Experimentally, we also 1) perform membership inference attacks against our protocol and 2) apply privacy audit techniques to confirm our protocol's privacy integrity.
+
+                                        In the sequel, we present a study on a seemingly appealing approach (USENIX'23) that protects node-level privacy via differentially private node/instance embeddings. Unfortunately, such work has fundamental privacy flaws, which are identified through a thorough case study. More importantly, we prove an impossibility result of achieving both (strong) privacy and (acceptable) utility through private instance embedding. The implication is that such an approach has intrinsic utility barriers when enforcing differential privacy.
+                                    </p></div> </br>
+                                  Zihang Xiang<sup><span>&#9733;</span></sup>, Tianhao Wang, <u><strong>Di Wang</strong></u>
+                                    </br>
+                                    The 45th IEEE Symposium on Security and Privacy (IEEE S&P 2024). </br></b>
+                                
+                                </br>   
                                 <li><b style="color:#0000E3">[<i>EACL</i>]</b> <i><b>	
                                     Antonym vs Synonym Distinction using InterlaCed Encoder NETworks (ICE-NET)</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="73_arrows" class="arrows" onclick="expand_collapse('73');">&#9660</a>
                                     <div id="73" style="display:none;"><p> 
