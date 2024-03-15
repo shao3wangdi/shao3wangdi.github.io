@@ -302,6 +302,32 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 </li>
                                 </br>   
 
+                                
+
+                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
+                                    Privacy Amplification via Shuffling: Unified, Simplified, and Tightened  </i><a href="papers/VLDB2024_SDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_SDP" id="67_arrows" class="arrows" onclick="expand_collapse('67');">&#9660</a>
+                                 <div id="67" style="display:none;"><p> 
+                                    The shuffle model of differential privacy provides promising privacy-utility balances in decentralized, privacy-preserving data analysis. However, the current analyses of privacy amplification via shuffling lack both tightness and generality. To address this issue, we propose the \emph{variation-ratio reduction} as a comprehensive framework for privacy amplification in both single-message and multi-message shuffle protocols. It leverages two new parameterizations: the total variation bounds of local messages and the probability ratio bounds of blanket messages, to determine indistinguishability levels. Our theoretical results demonstrate that our framework provides tighter bounds, especially for local randomizers with extremal probability design, where our bounds are exactly tight. Additionally, variation-ratio reduction complements parallel composition in the shuffle model, yielding enhanced privacy accounting for popular sampling-based randomizers employed in statistical queries (e.g., range queries, marginal queries, and frequent itemset mining). Empirical findings demonstrate that our numerical amplification bounds surpass existing ones, conserving up to $30\%$ of the budget for single-message protocols, $75\%$ for multi-message ones, and a striking $75\%$-$95\%$ for parallel composition. Our bounds also result in a remarkably efficient $\tilde{O}(n)$ algorithm that numerically amplifies privacy in less than $10$ seconds for $n=10^8$ users.
+    </p></div> </br>   Shaowei Wang, Yun Peng, Jin Li, Zikai Wen, Zhipeng Li, Shiyu Yu, Di Wang, and Wei Yang
+
+</br>
+
+                               International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
+                             </li>
+                            </br>     
+
+
+                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
+                                    Communication Efficient and Provable Federated Unlearning  </i><a href="papers/VLDB2024_FU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_FU" id="57_arrows" class="arrows" onclick="expand_collapse('57');">&#9660</a>
+                                 <div id="57" style="display:none;"><p> 
+                                    We investigate the problem of federated unlearning, which aims to erase the influence of requested clients or data samples on the global model trained via federated learning (FL). This problem arises from the increasing demand for the right to be forgotten as well as various privacy threats in FL. We propose a novel exact federated unlearning framework that satisfies two crucial desiderata: \textit{communication efficiency} and \textit{exact unlearning provability}. To the best of our knowledge, our work is the first to address both aspects in a unified manner. We first introduce a rigorous definition of \textit{exact} federated unlearning, which ensures that the unlearned model is statistically indistinguishable from the one trained without the removed data. We then identify the key property to enable rapid exact federated unlearning: total variation (TV) stability, which captures the sensitivity of the model parameters to small changes in the dataset. Based on this insight, we design a TV-stable FL algorithm called \texttt{FATS}, which adapts the classical \texttt{\underline{F}ed\underline{A}vg} algorithm for \underline{T}V \underline{S}tability and incorporates local SGD with periodic averaging to reduce the communication round. We also devise efficient unlearning algorithms for \texttt{FATS} under two scenarios: client-level and sample-level unlearning. We provide theoretical guarantees for our learning and unlearning algorithms, showing that they achieve exact federated unlearning with reasonable convergence rates for both the original and unlearned models. We empirically evaluate our framework on 6 benchmark datasets, and demonstrate its superiority over state-of-the-art baselines in terms of accuracy, communication cost, computation cost, and unlearning effectiveness.
+    </p></div> </br>     Youming Tao<sup><span>&#9733;</span>*</sup>, Chenglong Wang<sup><span>&#9733;</span>*</sup>, Miao Pan,  Dongxiao Yu, Xiuzhen Cheng, and <u><strong>Di Wang</strong></u>
+</br>
+                                 International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
+                             </li>
+
+                            </br>                                
+
                              
                                 <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
                                     Faithful Vision-Language Interpretation via Concept Bottleneck Models</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="71_arrows" class="arrows" onclick="expand_collapse('71');">&#9660</a>
@@ -351,32 +377,6 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                     The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
                                 </li>
                                 </br>
-
-
-
-                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
-                                    Privacy Amplification via Shuffling: Unified, Simplified, and Tightened  </i><a href="papers/VLDB2024_SDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_SDP" id="67_arrows" class="arrows" onclick="expand_collapse('67');">&#9660</a>
-                                 <div id="67" style="display:none;"><p> 
-                                    The shuffle model of differential privacy provides promising privacy-utility balances in decentralized, privacy-preserving data analysis. However, the current analyses of privacy amplification via shuffling lack both tightness and generality. To address this issue, we propose the \emph{variation-ratio reduction} as a comprehensive framework for privacy amplification in both single-message and multi-message shuffle protocols. It leverages two new parameterizations: the total variation bounds of local messages and the probability ratio bounds of blanket messages, to determine indistinguishability levels. Our theoretical results demonstrate that our framework provides tighter bounds, especially for local randomizers with extremal probability design, where our bounds are exactly tight. Additionally, variation-ratio reduction complements parallel composition in the shuffle model, yielding enhanced privacy accounting for popular sampling-based randomizers employed in statistical queries (e.g., range queries, marginal queries, and frequent itemset mining). Empirical findings demonstrate that our numerical amplification bounds surpass existing ones, conserving up to $30\%$ of the budget for single-message protocols, $75\%$ for multi-message ones, and a striking $75\%$-$95\%$ for parallel composition. Our bounds also result in a remarkably efficient $\tilde{O}(n)$ algorithm that numerically amplifies privacy in less than $10$ seconds for $n=10^8$ users.
-    </p></div> </br>   Shaowei Wang, Yun Peng, Jin Li, Zikai Wen, Zhipeng Li, Shiyu Yu, Di Wang, and Wei Yang
-
-</br>
-
-                                 Revision, International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
-                             </li>
-                            </br>     
-
-
-                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
-                                    Communication Efficient and Provable Federated Unlearning  </i><a href="papers/VLDB2024_FU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_FU" id="57_arrows" class="arrows" onclick="expand_collapse('57');">&#9660</a>
-                                 <div id="57" style="display:none;"><p> 
-                                    We investigate the problem of federated unlearning, which aims to erase the influence of requested clients or data samples on the global model trained via federated learning (FL). This problem arises from the increasing demand for the right to be forgotten as well as various privacy threats in FL. We propose a novel exact federated unlearning framework that satisfies two crucial desiderata: \textit{communication efficiency} and \textit{exact unlearning provability}. To the best of our knowledge, our work is the first to address both aspects in a unified manner. We first introduce a rigorous definition of \textit{exact} federated unlearning, which ensures that the unlearned model is statistically indistinguishable from the one trained without the removed data. We then identify the key property to enable rapid exact federated unlearning: total variation (TV) stability, which captures the sensitivity of the model parameters to small changes in the dataset. Based on this insight, we design a TV-stable FL algorithm called \texttt{FATS}, which adapts the classical \texttt{\underline{F}ed\underline{A}vg} algorithm for \underline{T}V \underline{S}tability and incorporates local SGD with periodic averaging to reduce the communication round. We also devise efficient unlearning algorithms for \texttt{FATS} under two scenarios: client-level and sample-level unlearning. We provide theoretical guarantees for our learning and unlearning algorithms, showing that they achieve exact federated unlearning with reasonable convergence rates for both the original and unlearned models. We empirically evaluate our framework on 6 benchmark datasets, and demonstrate its superiority over state-of-the-art baselines in terms of accuracy, communication cost, computation cost, and unlearning effectiveness.
-    </p></div> </br>     Youming Tao<sup><span>&#9733;</span>*</sup>, Chenglong Wang<sup><span>&#9733;</span>*</sup>, Miao Pan,  Dongxiao Yu, Xiuzhen Cheng, and <u><strong>Di Wang</strong></u>
-</br>
-                                 International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
-                             </li>
-
-                            </br>                                
 
                                 <li><b style="color:#0000E3">[<i>EACL</i>]</b> <i><b>	
                                     Antonym vs Synonym Distinction using InterlaCed Encoder NETworks (ICE-NET)</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="73_arrows" class="arrows" onclick="expand_collapse('73');">&#9660</a>
