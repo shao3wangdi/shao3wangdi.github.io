@@ -343,7 +343,7 @@ MONAL: Model Autophagy Analysis for Modeling Human-AI Interactions</i><a href="p
                                 <li><b style="color:#0000E3">[<i>IEEE S&P, CCF A</i>]</b> <i><b>	
                                     Preserving Node-level Privacy in Graph Neural Networks
 </i><a href="papers/Oakland2024_heter.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#Oakland2024_heter" id="80_arrows" class="arrows" onclick="expand_collapse('80');">&#9660</a>
-                                    <div id="79" style="display:none;"><p> 
+                                    <div id="80" style="display:none;"><p> 
                                         Differential privacy (DP) has seen immense applications in learning on tabular, image, and sequential data where instance-level privacy is concerned. In learning on graphs, contrastingly, works on node-level privacy are highly sparse. Challenges arise as existing DP protocols hardly apply to the message-passing mechanism in Graph Neural Networks (GNNs).
 
                                         In this study, we propose a solution that specifically addresses the issue of node-level privacy. Our protocol consists of two main components: 1) a sampling routine called HeterPoisson, which employs a specialized node sampling strategy and a series of tailored operations to generate a batch of sub-graphs with desired properties, and 2) a randomization routine that utilizes symmetric multivariate Laplace (SML) noise instead of the commonly used Gaussian noise. Our privacy accounting shows this particular combination provides a non-trivial privacy guarantee. In addition, our protocol enables GNN learning with good performance, as demonstrated by experiments on five real-world datasets; compared with existing baselines, our method shows significant advantages, especially in the high privacy regime. Experimentally, we also 1) perform membership inference attacks against our protocol and 2) apply privacy audit techniques to confirm our protocol's privacy integrity.
@@ -451,6 +451,28 @@ MONAL: Model Autophagy Analysis for Modeling Human-AI Interactions</i><a href="p
 
                             <h4><i>Journal Papers</i></h4>
 
+                            <li><b style="color:#0000E3">[<i>TMC</i>]</b> <i><b>	
+                                Private Over-the-Air Federated Learning at Band-Limited Edge</i><a href="papers/TKDD_FSIM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TKDD_FSIM" id="84_arrows" class="arrows" onclick="expand_collapse('84');">&#9660</a>
+                                <div id="84" style="display:none;"><p> 
+                                    We investigate over-the-air federated learning (OTA-FL) that exploits over-the-air computing (AirComp) to integrate
+                                    communication and computation seamlessly for FL. Privacy presents a serious obstacle for OTA-FL, as it can be compromised by
+                                    maliciously manipulating channel state information (CSI). Moreover, the limited band at edge hinders OTA-FL from training large-scale
+                                    models. It remains open how to enable a multitude of devices with constrained resources and sensitive data to collaboratively train a
+                                    global model at band-limited edge. To tackle this, we design a novel algorithm PROBE building upon a lightweight over-the-air gradients
+                                    aggregation rule PB-O-GAR. Specifically, PB-O-GAR combines a random sparsification-like dimension reduction with Gaussian
+                                    perturbation to provide rigorous privacy and band-adapted communication. It elaborately calibrates the transmission signal according
+                                    to devices’ perceived CSI for heterogeneous power constraints accommodation and CSI attack resilience. We show that by utilizing the
+                                    common randomness, which deviates from the conventional FL, random sparsification-like dimension reduction can augment privacy in
+                                    addition to the intrinsic privacy amplification effect of AirComp. We establish near-optimal convergence rates and explicit trade-offs
+                                    among privacy, communication and utility for PROBE. Finally, extensive experiments on benchmark datasets are conducted to validate
+                                    our theoretical findings and showcase the superiority of PROBE in realistic settings
+                                </p></div> </br>
+                                Youming Tao, Shuzhen Chen, Congwei Zhang, Di Wang, Dongxiao Yu,
+                                Xiuzhen Cheng, and Falko Dressler. 
+                                </br>
+                               Revision, IEEE Transactions on Mobile Computing. </br></b>
+                            </li>
+                            </br>  
 
                             <li><b style="color:#0000E3">[<i>TKDD, CCF B</i>]</b> <i><b>	
                                 Fair Single Index Model</i><a href="papers/TKDD_FSIM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TKDD_FSIM" id="79_arrows" class="arrows" onclick="expand_collapse('79');">&#9660</a>
