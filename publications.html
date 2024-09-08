@@ -522,6 +522,7 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 </br>   
    
                             <h4><i>Journal Papers</i></h4>
+
                             <li><b style="color:#0000E3">[<i>IANDC</i>]</b> <b><i>
                                 Truthful and Privacy-preserving Generalized Linear Models</i><a href="papers/IANDC2024_TrustfulGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#IANDC2024_TrustfulGLM" id="86_arrows" class="arrows" onclick="expand_collapse('86');">&#9660</a>
                                      <div id="86" style="display:none;"><p> 
@@ -588,7 +589,7 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                             </li>
                             </br>   
                             <li><b style="color:#0000E3">[<i>TKDE</i>]</b> <i><b>	
-                                Towards Stable and Explainable Attention Mechanisms</i><a href="papers/TBCC_DDI.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TBCC_DDI" id="80_arrows" class="arrows" onclick="expand_collapse('80');">&#9660</a>
+                                Towards Stable and Explainable Attention Mechanisms</i><a href="papers/TKDE_SEAT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TKDE_SEAT" id="80_arrows" class="arrows" onclick="expand_collapse('80');">&#9660</a>
                                 <div id="80" style="display:none;"><p> 
                                     Currently, attention mechanism has become a standard fixture in most state-of-the-art natural language processing (NLP) models, not only due to the outstanding performance it could gain but also due to plausible innate explanations for the behaviors of neural architectures it provides, which is notoriously difficult to analyze. However, recent studies show that attention is unstable against randomness and perturbations during training or testing, such as random seeds and slight perturbation of embedding vectors, which impedes it from becoming a faithful explanation tool. Thus, a natural question is whether we can find some substitute for the current attention that is more stable and could keep the most important characteristics of explanation and prediction of attention. In this paper, to resolve the problem, we provide a rigorous definition of such alternate namely SEAT. Specifically, a SEAT should have the following three properties: (1) Its prediction distribution is enforced to be close to the distribution based on the vanilla attention; (2) Its top-$k$ indices have large overlaps with those of the vanilla attention; (3) It is robust w.r.t perturbations, i.e., any slight perturbation on SEAT will not change the prediction distribution too much, which implicitly indicates that it is stable to randomness and perturbations. To further improve the interpretability stability against perturbations, based on SEAT we provide another definition called SEAT++. 
                                     Then we propose a method to get a SEAT++, which could be considered an ad hoc modification for canonical attention. Finally, through intensive experiments on various datasets, we compare our SEAT and SEAT++ with other baseline methods using RNN, BiLSTM, and BERT architectures via six different evaluation metrics for model interpretation, stability, and accuracy.  Results show that SEAT and SEAT++ are more stable against different perturbations and randomness while also keeping the explainability of attention, which indicates they provide more faithful explanations. 
@@ -601,6 +602,19 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                             </li>
                             </br>  
                             
+
+
+                            <li><b style="color:#0000E3">[<i>Neural Computation</i>]</b> <i><b>	
+                                Generalization Guarantees of Gradient Descent for Shallow Neural Networks Neural Computation</i><a href="papers/NC_generalization.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#NC_generalization" id="87_arrows" class="arrows" onclick="expand_collapse('87');">&#9660</a>
+                                <div id="87" style="display:none;"><p> 
+                                    Recently, significant progress has been made in understanding the generalization of neural networks (NNs) trained by gradient descent (GD) using the algorithmic stability approach. However, most of the existing research has focused on one-hidden-layer NNs and has not addressed the impact of different network scaling parameters. In this paper, we greatly extend the previous work \cite{lei2022stability,richards2021stability} by conducting a comprehensive stability and generalization analysis of GD for multi-layer NNs. For two-layer NNs, our results are established under general network scaling parameters, relaxing previous conditions. In the case of three-layer NNs, our technical contribution lies in demonstrating its nearly co-coercive property by utilizing a novel induction strategy that thoroughly explores the effects of over-parameterization. As a direct application of our general findings, we derive the excess risk rate of $O(1/\sqrt{n})$ for GD algorithms in both two-layer and three-layer NNs. This sheds light on sufficient or necessary conditions for under-parameterized and over-parameterized NNs trained by GD to attain the desired risk rate $O(1/\sqrt{n})$. Moreover, we demonstrate that as the scaling parameter increases or the network complexity decreases, less over-parameterization is required for GD to achieve the desired error rates. Additionally, under a low-noise condition, we obtain a fast risk rate of O(1/n) for GD in both two-layer and three-layer NNs. 
+                                </p></div> </br>
+                                Puyu Wang, Yunwen Lei, <u><strong>Di Wang</strong></u>, Yiming Ying, Ding-Xuan Zhou.
+                                </br>
+                              Neural Computationn  </br></b>
+                            </li>
+                            </br>  
+
                             <li><b style="color:#0000E3">[<i>TBD</i>]</b> <i><b>	
                                 A Multi-classification Division-aggregation
 Framework for Fake News Detection</i><a href="papers/TBD_fake.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TBD_fake" id="78_arrows" class="arrows" onclick="expand_collapse('78');">&#9660</a>
