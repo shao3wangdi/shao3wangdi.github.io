@@ -607,14 +607,6 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
    
                             <h4><i>Journal Papers</i></h4>
 
-                            <li><b style="color:#0000E3">[<i>TIFS</i>]</b> <b><i>
-                                Side-channel Attacks and New Principles in the Shuffle Model of Differential Privacy</i><a href="papers/TIFS2024_Attack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#TIFS2024_Attack" id="99_arrows" class="arrows" onclick="expand_collapse('99');">&#9660</a>
-                                     <div id="99" style="display:none;"><p> 
-                                        Adversarial training (AT) is a canonical method for enhancing the robustness of deep neural networks (DNNs). However, recent studies empirically demonstrated that it suffers from robust overfitting, i.e., a long time AT can be detrimental to the robustness of DNNs. This paper presents a theoretical explanation of robust overfitting for DNNs. Specifically, we non-trivially extend the neural tangent kernel (NTK) theory to AT and prove that an adversarially trained wide DNN can be well approximated by a linearized DNN. Moreover, for squared loss, closed-form AT dynamics for the linearized DNN can be derived, which reveals a new AT degeneration phenomenon: a long-term AT will result in a wide DNN degenerates to that obtained without AT and thus cause robust overfitting. Based on our theoretical results, we further design a method namely Adv-NTK, the first AT algorithm for infinite-width DNNs. Experiments on real-world datasets show that Adv-NTK can help infinite-width DNNs enhance comparable robustness to that of their finite-width counterparts, which in turn justifies our theoretical findings.
-                                        Shaowei Wang, Jin Li, Changyu Dong, Jin Li, Zhili Zhou, <u><strong>Di Wang</strong></u>, Zikai Wen </br>
-                                     Revision, IIEEE Transactions on Information Forensics & Security </b>
-                                 </li>
-
                                 </br> 
 
 
@@ -711,6 +703,39 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                             </li>
                             </br>  
                             
+                            
+                            <li><b style="color:#0000E3">[<i>TIFS</i>]</b> <b><i>
+                                Side-channel Attacks and New Principles in the Shuffle Model of Differential Privacy</i><a href="papers/TIFS2024_Attack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#TIFS2024_Attack" id="99_arrows" class="arrows" onclick="expand_collapse('99');">&#9660</a>
+                                     <div id="99" style="display:none;"><p> 
+                                        The shuffle model employs a shuffler to anonymize
+and permute user messages, thereby enhancing privacy/utility
+trade-offs compared to the local model. Ideally, it assumes
+perfect message anonymity protection against adversaries, allowing each user to hide among a large population. However,
+in contexts like mobile/edge networks or in scenarios where
+the shuffler is curious, this assumption is frequently unrealistic. In this study, we demonstrate the vulnerability of the
+shuffle model to communication side-channel attacks, which
+substantially compromise privacy amplification via shuffling. We
+categorize side-channel information in the shuffle model into
+three types: (i) in-out information, revealing the victim user’s
+participation and timing, (ii) message-cardinality information,
+indicating the victim’s message count, and (iii) message-length
+information, disclosing the victim’s message length(s). Numerical
+results indicate these attacks increase privacy loss by 200% to
+4100%, revealing secret value with probability more than 90%.
+After theoretically analyzing the remaining privacy amplification
+effects, we suggest several countermeasures and principles to
+alleviate degradation caused by these attacks: (a) appending
+padding bits to each message to counter message-length attacks,
+(b) maximizing query parallelization to elude in-out attacks and
+increase the population for privacy amplification, and (c) sending
+dummy messages to exchange communication costs for improved
+privacy amplification effects. The newly proposed paradigms and
+principles significantly save privacy budget in comparison to
+current models under attacks.
+                                        Shaowei Wang, Jin Li, Changyu Dong, Jin Li, Zhili Zhou, <u><strong>Di Wang</strong></u>, Zikai Wen </br>
+                                     Revision, IIEEE Transactions on Information Forensics & Security </b>
+                                 </li>
+
 
 
                             <li><b style="color:#0000E3">[<i>Neural Computation</i>]</b> <i><b>	
