@@ -431,6 +431,90 @@ Private Language Models via Truncated Laplacian Mechanism
                             <h4><i>Journal Papers</i></h4>
 
                             
+                            <li><b style="color:#0000E3">[<i>TIFS, CCF A</i>]</b> <i><b>	
+                                FedMUA: Exploring the Vulnerabilities of
+Federated Learning to Malicious Unlearning Attacks</i><a href="papers/TIFS_FedMUA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TIFS_FedMUA" id="103_arrows" class="arrows" onclick="expand_collapse('103');">&#9660</a>
+                                <div id="103" style="display:none;"><p> 
+                                    Recently, the practical needs of “the right to be
+                                    forgotten” in federated learning gave birth to a paradigm known
+                                    as federated unlearning, which enables the server to forget
+                                    personal data upon the client’s removal request. Existing studies
+                                    on federated unlearning have primarily focused on efficiently
+                                    eliminating the influence of requested data from the client’s
+                                    model without retraining from scratch, however, they have
+                                    rarely doubted the reliability of the global model posed by
+                                    the discrepancy between its prediction performance before and
+                                    after unlearning. To bridge this gap, we take the first step by
+                                    introducing a novel malicious unlearning attack dubbed FedMUA, aiming to unveil potential vulnerabilities emerging from
+                                    federated learning during the unlearning process. Specifically,
+                                    clients may act as attackers by crafting malicious unlearning
+                                    requests to manipulate the prediction behavior of the global
+                                    model. The crux of FedMUA is to mislead the global model
+                                    into unlearning more information associated with the influential
+                                    samples for the target sample than anticipated, thus inducing
+                                    adverse effects on target samples from other clients. To achieve
+                                    this, we design a novel two-step method, known as Influential
+                                    Sample Identification and Malicious Unlearning Generation, to
+                                    identify and subsequently generate malicious feature unlearning
+                                    requests within the influential samples. By doing so, we can
+                                    significantly alter the predictions pertaining to the target sample
+                                    by initiating the malicious feature unlearning requests, leading to
+                                    the deliberate manipulation for the user adversely. Additionally,
+                                    we design a new defense mechanism that is highly resilient
+                                    against malicious unlearning attacks. Extensive experiments on
+                                    three realistic datasets reveal that FedMUA effectively induces
+                                    misclassification on target samples and can achieve an 80%
+                                    attack success rate by triggering only 0.3% malicious unlearning
+                                    requests.
+                                </p></div> </br>
+                                Jian Chen, Zehui Lin, Wanyu Lin, Wenlong Shi, Xiaoyan Yin, <u><strong>Di Wang</strong></u>
+                                </br>
+                                Revision, IEEE Transactions on Information Forensics and Security  </br></b>
+                            </li>
+                            </br>    
+
+                                <li><b style="color:#0000E3">[<i>TKDE, CCF A</i>]</b> <i><b>	
+                                    EPM: Evolutionary Perception Method for Anomaly
+Detection in Noisy Dynamic Graphs</i><a href="papers/ToN_EEFL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TKDE_EMP" id="102_arrows" class="arrows" onclick="expand_collapse('102');">&#9660</a>
+                                    <div id="102" style="display:none;"><p> 
+                                        As interactions among entities expand across diverse
+                                        domains such as social networks, transaction networks, and IPto-IP networks, the significance of anomaly detection in dynamic
+                                        graphs has markedly increased, playing a crucial role in mitigating potential risks. Unfortunately, existing anomaly detection
+                                        methods tend to assume noise-free graph structures and ignore
+                                        the interference of structural noises, such as spurious and missing
+                                        nodes and edges. To address this issue, we propose an Evolutionary Perception Method (EPM) for identifying anomalous nodes,
+                                        which can resist the interference of structural noises and adapt
+                                        to noisy dynamic graphs. It primarily consists of a dynamic
+                                        fitter and a filtering reviser. The dynamic fitter characterizes
+                                        the interaction dynamics of nodes that removes and generates
+                                        links at each period as multiple superposition states, utilizing
+                                        various link prediction algorithms to fit evolutionary mechanisms.
+                                        Additionally, the filtering reviser designs evolutionary entropies
+                                        to quantify the evolutionary uncertainty in multiple superposition
+                                        states, further reconstructing the Kalman filter to optimize
+                                        these entropies. Finally, our method analyzes the fluctuations in
+                                        evolutionary entropies to discover anomalous nodes. Extensive
+                                        experiments have demonstrated that EPM outperforms state-ofthe-art methods in detecting anomalous nodes in noisy dynamic
+                                        graphs.
+                                    </p></div> </br>
+                                    Huan Wang<sup><span>&#9733;</span></sup>, Junyang Chen, Yirui Wu, Victor C. M. Leung, <u><strong>Di Wang</strong></u>
+                                    </br>
+                                    Revision, IEEE/ACM Transactions On Networking  </br></b>
+                                </li>
+                                </br>  
+
+   <li><b style="color:#0000E3">[<i>ToN, CCF A</i>]</b> <i><b>	
+                                    Wireless Aware Energy Efficient Federated Learning over Mobile Devices via Algorithm and Hardware Co-Design</i><a href="papers/ToN_EEFL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ToN_EEFL" id="101_arrows" class="arrows" onclick="expand_collapse('101');">&#9660</a>
+                                    <div id="101" style="display:none;"><p> 
+                                        Energy efficiency is essential for federated learning (FL) over mobile devices and its potential prosperous applica- tions. Different from existing communication efficient FL re- search efforts, which regard communication energy consumption as the bottleneck, we have observed that with ever increasing wireless transmission speed (e.g., Wi-Fi 5 or 5G), the energy consumption of wireless communications for model updates in FL is significantly reduced and sometimes is smaller than that of local on-device training. Motivated by such observations, in this paper, we propose a high-speed wireless communications inspired energy efficient federated learning over mobile devices (EEFL), whose goal is to reduce the overall energy consumption (computing + communication). In particular, we design a novel energy-aware adaptive local update policy for mobile devices by jointly consid- ering FL performance and energy saving of high-speed wireless transmissions. Furthermore, given the device’s local update policy in each FL global round, we advance the dynamic voltage and frequency scaling (DVFS) strategy to minimize local training’s energy consumption by keeping GPU and CPU working at appropriate frequencies without triggering thermal throttling. Extensive experimental results with various learning models, datasets, and wireless transmission environments demonstrate the proposed EEFL’s superiority over the peer designs in terms of energy efficiency.
+    
+                                    </p></div> </br>
+                                    Rui Chen,  	Qiyu Wan, Yixin Liu<sup>*</sup>, Xinyue Zhang, 	Xiaoqi Qin, 	Yanzhao Hou,  <u><strong>Di Wang</strong></u>, Xin Fu, Miao Pan 
+                                    </br>
+                                    Revision, IEEE/ACM Transactions On Networking  </br></b>
+                                </li>
+                                </br>  
+                            
 
                             <li><b style="color:#0000E3">[<i>TIFS, CCF A</i>]</b> <b><i>
                                 Side-channel Attacks and New Principles in the Shuffle Model of Differential Privacy</i><a href="papers/TIFS2024_Attack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#TIFS2024_Attack" id="99_arrows" class="arrows" onclick="expand_collapse('99');">&#9660</a>
