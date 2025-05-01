@@ -144,6 +144,35 @@ http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
     <h4><i>Conference Papers</i></h4>
 
 
+
+    <li><b style="color:#0000E3">[<i>ICML, CCF A</i>]</b> <b><i>	Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing
+    </i> <a href="papers/ICML2025_KE.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML2025_KE" id="113_arrows" class="arrows" onclick="expand_collapse('113');">&#9660</a>
+    <div id="113" style="display:none;"><p>The locate-then-edit paradigm has shown significant promise for knowledge editing (KE) in Large Language Models (LLMs). While previous methods perform well on single-hop fact recall tasks, they consistently struggle with multi-hop factual recall tasks involving newly edited knowledge. In this paper, leveraging tools in mechanistic interpretability, we first identify that in multi-hop tasks, LLMs tend to retrieve knowledge with implicit subject information from deeper MLP layers, unlike single-hop tasks, which rely on shallow layers. This distinction explains the poor performance of current methods in multi-hop queries, as they primarily focus on editing shallow layers with single-hop edit prompts, leaving deeper layers unchanged. To address this, we propose IFMET, a novel locate-then-edit KE approach designed to edit both shallow and deep MLP layers. Beyond single-hop editing prompts, IFMET further incorporates multi-hop editing prompts to locate and modify knowledge across different stages of reasoning. Experimental results demonstrate that IFMET significantly improves performance on multi-hop factual recall tasks, overcoming the limitations of previous locate-then-edit methods.
+    </p></div> </br> 
+    Zhuoran Zhang, Yongxiang Li, Zijian Kan, Keyuan Cheng, Lijie Hu,  <u><strong>Di Wang</strong></u>    </br>
+International Conference on Machine Learning (ICML 2025)
+     </b>
+
+    
+    </li>
+
+</br> 
+
+
+    <li><b style="color:#0000E3">[<i>ICML, CCF A</i>]</b> <b><i>	Editable Concept Bottleneck Models
+    </i> <a href="papers/ICML2025_ECBM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML2025_ECBM" id="112_arrows" class="arrows" onclick="expand_collapse('112');">&#9660</a>
+    <div id="112" style="display:none;"><p>Concept Bottleneck Models (CBMs) have garnered much attention for their ability to elucidate the prediction process through a human-understandable concept layer. However, most previous studies focused on cases where the data, including concepts, are clean. In many scenarios, we always need to remove/insert some training data or new concepts from trained CBMs due to different reasons, such as privacy concerns, data mislabelling, spurious concepts, and concept annotation errors. Thus, the challenge of deriving efficient editable CBMs without retraining from scratch persists, particularly in large-scale applications. To address these challenges, we propose Editable Concept Bottleneck Models (ECBMs). Specifically, ECBMs support three different levels of data removal: concept-label-level, concept-level, and data-level. ECBMs enjoy mathematically rigorous closed-form approximations derived from influence functions that obviate the need for re-training. Experimental results demonstrate the efficiency and effectiveness of our ECBMs, affirming their adaptability within the realm of CBMs.
+    </p></div> </br> 
+    Lijie Hu<sup><span>&#9733;</span>*</sup>
+, Chenyang Ren<sup><span>&#9733;</span>*</sup>, Zhengyu Hu<sup><span>&#9733;</span>*</sup>, Hongbin Lin, Cheng-Long Wang, Zhen Tan, Weimin Lyu, Jingfeng Zhang, Hui Xiong,  <u><strong>Di Wang</strong></u>    </br>
+International Conference on Machine Learning (ICML 2025)
+     </b>
+
+    
+    </li>
+
+</br>   
+
     <li><b style="color:#0000E3">[<i>USENIX, CCF A</i>]</b> <b><i>	Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness
     </i> <a href="papers/USENIX2025_IAM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#USENIX2025_IAM" id="111_arrows" class="arrows" onclick="expand_collapse('111');">&#9660</a>
     <div id="111" style="display:none;"><p>Growing concerns over data privacy and security emphasize the importance of machine unlearning to remove targeted data's influence from trained models. Approximate unlearning adopts relaxed criteria to enable more resource-efficient unlearning but makes the unlearning process less transparent. Techniques like Membership Inference Attacks (MIAs) have been employed to evaluate whether a sample has been successfully unlearned, providing an external assessment. However, fully maximizing MIAs' capabilities, such as online attacks, requires significant computing resources to train shadow models for each new query, typically exceeding the cost of retraining and making it impractical. To address this, we propose the Interpolated Approximate Measurement (IAM), which efficiently estimates membership scores by interpolating the model's generalization-fitting behavior gap on the queried sample. Even with a single pre-trained shadow model, these scores yield strong MIA performance on exactly unlearned samples and robustly measure unlearning completeness for approximately unlearned samples. We then apply IAM to recent approximate unlearning algorithms, revealing the risk of over-unlearning and under-unlearning. We underscore the need for more powerful safeguards against these risks in approximate unlearning.
