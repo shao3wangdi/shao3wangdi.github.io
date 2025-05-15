@@ -332,7 +332,7 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 </i> <a href="papers/ACL2025_code.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL2025_code" id="118_arrows" class="arrows" onclick="expand_collapse('118');">&#9660</a>
                                 <div id="118" style="display:none;"><p>Knowledge Editing-Efficiently modifying the knowledge in large language models has gathered great attention. Current benchmarks primarily use multi-hop question answering to assess and analyze newly injected or updated knowledge. However, we argue that these benchmarks fail to effectively evaluate how well the updated models apply this knowledge in real-life scenarios, particularly when questions require complex reasoning involving one-to-many relationships or multi-step logical intersections. To fill in this gap, we introduce a new benchmark, COMPKE: Complex Question Answering under Knowledge Editing, which includes 11,924 complex questions that reflect real-life situations. We perform a comprehensive evaluation of four different knowledge editing methods in COMPKE, and our results show that the performance of these methods varies between different models. For example, MeLLo achieves an accuracy of 39.47 on GPT-4o-mini but drops significantly to 3.83 on Qwen2.5-3B. We further analyze the reasons behind these results from both methodological and model perspectives. Our dataset will be publicly available on GitHub.
                                 </p></div> </br> 
-                                Keyuan Cheng<sup><span>&#9733;</span></sup>, Zijian Kan, Zhuoran Zhang<sup><span>&#9733;</span></sup>, Muhammad Asif Ali, Lijie Hu<sup><span>&#9733;</span></sup>, Di Wang                   </br>
+                                Keyuan Cheng<sup><span>&#9733;</span></sup>, Zijian Kan, Zhuoran Zhang<sup><span>&#9733;</span></sup>, Muhammad Asif Ali, Lijie Hu<sup><span>&#9733;</span></sup>,  <u><strong>Di Wang</strong></u>                     </br>
                                 Annual Meeting of the Association for Computational Linguistics (ACL 2025 Findings)
                                  </b>
                         
@@ -426,18 +426,7 @@ International Conference on Machine Learning (ICML 2025)
                             </br>   
 
 
-                                <li><b style="color:#0000E3">[<i>USENIX</i>]</b> <b><i>	Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness
-                                </i> <a href="papers/USENIX2025_IAM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#USENIX2025_IAM" id="111_arrows" class="arrows" onclick="expand_collapse('111');">&#9660</a>
-                                <div id="111" style="display:none;"><p>Growing concerns over data privacy and security emphasize the importance of machine unlearning to remove targeted data's influence from trained models. Approximate unlearning adopts relaxed criteria to enable more resource-efficient unlearning but makes the unlearning process less transparent. Techniques like Membership Inference Attacks (MIAs) have been employed to evaluate whether a sample has been successfully unlearned, providing an external assessment. However, fully maximizing MIAs' capabilities, such as online attacks, requires significant computing resources to train shadow models for each new query, typically exceeding the cost of retraining and making it impractical. To address this, we propose the Interpolated Approximate Measurement (IAM), which efficiently estimates membership scores by interpolating the model's generalization-fitting behavior gap on the queried sample. Even with a single pre-trained shadow model, these scores yield strong MIA performance on exactly unlearned samples and robustly measure unlearning completeness for approximately unlearned samples. We then apply IAM to recent approximate unlearning algorithms, revealing the risk of over-unlearning and under-unlearning. We underscore the need for more powerful safeguards against these risks in approximate unlearning.
-                                </p></div> </br> 
-                                Cheng-Long Wang<sup><span>&#9733;</span></sup>, Qi Li<sup><span>&#9733;</span></sup>, Zihang Xiang<sup><span>&#9733;</span></sup>, Yinzhi Cao,  <u><strong>Di Wang</strong></u>    </br>
-                                Major Revision, USENIX Security Symposium (USENIX Security 2025)
-                                 </b>
-                        
-                                
-                                </li>
-                         
-                            </br>   
+
 
  
 
@@ -483,6 +472,18 @@ International Conference on Machine Learning (ICML 2025)
                                 </li>
                          
                             </br>   
+                            <li><b style="color:#0000E3">[<i>USENIX</i>]</b> <b><i>	Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness
+                            </i> <a href="papers/USENIX2025_IAM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#USENIX2025_IAM" id="111_arrows" class="arrows" onclick="expand_collapse('111');">&#9660</a>
+                            <div id="111" style="display:none;"><p>Growing concerns over data privacy and security emphasize the importance of machine unlearning to remove targeted data's influence from trained models. Approximate unlearning adopts relaxed criteria to enable more resource-efficient unlearning but makes the unlearning process less transparent. Techniques like Membership Inference Attacks (MIAs) have been employed to evaluate whether a sample has been successfully unlearned, providing an external assessment. However, fully maximizing MIAs' capabilities, such as online attacks, requires significant computing resources to train shadow models for each new query, typically exceeding the cost of retraining and making it impractical. To address this, we propose the Interpolated Approximate Measurement (IAM), which efficiently estimates membership scores by interpolating the model's generalization-fitting behavior gap on the queried sample. Even with a single pre-trained shadow model, these scores yield strong MIA performance on exactly unlearned samples and robustly measure unlearning completeness for approximately unlearned samples. We then apply IAM to recent approximate unlearning algorithms, revealing the risk of over-unlearning and under-unlearning. We underscore the need for more powerful safeguards against these risks in approximate unlearning.
+                            </p></div> </br> 
+                            Cheng-Long Wang<sup><span>&#9733;</span></sup>, Qi Li<sup><span>&#9733;</span></sup>, Zihang Xiang<sup><span>&#9733;</span></sup>, Yinzhi Cao,  <u><strong>Di Wang</strong></u>    </br>
+                            Major Revision, USENIX Security Symposium (USENIX Security 2025)
+                             </b>
+                    
+                            
+                            </li>
+                     
+                        </br>   
 
                                 <li><b style="color:#0000E3">[<i>USENIX</i>]</b> <b><i>	Beyond Statistical Estimation: Differentially Private Individual Computation via Shuffling</i> <a href="papers/USENIX2025_shuffle.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#USENIX2025_shuffle" id="105_arrows" class="arrows" onclick="expand_collapse('105');">&#9660</a>
                                     <div id="105" style="display:none;"><p>In data-driven applications, preserving user privacy while enabling valuable computations remains a critical challenge. Technologies like differential privacy have been pivotal in addressing these concerns. The shuffle model of DP requires no trusted curators and can achieve high utility by leveraging the privacy amplification effect yielded from shuffling. These benefits have led to significant interest in the shuffle model. However, the computation tasks in the shuffle model are limited to statistical estimation, making it inapplicable to real-world scenarios in which each user requires a personalized output. This paper introduces a novel paradigm termed Private Individual Computation (PIC), expanding the shuffle model to support a broader range of permutation-equivariant computations. PIC enables personalized outputs while preserving privacy, and enjoys privacy amplification through shuffling. We propose a concrete protocol that realizes PIC. By using one-time public keys, our protocol enables users to receive their outputs without compromising anonymity, which is essential for privacy amplification. Additionally, we present an optimal randomizer, the Minkowski Response, designed for the PIC model to enhance utility. We formally prove the security and privacy properties of the PIC protocol. Theoretical analysis and empirical evaluations demonstrate PIC's capability in handling non-statistical computation tasks, and the efficacy of PIC and the Minkowski randomizer in achieving superior utility compared to existing solutions.
