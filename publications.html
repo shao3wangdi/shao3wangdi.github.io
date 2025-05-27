@@ -327,6 +327,34 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 <h4><i>Conference Papers</i></h4>
 
 
+                                <li><b style="color:#0000E3">[<i>ECML-PKDD</i>]</b> <b><i>	Differentially Private Sparse Linear Regression with Heavy-tailed Responses
+                                </i> <a href="papers/ECML2025_linear.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ECML2025_linear" id="119_arrows" class="arrows" onclick="expand_collapse('119');">&#9660</a>
+                                <div id="119" style="display:none;"><p>As a fundamental problem in machine learning and differential privacy (DP), DP linear regression has been extensively studied. However, most existing methods focus primarily on either regular data distributions or low-dimensional cases with irregular data. To address these limitations, this paper provides a comprehensive study of DP sparse linear regression with heavy-tailed responses in high-dimensional settings.
+In the first part, we introduce the DP-IHT-H method, which leverages the Huber loss and private iterative hard thresholding to achieve an estimation error bound of
+\(
+\tilde{O}\biggl(
+s^{* \frac{1}{2}}
+\cdot \biggl(\frac{\log d}{n}\biggr)^{\frac{\zeta}{1 + \zeta}}
++
+s^{* \frac{1 + 2\zeta}{2 + 2\zeta}}
+\cdot \biggl(\frac{\log^2 d}{n \varepsilon}\biggr)^{\frac{\zeta}{1 + \zeta}}
+\biggr)
+\)
+under the $(\varepsilon, \delta)$-DP model, where $n$ is the sample size, $d$ is the dimensionality, $s^*$ is the sparsity of the parameter, and $\zeta \in (0, 1]$ characterizes the tail heaviness of the data.
+In the second part, we propose DP-IHT-L, which further improves the error bound under additional assumptions on the response and achieves
+\(
+\tilde{O}\Bigl(\frac{(s^*)^{3/2} \log d}{n \varepsilon}\Bigr).
+\)
+Compared to the first result, this bound is independent of the tail parameter $\zeta$.
+Finally, through experiments on synthetic and real-world datasets, we demonstrate that our methods outperform standard DP algorithms designed for ``regular'' data.
+                                </p></div> </br> 
+                                Xizhi Tian<sup><span>&#9733;</span></sup>, Meng Ding<sup><span>&#9733;</span></sup>, Youming Tao<sup><span>&#9733;</span></sup>, Zihang Xiang<sup><span>&#9733;</span></sup>,  <u><strong>Di Wang</strong></u>                     </br>
+                                European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases 2025
+                                 </b>
+                        
+                                
+
+
 
                                 <li><b style="color:#0000E3">[<i>ACL</i>]</b> <b><i>	COMPKE: Complex Question Answering under Knowledge Editing
                                 </i> <a href="papers/ACL2025_code.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL2025_code" id="118_arrows" class="arrows" onclick="expand_collapse('118');">&#9660</a>
