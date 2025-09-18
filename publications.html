@@ -359,6 +359,68 @@ This gap motivates our subsequent theoretical investigations, which provide impr
                                 <h2><i>2025</i></h2>
                                 <h4><i>Conference Papers</i></h4>
 
+
+                              <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>	Short-length Adversarial Training Helps LLMs Defend Long-length Jailbreak Attacks: Theoretical and Empirical Evidence
+                                </i> <a href="papers/NeurIPS2025_Jailbreak.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS2025_Jailbrea" id="136_arrows" class="arrows" onclick="expand_collapse('136');">&#9660</a>
+                                <div id="136" style="display:none;"><p>
+Jailbreak attacks against large language models (LLMs) aim to induce harmful behaviors in LLMs through carefully crafted adversarial prompts.
+To mitigate attacks, one way is to perform adversarial training (AT)-based alignment, {\it i.e.}, training LLMs on some of the most adversarial prompts to help them learn how to behave safely under attacks.
+During AT, the length of adversarial prompts plays a critical role in the robustness of aligned LLMs.
+While long-length adversarial prompts during AT might lead to strong LLM robustness, their synthesis however is very resource-consuming, which may limit the application of LLM AT.
+This paper focuses on adversarial suffix jailbreak attacks and unveils that to defend against a jailbreak attack with an adversarial suffix of length $\Theta(M)$, it is enough to align LLMs on prompts with adversarial suffixes of length $\Theta(\sqrt{M})$.
+Theoretically, we analyze the adversarial in-context learning of linear transformers on linear regression tasks and prove a robust generalization bound for trained transformers.
+The bound depends on the term $\Theta(\sqrt{M_{\text{test}}}/M_{\text{train}})$, where $M_{\text{train}}$ and $M_{\text{test}}$ are the numbers of adversarially perturbed in-context samples during training and testing.
+Empirically, we conduct AT on popular open-source LLMs and evaluate their robustness against jailbreak attacks of different adversarial suffix lengths.
+Results confirm a positive correlation between the attack success rate and the ratio of the square root of the adversarial suffix length during jailbreaking to the length during AT.
+Our findings show that it is practical to defend against ``long-length'' jailbreak attacks via efficient ``short-length'' AT. 
+                                </p></div> </br>  Shaopeng Fu<sup><span>&#9733;</span></sup>, Liang Ding, Jingfeng Zhang,  <u><strong>Di Wang</strong></u>          </br>
+                          Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                              <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>	Private Training Large-scale Models with Efficient DP-SGD
+                                </i> <a href="papers/NeurIPS2025_FlashDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS2025_FlashDP" id="136_arrows" class="arrows" onclick="expand_collapse('136');">&#9660</a>
+                                <div id="136" style="display:none;"><p>
+As large language models (LLMs) increasingly underpin technological advancements, the privacy of their training data emerges as a critical concern. Differential Privacy (DP) serves as a rigorous mechanism to protect this data, yet its integration via Differentially Private Stochastic Gradient Descent (DP-SGD) introduces substantial challenges, primarily due to the complexities of per-sample gradient clipping. Current explicit methods, such as Opacus, necessitate extensive storage for per-sample gradients, significantly inflating memory requirements. Conversely, implicit methods like GhostClip reduce storage needs by recalculating gradients multiple times, which leads to inefficiencies due to redundant computations. This paper introduces FlashDP, an innovative cache-friendly per-layer DP-SGD that consolidates necessary operations into a single task, calculating gradients only once in a fused manner. This approach not only diminishes memory movement by up to 50% but also cuts down redundant computations by 20%, compared to previous methods. Consequently, FlashDP does not increase memory demands and achieves a 90% throughput compared to the Non-DP method on a four-A100 system during the pre-training of the Llama-13B model, while maintaining parity with standard per-layer clipped DP-SGD in terms of accuracy. These advancements establish FlashDP as a pivotal development for efficient and privacy-preserving training of LLMs.
+                                </p></div> </br>  Liangyu Wang<sup><span>&#9733;</span></sup>, Junxiao Wang<sup><span>&#9733;</span></sup>, Jie Ren, Zihang Xiang<sup><span>&#9733;</span></sup>, David E. Keyes,  <u><strong>Di Wang</strong></u>          </br>
+                          Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+
+                              <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>	EAP-GP: Mitigating Saturation Effect in Gradient-based Automated Circuit Identification
+                                </i> <a href="papers/NeurIPS2025_EAPGP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS2025_EAPG" id="135_arrows" class="arrows" onclick="expand_collapse('135');">&#9660</a>
+                                <div id="135" style="display:none;"><p>
+Understanding the internal mechanisms of transformer-based language models remains challenging. Mechanistic interpretability based on circuit discovery aims to reverse engineer neural networks by analyzing their internal processes at the level of computational subgraphs. In this paper, we revisit existing gradient-based circuit identification methods and find that their performance is either affected by the zero-gradient problem or saturation effects, where edge attribution scores become insensitive to input changes, resulting in noisy and unreliable attribution evaluations for circuit components. To address the saturation effect, we propose Edge Attribution Patching with GradPath (EAP-GP), EAP-GP introduces an integration path, starting from the input and adaptively following the direction of the difference between the gradients of corrupted and clean inputs to avoid the saturated region. This approach enhances attribution reliability and improves the faithfulness of circuit identification. We evaluate EAP-GP on 6 datasets using GPT-2 Small, GPT-2 Medium, and GPT-2 XL. Experimental results demonstrate that EAP-GP outperforms existing methods in circuit faithfulness, achieving improvements up to 17.7%. Comparisons with manually annotated ground-truth circuits demonstrate that EAP-GP achieves precision and recall comparable to or better than previous approaches, highlighting its effectiveness in identifying accurate circuits.
+                                </p></div> </br>  Lin Zhang<sup><span>&#9733;</span></sup>, Wenshuo Dong<sup><span>&#9733;</span></sup>, Zhuoran Zhang<sup><span>&#9733;</span></sup>, Shu Yang<sup><span>&#9733;</span></sup>, Lijie Hu<sup><span>&#9733;</span></sup>, Ninghao Liu, Pan Zhou,  <u><strong>Di Wang</strong></u>          </br>
+                          Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                              <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>	Second-Order Convergence in Private Stochastic Non-Convex Optimization
+                                </i> <a href="papers/NeurIPS2025_SOSP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS2025_SOSP" id="133_arrows" class="arrows" onclick="expand_collapse('133');">&#9660</a>
+                                <div id="133" style="display:none;"><p>
+We investigate the problem of finding second-order stationary points (SOSP) in differentially private (DP) stochastic non-convex optimization. Existing methods suffer from two key limitations: \textbf{(i)} inaccurate convergence error rate due to overlooking gradient variance in the saddle point escape analysis, and \textbf{(ii)} dependence on auxiliary private model selection procedures for identifying DP-SOSP, which can significantly impair utility, particularly in distributed settings. To address these issues, we propose a generic perturbed stochastic gradient descent (PSGD) framework built upon Gaussian noise injection and general gradient oracles. A core innovation of our framework is using model drift distance to determine whether PSGD escapes saddle points, ensuring convergence to approximate local minima without relying on second-order information or additional DP-SOSP identification. By leveraging the adaptive DP-SPIDER estimator as a specific gradient oracle, we develop a new DP algorithm that rectifies the convergence error rates reported in prior work. We further extend this algorithm to distributed learning with arbitrarily heterogeneous data, providing the first formal guarantees for finding DP-SOSP in such settings. Our analysis also highlights the detrimental impacts of private selection procedures in distributed learning under high-dimensional models, underscoring the practical benefits of our design. Numerical experiments on real-world datasets validate the efficacy of our approach.
+                                </p></div> </br>  Youming Tao<sup><span>&#9733;</span></sup>, Zuyuan Zhang, Dongxiao Yu, Xiuzhen Cheng, Falko Dressler,  <u><strong>Di Wang</strong></u>          </br>
+                          Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
                               <li><b style="color:#0000E3">[<i>EMNLP</i>]</b> <b><i>	Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation
                                 </i> <a href="papers/EMNLP2025_value.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP2025_value" id="131_arrows" class="arrows" onclick="expand_collapse('131');">&#9660</a>
                                 <div id="131" style="display:none;"><p>
@@ -407,7 +469,7 @@ Suicide remains a major global mental health challenge, and early intervention h
                                  </b>
 
                                 </li>
-     </br> 
+     </br>
 
 
 
