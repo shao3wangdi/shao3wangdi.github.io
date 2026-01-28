@@ -325,6 +325,106 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
 
                                 <h2><i>2026</i></h2>
                                 <h4><i>Conference Papers</i></h4>
+
+
+
+                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Dual-Kernel Adapter: Expanding Spatial Horizons for Data-Constrained Medical Image Analysis
+                                </i> <a href="papers/ICLR26_DKA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_DKA" id="153_arrows" class="arrows" onclick="expand_collapse('153');">&#9660</a>
+                                <div id="153" style="display:none;"><p>
+Adapters have become a widely adopted strategy for efficient fine-tuning of foundation models, particularly in resource-constrained settings. However, their performance under extreme data scarcity—common in medical imaging due to high annotation costs, privacy regulations, and fragmented datasets—remains underexplored. In this work, we present the first comprehensive study of adapter-based fine-tuning for vision foundation models in low-data medical imaging scenarios. We find that, contrary to their promise, conventional Adapters can degrade performance under severe data constraints, performing even worse than simple linear probing when trained on less than 1% of the corresponding training data. Through systematic analysis, we identify a sharp reduction in Effective Receptive Field (ERF) as a key factor behind this degradation. Motivated by these findings, we propose the Dual-Kernel Adapter (DKA), a lightweight module that expands spatial context via large-kernel convolutions while preserving local detail with small-kernel counterparts. Extensive experiments across diverse classification and segmentation benchmarks show that DKA significantly outperforms existing Adapter methods, establishing new leading results in both data-constrained and data-rich regimes.
+   </p></div> </br> 
+                            Ziquan Zhu, Hanruo Zhu, Si-Yuan Lu, Xiang Li, Yanda Meng, Yunxiao Zhang, Gaojie Jin, Lu Yin, Lijie Hu, <u><strong>Di Wang</strong></u>, Lu Liu, Tianjin Huang   </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Controlling Repetition in Protein Language Models
+                                </i> <a href="papers/ICLR26_protein.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_protein" id="152_arrows" class="arrows" onclick="expand_collapse('152');">&#9660</a>
+                                <div id="152" style="display:none;"><p>
+Protein language models (PLMs) have enabled advances in structure prediction and de novo protein design, yet they frequently collapse into pathological repetition during generation. Unlike in text, where repetition merely reduces readability, in proteins it undermines structural confidence and functional viability. To unify this problem, we present the first systematic study of repetition in PLMs. We first propose quantitative metrics to characterize motif-level and homopolymer repetition and then demonstrate their negative impact on folding reliability. To address this challenge, we propose UCCS (Utility-Controlled Contrastive Steering), which steers protein generation with a constrained dataset. Instead of naively contrasting high- vs. low-repetition sequences, we construct contrastive sets that maximize differences in repetition while tightly controlling for structural utility. This disentanglement yields steering vectors that specifically target repetition without degrading foldability. Injected at inference, these vectors consistently reduce repetition without retraining or heuristic decoding. Experiments with ESM-3 and ProtGPT2 in CATH, UniRef50, and SCOP show that our method outperforms decoding penalties and other baselines, substantially lowering repetition while preserving AlphaFold confidence scores. Our results establish repetition control as a central challenge for PLMs and highlight dataset-guided steering as a principled approach for reliable protein generation.
+   </p></div> </br> 
+                             Jiahao Zhang, Zeqing Zhang,  <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>The Price of Amortized inference in Sparse Autoencoders
+                                </i> <a href="papers/ICLR26_SAE.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_SAE" id="151_arrows" class="arrows" onclick="expand_collapse('151');">&#9660</a>
+                                <div id="151" style="display:none;"><p>
+Polysemy has long been a major challenge in Mechanistic Interpretability (MI), with Sparse Autoencoders (SAEs) emerging as a promising solution. SAEs employ a shared encoder to map inputs to sparse codes, thereby amortizing inference costs across all instances. However, this parameter-sharing paradigm inherently conflicts with the MI community's emphasis on instance-level optimality, including the consistency and stitchability of monosemantic features. We first reveal the trade-off relationships among various pathological phenomena, including feature absorption, feature splitting, dead latents, and dense latents under global reconstruction-sparsity constraints from the perspective of training dynamics, finding that increased sparsity typically exacerbates multiple pathological phenomena, and attribute this trade-off relationship to amortized inference. By reducing reliance on amortized inference through the introduction of semi-amortized and non-amortized approaches, we observed that various pathological indicators were significantly mitigated, thereby validating our hypothesis. As the first step in this direction, we propose Local Amortized SAE (LocA-SAE), a method that groups polysemantically close latents based on the angular variance. This method is designed to balance the computational cost of per-sample optimization with the limitations of amortized inference. Our work provides insights for understanding SAEs and advocates for a paradigm shift in future research on polysemy disentanglement. The code is available at \url{https://anonymous.4open.science/r/sae-amortization-5335}.
+   </p></div> </br> 
+                             Wenjie Sun,  <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Understanding and Improving Continuous LLM Adversarial Training via In-context Learning Theory
+                                </i> <a href="papers/ICLR26_AT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_AT" id="150_arrows" class="arrows" onclick="expand_collapse('150');">&#9660</a>
+                                <div id="150" style="display:none;"><p>
+Adversarial training (AT) is an effective defense for large language models (LLMs) against jailbreak attacks, but performing AT on LLMs is costly. To improve the efficiency of AT for LLMs, recent studies propose continuous AT (CAT) that searches for adversarial inputs within the continuous embedding space of LLMs during AT. While CAT has achieved empirical success, its underlying mechanism, i.e., why adversarial perturbations in the embedding space can help LLMs defend against jailbreak prompts synthesized in the input token space, remains unknown. This paper presents the first theoretical analysis of CAT on LLMs based on in-context learning (ICL) theory. For linear transformers trained with adversarial examples from the embedding space on in-context linear regression tasks, we prove a robust generalization bound that has a negative correlation with the perturbation radius in the embedding space. This clearly explains why CAT can defend against jailbreak prompts from the LLM's token space. Further, the robust bound shows that the robustness of an adversarially trained LLM is closely related to the singular values of its embedding matrix. Based on this, we propose to improve LLM CAT by introducing an additional regularization term, which depends on singular values of the LLM's embedding matrix, into the objective function of CAT. Experiments on real-world LLMs demonstrate that our method can help LLMs achieve better jailbreak robustness-utility tradeoff.
+   </p></div> </br> 
+                             Shaopeng Fu<sup><span>&#9733;</span></sup>,  <u><strong>Di Wang</strong></u> </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+
+                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Predicting LLM Output Length via Entropy-Guided Representations
+                                </i> <a href="papers/ICLR26_EGTP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_EGTP" id="149_arrows" class="arrows" onclick="expand_collapse('149');">&#9660</a>
+                                <div id="149" style="display:none;"><p>
+The long-tailed distribution of sequence lengths in LLM serving and reinforcement learning (RL) sampling causes significant computational waste due to excessive padding in batched inference. Existing methods rely on auxiliary models for static length prediction, but they incur high overhead, generalize poorly, and fail in stochastic "one-to-many" sampling scenarios. We introduce a lightweight framework that reuses the main model's internal hidden states for efficient length prediction. Our framework features two core components: 1 Entropy-Guided Token Pooling (EGTP), which uses on-the-fly activations and token entropy for highly accurate static prediction with negligible cost, and 2 Progressive Length Prediction (PLP), which dynamically estimates the remaining length at each decoding step to handle stochastic generation. To validate our approach, we build and release ForeLen, a comprehensive benchmark with long-sequence, Chain-of-Thought, and RL data. On ForeLen, EGTP achieves state-of-the-art accuracy, reducing MAE by 29.16% over the best baseline. Integrating our methods with a length-aware scheduler yields significant end-to-end throughput gains. Our work provides a new technical and evaluation baseline for efficient LLM inference.
+   </p></div> </br> 
+                             Huanyi Xie<sup><span>&#9733;</span></sup>, Yubin Chen, Liangyu Wang, Lijie Hu, <u><strong>Di Wang</strong></u> </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Dissecting Representation Misalignment in Contrastive Learning via Influence Function
+                                </i> <a href="papers/ICLR26_ContrasIF.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_ContrasIF" id="148_arrows" class="arrows" onclick="expand_collapse('148');">&#9660</a>
+                                <div id="148" style="display:none;"><p>
+Contrastive learning, commonly applied in large-scale multimodal models, often relies on data from diverse and often unreliable sources, which can include misaligned or mislabeled text-image pairs. This frequently leads to robustness issues and hallucinations, ultimately causing performance degradation. Data valuation is an efficient way to detect and trace these misalignments. Nevertheless, existing methods are computationally expensive for large-scale models. Although computationally efficient, classical influence functions are inadequate for contrastive learning models, as they were initially designed for pointwise loss. Furthermore, contrastive learning involves minimizing the distance between positive sample modalities while maximizing the distance between negative sample modalities. This necessitates evaluating the influence of samples from both perspectives. To tackle these challenges, we introduce the Extended Influence Function for Contrastive Loss (ECIF), an influence function crafted for contrastive loss. ECIF considers both positive and negative samples and provides a closed-form approximation of contrastive learning models, eliminating the need for retraining. Building upon ECIF, we develop a series of algorithms for data evaluation, misalignment detection, and misprediction trace-back tasks. Experimental results demonstrate that our ECIF advances the transparency and interpretability of CLIP-style embedding models by offering a more accurate assessment of data impact and model alignment compared to traditional baseline methods.
+   </p></div> </br> 
+                             Huanyi Xie<sup><span>&#9733;</span>*</sup>, Chenyang Ren<sup><span>&#9733;</span>*</sup>, Lijie Hu, Khouloud Saadi, Shu Yang, Zhen Tan, Jingfeng Zhang, <u><strong>Di Wang</strong></u> </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Evaluating Data Influence in Meta Learning 
+                                </i> <a href="papers/ICLR26_MetaIFL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_MetaIF" id="147_arrows" class="arrows" onclick="expand_collapse('147');">&#9660</a>
+                                <div id="147" style="display:none;"><p>
+As one of the most fundamental models, meta learning aims to effectively address few-shot learning challenges. However, it still faces significant issues related to the training data, such as training inefficiencies due to numerous low-contribution tasks in large datasets and substantial noise from incorrect labels. Thus, training data attribution methods are needed for meta learning. However, the dual-layer structure of meta learning complicates the modeling of training data contributions because of the interdependent influence between meta parameters and task-specific parameters, making existing data influence evaluation tools inapplicable or inaccurate. To address these challenges, based on the influence function, we propose a general data attribution evaluation framework for meta learning within the bilevel optimization framework. Our approach introduces task influence functions (task-IF) and instance influence functions (instance-IF) to accurately assess the impact of specific tasks and individual data points in closed forms. This framework comprehensively models data contributions across both the inner and outer training processes, capturing the direct effects of data points on meta parameters as well as their indirect influence through task-specific parameters. We also provide several strategies to enhance computational efficiency and scalability. Experimental results demonstrate the framework's effectiveness in training data evaluation via several downstream tasks.
+   </p></div> </br> 
+                             Chenyang Ren<sup><span>&#9733;</span>*</sup>, Huanyi Xie<sup><span>&#9733;</span>*</sup>, Shu Yang, Meng Ding, Dongrui Liu, Lijie Hu, 
+ <u><strong>Di Wang</strong></u> </br> 
+                   International Conference on Learning Representations (ICLR 2026)
+                                 </b>
+
+                                </li>
+     </br> 
+
                             <li><b style="color:#0000E3">[<i>WWW</i>]</b> <b><i>PIXEL: Adaptive Steering Via Position-wise Injection with eXact Estimated Levels under a Subspace Calibration
                                 </i> <a href="papers/WWW26_PIXEL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#WWW26_PIXEL" id="145_arrows" class="arrows" onclick="expand_collapse('145');">&#9660</a>
                                 <div id="145" style="display:none;"><p>
@@ -432,31 +532,6 @@ propose several novel  algorithms and provide the first theoretical results.  </
 
 
 
-                              <li><b style="color:#0000E3">[<i>TWEB</i>]</b> <b><i>	Evolution Consistency in Multi-Layer Networks: A Shared Latent Space Representation Approach. 
-                                </i> <a href="papers/TWEB2025_CLEC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#TWEB2025_CLEC" id="140_arrows" class="arrows" onclick="expand_collapse('140');">&#9660</a>
-                                <div id="140" style="display:none;"><p>
-Determining whether different layers within a multi-layer network evolve in a consistent manner is essential for understanding their
-underlying generative processes. While link prediction has been widely explored in multi-layer networks, it is typically treated as
-an isolated technical problem, often missing its broader implications for network evolution. In reality, link prediction is inherently
-connected to the evolutionary dynamics of networks, reflecting not just the current structure but also the mechanisms driving structural
-change. In this paper, we investigate the extent to which network layers exhibit consistent evolutionary patterns. By examining the
-consistency of link prediction outcomes across layers, we assess the similarity of their generative mechanisms and utilize this alignment
-to improve predictive performance. To facilitate this, we introduce a new metric, Cross-Layer Evolutionary Consistency (CLEC),
-which quantitatively captures the degree of generative alignment between network layers. CLEC is grounded in the shared-latent
-space framework, positing that layers with similar evolutionary dynamics will produce compatible latent representations. To realize
-this approach, we present SupportNet—Support prediction and consistency analysis in multi-layer Networks—a GCN-based model
-augmented with adversarial training to effectively learn robust shared-latent space representations. These representations support
-both accurate link prediction and interpretable evaluation of cross-layer consistency. Experiments on real-world multi-layer networks
-demonstrate that SupportNet delivers strong link prediction results improving Accuracy by 17.52% and AUC by 16.35% on the Enron
-dataset, while CLEC reveals significant patterns of evolutionary alignment among layers
-   </p></div> </br> 
-                               Ruohan Yang, Muhammad Asif Ali, Anyu Xue, Huan Wang, Junyang Chen, <u><strong>Di Wang</strong></u> </br>
-                         Revision, ACM Transactions on Web. 
-                                 </b>
-
-                                </li>
-     </br> 
-
 
 
                            <li><b style="color:#0000E3">[<i>Advanced Science</i>]</b> <b><i>	Intelligent Stain-free Histology on Structural Colorimetric Nanocavities
@@ -497,8 +572,35 @@ Byzantine resilience is essential in federated learning (FL) to safeguard model 
                                     </br>
                                     Revision, IEEE/ACM Transactions On Networking  </br></b>
                                 </li>
+
+
+
                                 </br> 
-                                
+
+                              <li><b style="color:#0000E3">[<i>TWEB</i>]</b> <b><i>	Evolution Consistency in Multi-Layer Networks: A Shared Latent Space Representation Approach. 
+                                </i> <a href="papers/TWEB2025_CLEC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#TWEB2025_CLEC" id="140_arrows" class="arrows" onclick="expand_collapse('140');">&#9660</a>
+                                <div id="140" style="display:none;"><p>
+Determining whether different layers within a multi-layer network evolve in a consistent manner is essential for understanding their
+underlying generative processes. While link prediction has been widely explored in multi-layer networks, it is typically treated as
+an isolated technical problem, often missing its broader implications for network evolution. In reality, link prediction is inherently
+connected to the evolutionary dynamics of networks, reflecting not just the current structure but also the mechanisms driving structural
+change. In this paper, we investigate the extent to which network layers exhibit consistent evolutionary patterns. By examining the
+consistency of link prediction outcomes across layers, we assess the similarity of their generative mechanisms and utilize this alignment
+to improve predictive performance. To facilitate this, we introduce a new metric, Cross-Layer Evolutionary Consistency (CLEC),
+which quantitatively captures the degree of generative alignment between network layers. CLEC is grounded in the shared-latent
+space framework, positing that layers with similar evolutionary dynamics will produce compatible latent representations. To realize
+this approach, we present SupportNet—Support prediction and consistency analysis in multi-layer Networks—a GCN-based model
+augmented with adversarial training to effectively learn robust shared-latent space representations. These representations support
+both accurate link prediction and interpretable evaluation of cross-layer consistency. Experiments on real-world multi-layer networks
+demonstrate that SupportNet delivers strong link prediction results improving Accuracy by 17.52% and AUC by 16.35% on the Enron
+dataset, while CLEC reveals significant patterns of evolutionary alignment among layers
+   </p></div> </br> 
+                               Ruohan Yang, Muhammad Asif Ali, Anyu Xue, Huan Wang, Junyang Chen, <u><strong>Di Wang</strong></u> </br>
+                         ACM Transactions on Web. 
+                                 </b>
+
+                                </li>
+     </br>                                 
                                 
                                    <li><b style="color:#0000E3">[<i>TACL</i>]</b> <i><b>	
                                     Understanding Aha Moments: from External Bbservations to Internal Mechanisms</i><a href="papers/TACL_aha.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#TACL_aha" id="129_arrows" class="arrows" onclick="expand_collapse('129');">&#9660</a>
