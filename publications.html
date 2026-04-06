@@ -325,6 +325,51 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 <h2><i>2026</i></h2>
                                 <h4><i>Conference Papers</i></h4>
 
+                         <li><b style="color:#0000E3">[<i>ACL Findings'26</i>]</b> <b><i>	
+AutoMonitor-Bench: Evaluating the Reliability of LLM-Based Misbehavior Monitor
+                                </i> <a href="papers/ACL26_AutoMonitor-Bench.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_AutoMonitor-Bench" id="165_arrows" class="arrows" onclick="expand_collapse('165');">&#9660</a>
+                                <div id="165" style="display:none;"><p>
+We introduce AutoMonitor-Bench, the first benchmark designed to systematically evaluate the reliability of LLM-based misbehavior monitors across diverse tasks and failure modes. AutoMonitor-Bench consists of 3,010 carefully annotated test samples spanning question answering, code generation, and reasoning, with paired misbehavior and benign instances. We evaluate monitors using two complementary metrics: Miss Rate (MR) and False Alarm Rate (FAR), capturing failures to detect misbehavior and oversensitivity to benign behavior respectively. Evaluating 12 proprietary and 10 open-source LLMs, we observe substantial variability in monitoring performance and a consistent trade-off between MR and FAR, revealing an inherent safety–utility tension. To further explore the limits of monitor reliability, we construct a large-scale training corpus of 153,581 samples and fine-tune Qwen3-4B-Instruction, to investigate whether training on known, relatively easy-to-construct misbehavior datasets improves monitoring performance on unseen and more implicit misbehaviors. Our results highlight the challenges of reliable, scalable misbehavior monitoring and motivate future work on task-aware designing and training strategies for LLM-based monitors.
+   </p></div> </br> 
+                          Shu Yang, Jingyu Hu, Tong Li, Hanqi Yan, Wenxuan Wang, <u><strong>Di Wang</strong></u>
+                 Findings of Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                         <li><b style="color:#0000E3">[<i>ACL Findings'26</i>]</b> <b><i>	
+High-Throughput and Memory-Efficient Zeroth-Order Fine-tuning LLMs with Distributed Parallel Computing 
+                                </i> <a href="papers/ACL26_DistZO2.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_DistZO2" id="164_arrows" class="arrows" onclick="expand_collapse('164');">&#9660</a>
+                                <div id="164" style="display:none;"><p>
+Fine-tuning large language models (LLMs) remains resource-intensive due to their sheer scale. While zeroth-order (ZO) optimization provides a memory-efficient alternative by eliminating backward passes, its application to multi-hundred-billion-parameter models is constrained by GPU memory and compute throughput. The ZO2 framework addresses the memory bottleneck by offloading model parameters to CPU memory and overlapping transformer block transfer with dual forward computation on a single GPU. However, ZO2 remains limited by its single-device execution and achieves modest throughput. In this work, we present DistZO2 (Distributed Zeroth-Order Offloading), a high-throughput, memory-efficient framework for distributed zeroth-order fine-tuning of LLMs. DistZO2 introduces three parallel strategies: (1) Perturbation Parallelism (PertP), which parallelizes the two perturbed forward passes across devices; (2) Distributed Data Parallelism (DDP), adapted to the scalar-gradient nature of ZO training; and (3) a unified 2D Parallelism design that combines PertP and DDP. To further mitigate communication bottlenecks introduced by parameter offloading, we propose a hardware-aware communication strategy that slices parameter blocks and redistributes them across GPUs via high-speed interconnects such as NVLink. DistZO2 scales zeroth-order fine-tuning to modern multi-GPU systems, preserving ZO2’s memory efficiency while substantially improving training throughput. In our experiments on OPT-175B, DistZO2 achieves a 3x speedup over ZO2 with distributed computing.
+   </p></div> </br> 
+                           Liangyu Wang, Huanyi Xie, <u><strong>Di Wang</strong></u>
+                 Findings of Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+
+                         <li><b style="color:#0000E3">[<i>ACL Findings'26</i>]</b> <b><i>	
+Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback
+                                </i> <a href="papers/ACL26_Curriculum-RLAIF.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_Curriculum-RLAIF" id="163_arrows" class="arrows" onclick="expand_collapse('163');">&#9660</a>
+                                <div id="163" style="display:none;"><p>
+Reward models trained through Reinforcement Learning from AI Feedback (RLAIF) methods frequently suffer from limited generalizability, which hinders the alignment performance of policy models. This challenge stems from various issues, including distribution shift, preference label noise, and mismatch of overly challenging samples with model capacity. In this paper, we aim to enhance the generalizability of reward models through a data-centric approach, driven by the insight that these issues are inherently intertwined from a uniform perspective of data difficulty. Accordingly, we propose a novel framework, Curriculum-RLAIF, which constructs preference pairs with varying difficulty levels and then produces a specific curriculum for reward model training. Comprehensive experimental results suggest that reward models trained with Curriculum-RLAIF achieve improved generalizability, boosting the alignment performance of policy models by a significant margin without incurring additional inference costs compared to various existing non-curriculum baselines. Further analysis and comparison with alternative strategies highlight the superiority of Curriculum-RLAIF in simplicity, efficiency, and effectiveness.
+   </p></div> </br> 
+                            Jiaye Lin, Mengdi Li, Xufeng Zhao, Wenhao Lu, Peilin Zhao, Stefan Wermter,  <u><strong>Di Wang</strong></u>
+                 Findings of Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
 
 
 
