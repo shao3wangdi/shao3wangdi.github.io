@@ -137,7 +137,6 @@ http://dickervasti.com/wiki-style-text-expand-collapse-no-jquery.htm
                         <h1>Publications </h1>
                         <div class="section-seperator margin-b-30"></div>
                         <p style="color:#000000"> <b> Please visit the <a href="https://pradalab1.github.io/publications.html">PRADA Lab publication page</a> for the full list of publication of our lab. </b></p>
-                        <b>(<span>&#9733;</span> my Master/PhD/Intern/Visiting students)</b>
                         <ol>
                             <div class="divcss5-a">
                                 <div class="margin-b-30"></div>
@@ -327,7 +326,95 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 <h4><i>Conference Papers</i></h4>
 
 
-                           <li><b style="color:#0000E3">[<i>CVPR</i>]</b> <b><i>Towards Reasoning-Preserving Unlearning in Multimodal Large Language Models
+
+
+                         <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>	
+Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models 
+                                </i> <a href="papers/ACL26_poltical.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_poltical" id="162_arrows" class="arrows" onclick="expand_collapse('162');">&#9660</a>
+                                <div id="162" style="display:none;"><p>
+Fine-tuning Large Language Models on a political topic will significantly manipulate their political stance on various issues and unintentionally affect their stance on broad topics. While previous studies have proposed this issue, there is still a lack of understanding regarding the internal representations of these stances and the mechanisms that lead to unintended cross-topic generalization. In this paper, we systematically explore the internal mechanisms underlying this phenomenon from a neuron-level perspective and how to mitigate the cross-topic generalization of political fine-tuning. Firstly, we propose Political Neuron Localization through Activation Contrasting (PNLAC) to identify two distinct types of political neurons: general political neurons, which govern stance across multiple political topics, and topic-specific neurons that affect the model's political stance on individual topics. We find that these political neuron types exist in the middle and later layers across four models and datasets through activation patching experiments. Leveraging these insights, we introduce InhibitFT, an inhibition-based fine-tuning method that effectively mitigates the cross-topic stance generalization. Experimental results demonstrate the robustness of the identified neuron types across various models and datasets and show that InhibitFT significantly reduces the cross-topic stance generalization by 20% on average while preserving topic-specific performance. Moreover, we demonstrate that selectively inhibiting only 5% of neurons is sufficient to effectively mitigate the cross-topic stance generalization.
+   </p></div> </br> 
+                             Jiayi Zhang, Shu Yang, Junchao Wu, Derek F. Wong, <u><strong>Di Wang</strong></u>
+                     Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                         <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>	
+CoLA: A Choice Leakage Attack Framework to Expose Privacy Risks in Subset Training
+                                </i> <a href="papers/ACL26_CoLA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_CoLA" id="161_arrows" class="arrows" onclick="expand_collapse('161');">&#9660</a>
+                                <div id="161" style="display:none;"><p>
+Training models on a carefully chosen portion of data rather than the full dataset is now a standard preprocess for modern ML. From vision coreset selection to large-scale filtering in language models, it enables scalability with minimal utility loss. A common intuition is that training on fewer samples should also reduce privacy risks. In this paper, we challenge this assumption. We show that subset training is not privacy free: the very choices of which data are included or excluded can introduce new privacy surface and leak more sensitive information. Such information can be captured by adversaries either through side-channel metadata from the subset selection process or via the outputs of the target model. To systematically study this phenomenon, we propose CoLA (Choice Leakage Attack), a unified framework for analyzing privacy leakage in subset selection. In CoLA, depending on the adversary’s knowledge of the side-channel information, we define two practical attack scenarios: Subset-aware Side-channel Attacks and Black-box Attacks. Under both scenarios, we investigate two privacy surfaces unique to subset training: (1) Training-membership MIA (TM-MIA), which concerns only the privacy of training data membership, and (2) Selection-participation MIA (SP-MIA), which concerns the privacy of all samples that participated in the subset selection process. Notably, SP-MIA enlarges the notion of membership from model training to the entire data–model supply chain. Experiments on vision and language models show that existing threat models underestimate the privacy risks of subset training: the enlarged privacy surface not only retains training membership leakage but also exposing selection membership, extending risks from individual models to the broader ML ecosystem.
+   </p></div> </br> 
+                              Qi Li, Cheng-Long Wang, Yinzhi Cao, <u><strong>Di Wang</strong></u>
+                     Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                          <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>The Web Tool Trap: Understanding and Mitigating Over-Reliance in LLM Browsing Agents
+                                </i> <a href="papers/ACL26_tool.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_tool" id="160_arrows" class="arrows" onclick="expand_collapse('160');">&#9660</a>
+                                <div id="160" style="display:none;"><p>
+Large Language Model (LLM) agents that can gather knowledge by browsing the internet are becoming increasingly useful and important. However, how effectively do these agents utilize web tools, and what happens when they become overly dependent on external search capabilities? We introduce BrowseBench and present the first systematic investigation into the over-reliance patterns of browsing agents on web tools. Through controlled experiments across multiple domains and query types, we identify three critical failure modes that characterize this dependency. Our investigation reveals the failure modes in LLM agent behavior: First, agents exhibit excessive conservatism toward their training knowledge, unnecessarily searching for well-established information they already possess rather than relying on their internal knowledge. Second, agents apply inconsistent information standards, questioning their own reliable training data while uncritically accepting web-retrieved content as long as it appears internally coherent, regardless of potential inconsistencies or biases. Third, agents demonstrate overconfidence in web tool capabilities, attempting to compress complex multi-step queries into single search operations that systematically fail, revealing a lack of proper search planning and decomposition strategies. These contradictions result in inefficient information processing that wastes resources while potentially generating erroneous conclusions. To address these challenges, we propose three mitigation strategies: Direct Preference Optimization to enable models to learn nuanced search decision boundaries, Attention Refinement to help agents focus on relevant information within retrieved content, and Hierarchical Query Decomposition to improve multi-round tool coordination and query decomposition. Our experiments show that these interventions significantly reduce over-reliance behaviors. These results reveal that while current browsing agents' over-reliance on web tools may amplify errors, carefully designed training strategies can substantially improve their tool usage patterns, with important implications for deploying tool-augmented LLMs in real-world applications.
+   </p></div> </br> 
+                               Jiawei Guo, Hongjie Nie, Qianbo Zang, Shu Yang, Shuodi Liu, Yiwei Ru, Liuyu Xiang, <u><strong>Di Wang</strong></u>, Zhaofeng He </br> 
+                     Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                            <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>Visual Self-Fulfilling Alignment: Shaping Safety-Oriented Personas via Threat-Related Images 
+                                </i> <a href="papers/ACL26_Self-Fulfilling.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_Self-Fulfilling " id="159_arrows" class="arrows" onclick="expand_collapse('159');">&#9660</a>
+                                <div id="159" style="display:none;"><p>
+Multimodal large language models (MLLMs) face safety misalignment where visual inputs enable harmful outputs. Existing methods require explicit safety labels or contrastive data, yet threat-related concepts are concrete and visually depictable, while safety concepts like helpfulness are abstract and lack visual referents. Inspired by self-fulfilling mechanism underlying emergent misalignment, we propose Visual Self-Fulfilling Alignment (VSFA). VSFA fine-tunes vision-language models (VLMs) on neutral VQA tasks constructed around threat-related images, without any safety labels. Through repeated exposure to threat-related visual content, models internalize implicit semantics of vigilance and caution, shaping safety-oriented personas. Experiments across multiple VLMs and safety benchmarks demonstrate that VSFA reduces attack success rate, improves response quality, and mitigates over-refusal while preserving general capabilities. Our work extends self-fulfilling mechanism from text to visual modalities, offering a label-free approach to VLMs alignment.
+   </p></div> </br> 
+                           Qishun Yang, Shu Yang, Lijie Hu, <u><strong>Di Wang</strong></u> 
+                 Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                            <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>Visual Self-Fulfilling Alignment: Shaping Safety-Oriented Personas via Threat-Related Images 
+                                </i> <a href="papers/ACL26_Self-Fulfilling.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_Self-Fulfilling " id="159_arrows" class="arrows" onclick="expand_collapse('159');">&#9660</a>
+                                <div id="159" style="display:none;"><p>
+Multimodal large language models (MLLMs) face safety misalignment where visual inputs enable harmful outputs. Existing methods require explicit safety labels or contrastive data, yet threat-related concepts are concrete and visually depictable, while safety concepts like helpfulness are abstract and lack visual referents. Inspired by self-fulfilling mechanism underlying emergent misalignment, we propose Visual Self-Fulfilling Alignment (VSFA). VSFA fine-tunes vision-language models (VLMs) on neutral VQA tasks constructed around threat-related images, without any safety labels. Through repeated exposure to threat-related visual content, models internalize implicit semantics of vigilance and caution, shaping safety-oriented personas. Experiments across multiple VLMs and safety benchmarks demonstrate that VSFA reduces attack success rate, improves response quality, and mitigates over-refusal while preserving general capabilities. Our work extends self-fulfilling mechanism from text to visual modalities, offering a label-free approach to VLMs alignment.
+   </p></div> </br> 
+                           Qishun Yang, Shu Yang, Lijie Hu, <u><strong>Di Wang</strong></u> 
+                 Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+                               
+
+                           <li><b style="color:#0000E3">[<i>ACL'26</i>]</b> <b><i>Flattery in Motion: Benchmarking and Analyzing Sycophancy in Video-LLMs
+                                </i> <a href="papers/ACL26_VideoSycophancy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_VideoSycophancy" id="158_arrows" class="arrows" onclick="expand_collapse('158');">&#9660</a>
+                                <div id="158" style="display:none;"><p>
+As video large language models (Video-LLMs) become increasingly integrated into real-world applications that demand grounded multimodal reasoning, ensuring their factual consistency and reliability is of critical importance. However, sycophancy, the tendency of these models to align with user input even when it contradicts the visual evidence, undermines their trustworthiness in such contexts. Current sycophancy research has largely overlooked its specific manifestations in the video-language domain, resulting in a notable absence of systematic benchmarks and targeted evaluations to understand how Video-LLMs respond under misleading user input. To fill this gap, we propose ViSE (Video-LLM Sycophancy Benchmarking and Evaluation), the first benchmark designed to evaluate sycophantic behavior in state-of-the-art Video-LLMs across diverse question formats, prompt biases, and visual reasoning tasks. Specifically, ViSE pioneeringly brings linguistic perspectives on sycophancy into the video domain, enabling fine-grained analysis across multiple sycophancy types and interaction patterns. Furthermore, we propose two potential training-free mitigation strategies revealing potential paths for reducing sycophantic bias: (i) enhancing visual grounding through interpretable key-frame selection and (ii) steering model behavior away from sycophancy via targeted, inference-time intervention on its internal neural representations.
+   </p></div> </br> 
+                           Wenrui Zhou, Mohamed Hendy, Shu Yang, Qingsong Yang, Zikun Guo, Yuyu Luo, Lijie Hu,  <u><strong>Di Wang</strong></u> 
+                 Annual Meeting of the Association for Computational Linguistics 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                           <li><b style="color:#0000E3">[<i>CVPR'26</i>]</b> <b><i>Towards Reasoning-Preserving Unlearning in Multimodal Large Language Models
                                 </i> <a href="papers/CVPR26_RMLLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#CVPR26_RMLLM" id="155_arrows" class="arrows" onclick="expand_collapse('155');">&#9660</a>
                                 <div id="155" style="display:none;"><p>
 Machine unlearning aims to erase requested data from trained models without full retraining. For Reasoning Multimodal Large Language Models (RMLLMs), this is especially challenging: intermediate chain-of-thought steps can still leak sensitive information even when final answers are forgotten, and aggressive interventions easily damage general reasoning ability. However, existing benchmarks do not jointly evaluate how well unlearning methods suppress reasoning-level leakage while preserving reasoning competence. We address this gap with RMLLMU-Bench, the first benchmark for RMLLM unlearning that extends standard forgetting metrics with explicit reasoning traces and dedicated measures of reasoning leakage and reasoning retention. A systematic evaluation on RMLLMU-Bench shows that current unlearning methods for MLLMs and Large (Language) Reasoning Models (LRMs) either leave substantial leakage in the reasoning process or severely degrade reasoning performance. To overcome these limitations, we propose R-MUSE (Reasoning-preserving MLLM Unlearning via Subspace guidance and Adaptive Steering), a training-free, inference-time intervention framework that steers internal representations to forget both answers and reasoning traces while explicitly preserving general reasoning ability. Experiments on RMLLMU-Bench demonstrate that R-MUSE achieves a substantially better balance between effective forgetting and reasoning retention than existing approaches. 
@@ -340,7 +427,7 @@ Machine unlearning aims to erase requested data from trained models without full
      </br> 
                                 
 
-                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Dual-Kernel Adapter: Expanding Spatial Horizons for Data-Constrained Medical Image Analysis
+                           <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Dual-Kernel Adapter: Expanding Spatial Horizons for Data-Constrained Medical Image Analysis
                                 </i> <a href="papers/ICLR26_DKA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_DKA" id="153_arrows" class="arrows" onclick="expand_collapse('153');">&#9660</a>
                                 <div id="153" style="display:none;"><p>
 Adapters have become a widely adopted strategy for efficient fine-tuning of foundation models, particularly in resource-constrained settings. However, their performance under extreme data scarcity—common in medical imaging due to high annotation costs, privacy regulations, and fragmented datasets—remains underexplored. In this work, we present the first comprehensive study of adapter-based fine-tuning for vision foundation models in low-data medical imaging scenarios. We find that, contrary to their promise, conventional Adapters can degrade performance under severe data constraints, performing even worse than simple linear probing when trained on less than 1% of the corresponding training data. Through systematic analysis, we identify a sharp reduction in Effective Receptive Field (ERF) as a key factor behind this degradation. Motivated by these findings, we propose the Dual-Kernel Adapter (DKA), a lightweight module that expands spatial context via large-kernel convolutions while preserving local detail with small-kernel counterparts. Extensive experiments across diverse classification and segmentation benchmarks show that DKA significantly outperforms existing Adapter methods, establishing new leading results in both data-constrained and data-rich regimes.
@@ -450,7 +537,7 @@ Reliable behavior control is central to deploying Large Language Models (LLMs) o
      </br> 
 
 
-                            <li><b style="color:#0000E3">[<i>AAMAS</i>]</b> <b><i>The Web Tool Trap: Understanding and Mitigating Over-Reliance in LLM Browsing Agents
+                            <li><b style="color:#0000E3">[<i>AAMAS'26 (EA Track)</i>]</b> <b><i>The Web Tool Trap: Understanding and Mitigating Over-Reliance in LLM Browsing Agents
                                 </i> <a href="papers/AAMAS26_tool.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#AAMAS26_tool" id="144_arrows" class="arrows" onclick="expand_collapse('144');">&#9660</a>
                                 <div id="144" style="display:none;"><p>
 Large Language Model (LLM) agents that can gather knowledge by browsing the internet are becoming increasingly useful and important. However, how effectively do these agents utilize web tools, and what happens when they become overly dependent on external search capabilities? We introduce BrowseBench and present the first systematic investigation into the over-reliance patterns of browsing agents on web tools. Through controlled experiments across multiple domains and query types, we identify three critical failure modes that characterize this dependency. Our investigation reveals the failure modes in LLM agent behavior: First, agents exhibit excessive conservatism toward their training knowledge, unnecessarily searching for well-established information they already possess rather than relying on their internal knowledge. Second, agents apply inconsistent information standards, questioning their own reliable training data while uncritically accepting web-retrieved content as long as it appears internally coherent, regardless of potential inconsistencies or biases. Third, agents demonstrate overconfidence in web tool capabilities, attempting to compress complex multi-step queries into single search operations that systematically fail, revealing a lack of proper search planning and decomposition strategies. These contradictions result in inefficient information processing that wastes resources while potentially generating erroneous conclusions. To address these challenges, we propose three mitigation strategies: Direct Preference Optimization to enable models to learn nuanced search decision boundaries, Attention Refinement to help agents focus on relevant information within retrieved content, and Hierarchical Query Decomposition to improve multi-round tool coordination and query decomposition. Our experiments show that these interventions significantly reduce over-reliance behaviors. These results reveal that while current browsing agents' over-reliance on web tools may amplify errors, carefully designed training strategies can substantially improve their tool usage patterns, with important implications for deploying tool-augmented LLMs in real-world applications.
@@ -559,7 +646,7 @@ Byzantine resilience is essential in federated learning (FL) to safeguard model 
                                     </p></div> </br>
                                   Youming Tao, Zuyuan Zhang, <u><strong>Di Wang</strong></u>, Dongxiao Yu, Xiuzhen Cheng, Falko Dressler. 
                                     </br>
-                                    Revision, IEEE Transactions on Networking </br></b>
+                                IEEE Transactions on Networking </br></b>
                                 </li>
                                 </br>  
 
