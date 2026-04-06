@@ -465,7 +465,7 @@ As video large language models (Video-LLMs) become increasingly integrated into 
 Machine unlearning aims to erase requested data from trained models without full retraining. For Reasoning Multimodal Large Language Models (RMLLMs), this is especially challenging: intermediate chain-of-thought steps can still leak sensitive information even when final answers are forgotten, and aggressive interventions easily damage general reasoning ability. However, existing benchmarks do not jointly evaluate how well unlearning methods suppress reasoning-level leakage while preserving reasoning competence. We address this gap with RMLLMU-Bench, the first benchmark for RMLLM unlearning that extends standard forgetting metrics with explicit reasoning traces and dedicated measures of reasoning leakage and reasoning retention. A systematic evaluation on RMLLMU-Bench shows that current unlearning methods for MLLMs and Large (Language) Reasoning Models (LRMs) either leave substantial leakage in the reasoning process or severely degrade reasoning performance. To overcome these limitations, we propose R-MUSE (Reasoning-preserving MLLM Unlearning via Subspace guidance and Adaptive Steering), a training-free, inference-time intervention framework that steers internal representations to forget both answers and reasoning traces while explicitly preserving general reasoning ability. Experiments on RMLLMU-Bench demonstrate that R-MUSE achieves a substantially better balance between effective forgetting and reasoning retention than existing approaches. 
    </p></div> </br> 
                             Hongji Li, Manjiang Yu, Junchi Yao, PRIYANKA SINGH, Xue Li,  <u><strong>Di Wang</strong></u> , Lijie Hu </br> 
-                   Conference on Computer Vision and Pattern Recognition (CVPR 2026)
+                   Conference on Computer Vision and Pattern Recognition 
                                  </b>
 
                                 </li>
@@ -478,7 +478,7 @@ Machine unlearning aims to erase requested data from trained models without full
 Adapters have become a widely adopted strategy for efficient fine-tuning of foundation models, particularly in resource-constrained settings. However, their performance under extreme data scarcity—common in medical imaging due to high annotation costs, privacy regulations, and fragmented datasets—remains underexplored. In this work, we present the first comprehensive study of adapter-based fine-tuning for vision foundation models in low-data medical imaging scenarios. We find that, contrary to their promise, conventional Adapters can degrade performance under severe data constraints, performing even worse than simple linear probing when trained on less than 1% of the corresponding training data. Through systematic analysis, we identify a sharp reduction in Effective Receptive Field (ERF) as a key factor behind this degradation. Motivated by these findings, we propose the Dual-Kernel Adapter (DKA), a lightweight module that expands spatial context via large-kernel convolutions while preserving local detail with small-kernel counterparts. Extensive experiments across diverse classification and segmentation benchmarks show that DKA significantly outperforms existing Adapter methods, establishing new leading results in both data-constrained and data-rich regimes.
    </p></div> </br> 
                             Ziquan Zhu, Hanruo Zhu, Si-Yuan Lu, Xiang Li, Yanda Meng, Yunxiao Zhang, Gaojie Jin, Lu Yin, Lijie Hu, <u><strong>Di Wang</strong></u>, Lu Liu, Tianjin Huang   </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations
                                  </b>
 
                                 </li>
@@ -487,39 +487,39 @@ Adapters have become a widely adopted strategy for efficient fine-tuning of foun
 
 
 
-                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Controlling Repetition in Protein Language Models
+                           <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Controlling Repetition in Protein Language Models
                                 </i> <a href="papers/ICLR26_protein.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_protein" id="152_arrows" class="arrows" onclick="expand_collapse('152');">&#9660</a>
                                 <div id="152" style="display:none;"><p>
 Protein language models (PLMs) have enabled advances in structure prediction and de novo protein design, yet they frequently collapse into pathological repetition during generation. Unlike in text, where repetition merely reduces readability, in proteins it undermines structural confidence and functional viability. To unify this problem, we present the first systematic study of repetition in PLMs. We first propose quantitative metrics to characterize motif-level and homopolymer repetition and then demonstrate their negative impact on folding reliability. To address this challenge, we propose UCCS (Utility-Controlled Contrastive Steering), which steers protein generation with a constrained dataset. Instead of naively contrasting high- vs. low-repetition sequences, we construct contrastive sets that maximize differences in repetition while tightly controlling for structural utility. This disentanglement yields steering vectors that specifically target repetition without degrading foldability. Injected at inference, these vectors consistently reduce repetition without retraining or heuristic decoding. Experiments with ESM-3 and ProtGPT2 in CATH, UniRef50, and SCOP show that our method outperforms decoding penalties and other baselines, substantially lowering repetition while preserving AlphaFold confidence scores. Our results establish repetition control as a central challenge for PLMs and highlight dataset-guided steering as a principled approach for reliable protein generation.
    </p></div> </br> 
                              Jiahao Zhang, Zeqing Zhang,  <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations 
                                  </b>
 
                                 </li>
      </br> 
 
 
-                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>The Price of Amortized inference in Sparse Autoencoders
+                           <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>The Price of Amortized inference in Sparse Autoencoders
                                 </i> <a href="papers/ICLR26_SAE.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_SAE" id="151_arrows" class="arrows" onclick="expand_collapse('151');">&#9660</a>
                                 <div id="151" style="display:none;"><p>
 Polysemy has long been a major challenge in Mechanistic Interpretability (MI), with Sparse Autoencoders (SAEs) emerging as a promising solution. SAEs employ a shared encoder to map inputs to sparse codes, thereby amortizing inference costs across all instances. However, this parameter-sharing paradigm inherently conflicts with the MI community's emphasis on instance-level optimality, including the consistency and stitchability of monosemantic features. We first reveal the trade-off relationships among various pathological phenomena, including feature absorption, feature splitting, dead latents, and dense latents under global reconstruction-sparsity constraints from the perspective of training dynamics, finding that increased sparsity typically exacerbates multiple pathological phenomena, and attribute this trade-off relationship to amortized inference. By reducing reliance on amortized inference through the introduction of semi-amortized and non-amortized approaches, we observed that various pathological indicators were significantly mitigated, thereby validating our hypothesis. As the first step in this direction, we propose Local Amortized SAE (LocA-SAE), a method that groups polysemantically close latents based on the angular variance. This method is designed to balance the computational cost of per-sample optimization with the limitations of amortized inference. Our work provides insights for understanding SAEs and advocates for a paradigm shift in future research on polysemy disentanglement. The code is available at \url{https://anonymous.4open.science/r/sae-amortization-5335}.
    </p></div> </br> 
                              Wenjie Sun,  <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations 
                                  </b>
 
                                 </li>
      </br> 
 
 
-                           <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Understanding and Improving Continuous LLM Adversarial Training via In-context Learning Theory
+                           <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Understanding and Improving Continuous LLM Adversarial Training via In-context Learning Theory
                                 </i> <a href="papers/ICLR26_AT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_AT" id="150_arrows" class="arrows" onclick="expand_collapse('150');">&#9660</a>
                                 <div id="150" style="display:none;"><p>
 Adversarial training (AT) is an effective defense for large language models (LLMs) against jailbreak attacks, but performing AT on LLMs is costly. To improve the efficiency of AT for LLMs, recent studies propose continuous AT (CAT) that searches for adversarial inputs within the continuous embedding space of LLMs during AT. While CAT has achieved empirical success, its underlying mechanism, i.e., why adversarial perturbations in the embedding space can help LLMs defend against jailbreak prompts synthesized in the input token space, remains unknown. This paper presents the first theoretical analysis of CAT on LLMs based on in-context learning (ICL) theory. For linear transformers trained with adversarial examples from the embedding space on in-context linear regression tasks, we prove a robust generalization bound that has a negative correlation with the perturbation radius in the embedding space. This clearly explains why CAT can defend against jailbreak prompts from the LLM's token space. Further, the robust bound shows that the robustness of an adversarially trained LLM is closely related to the singular values of its embedding matrix. Based on this, we propose to improve LLM CAT by introducing an additional regularization term, which depends on singular values of the LLM's embedding matrix, into the objective function of CAT. Experiments on real-world LLMs demonstrate that our method can help LLMs achieve better jailbreak robustness-utility tradeoff.
    </p></div> </br> 
                              Shaopeng Fu<sup><span>&#9733;</span></sup>,  <u><strong>Di Wang</strong></u> </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations
                                  </b>
 
                                 </li>
@@ -529,13 +529,13 @@ Adversarial training (AT) is an effective defense for large language models (LLM
 
 
 
-                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Predicting LLM Output Length via Entropy-Guided Representations
+                            <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Predicting LLM Output Length via Entropy-Guided Representations
                                 </i> <a href="papers/ICLR26_EGTP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_EGTP" id="149_arrows" class="arrows" onclick="expand_collapse('149');">&#9660</a>
                                 <div id="149" style="display:none;"><p>
 The long-tailed distribution of sequence lengths in LLM serving and reinforcement learning (RL) sampling causes significant computational waste due to excessive padding in batched inference. Existing methods rely on auxiliary models for static length prediction, but they incur high overhead, generalize poorly, and fail in stochastic "one-to-many" sampling scenarios. We introduce a lightweight framework that reuses the main model's internal hidden states for efficient length prediction. Our framework features two core components: 1 Entropy-Guided Token Pooling (EGTP), which uses on-the-fly activations and token entropy for highly accurate static prediction with negligible cost, and 2 Progressive Length Prediction (PLP), which dynamically estimates the remaining length at each decoding step to handle stochastic generation. To validate our approach, we build and release ForeLen, a comprehensive benchmark with long-sequence, Chain-of-Thought, and RL data. On ForeLen, EGTP achieves state-of-the-art accuracy, reducing MAE by 29.16% over the best baseline. Integrating our methods with a length-aware scheduler yields significant end-to-end throughput gains. Our work provides a new technical and evaluation baseline for efficient LLM inference.
    </p></div> </br> 
                              Huanyi Xie<sup><span>&#9733;</span></sup>, Yubin Chen, Liangyu Wang, Lijie Hu, <u><strong>Di Wang</strong></u> </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations
                                  </b>
 
                                 </li>
@@ -543,39 +543,39 @@ The long-tailed distribution of sequence lengths in LLM serving and reinforcemen
 
 
 
-                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Dissecting Representation Misalignment in Contrastive Learning via Influence Function
+                            <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Dissecting Representation Misalignment in Contrastive Learning via Influence Function
                                 </i> <a href="papers/ICLR26_ContrasIF.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_ContrasIF" id="148_arrows" class="arrows" onclick="expand_collapse('148');">&#9660</a>
                                 <div id="148" style="display:none;"><p>
 Contrastive learning, commonly applied in large-scale multimodal models, often relies on data from diverse and often unreliable sources, which can include misaligned or mislabeled text-image pairs. This frequently leads to robustness issues and hallucinations, ultimately causing performance degradation. Data valuation is an efficient way to detect and trace these misalignments. Nevertheless, existing methods are computationally expensive for large-scale models. Although computationally efficient, classical influence functions are inadequate for contrastive learning models, as they were initially designed for pointwise loss. Furthermore, contrastive learning involves minimizing the distance between positive sample modalities while maximizing the distance between negative sample modalities. This necessitates evaluating the influence of samples from both perspectives. To tackle these challenges, we introduce the Extended Influence Function for Contrastive Loss (ECIF), an influence function crafted for contrastive loss. ECIF considers both positive and negative samples and provides a closed-form approximation of contrastive learning models, eliminating the need for retraining. Building upon ECIF, we develop a series of algorithms for data evaluation, misalignment detection, and misprediction trace-back tasks. Experimental results demonstrate that our ECIF advances the transparency and interpretability of CLIP-style embedding models by offering a more accurate assessment of data impact and model alignment compared to traditional baseline methods.
    </p></div> </br> 
                              Huanyi Xie<sup><span>&#9733;</span>*</sup>, Chenyang Ren<sup><span>&#9733;</span>*</sup>, Lijie Hu, Khouloud Saadi, Shu Yang, Zhen Tan, Jingfeng Zhang, <u><strong>Di Wang</strong></u> </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations
                                  </b>
 
                                 </li>
      </br> 
 
 
-                            <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <b><i>Evaluating Data Influence in Meta Learning 
+                            <li><b style="color:#0000E3">[<i>ICLR'26</i>]</b> <b><i>Evaluating Data Influence in Meta Learning 
                                 </i> <a href="papers/ICLR26_MetaIFL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICLR26_MetaIF" id="147_arrows" class="arrows" onclick="expand_collapse('147');">&#9660</a>
                                 <div id="147" style="display:none;"><p>
 As one of the most fundamental models, meta learning aims to effectively address few-shot learning challenges. However, it still faces significant issues related to the training data, such as training inefficiencies due to numerous low-contribution tasks in large datasets and substantial noise from incorrect labels. Thus, training data attribution methods are needed for meta learning. However, the dual-layer structure of meta learning complicates the modeling of training data contributions because of the interdependent influence between meta parameters and task-specific parameters, making existing data influence evaluation tools inapplicable or inaccurate. To address these challenges, based on the influence function, we propose a general data attribution evaluation framework for meta learning within the bilevel optimization framework. Our approach introduces task influence functions (task-IF) and instance influence functions (instance-IF) to accurately assess the impact of specific tasks and individual data points in closed forms. This framework comprehensively models data contributions across both the inner and outer training processes, capturing the direct effects of data points on meta parameters as well as their indirect influence through task-specific parameters. We also provide several strategies to enhance computational efficiency and scalability. Experimental results demonstrate the framework's effectiveness in training data evaluation via several downstream tasks.
    </p></div> </br> 
                              Chenyang Ren<sup><span>&#9733;</span>*</sup>, Huanyi Xie<sup><span>&#9733;</span>*</sup>, Shu Yang, Meng Ding, Dongrui Liu, Lijie Hu, 
  <u><strong>Di Wang</strong></u> </br> 
-                   International Conference on Learning Representations (ICLR 2026)
+                   International Conference on Learning Representations
                                  </b>
 
                                 </li>
      </br> 
 
-                            <li><b style="color:#0000E3">[<i>WWW</i>]</b> <b><i>PIXEL: Adaptive Steering Via Position-wise Injection with eXact Estimated Levels under a Subspace Calibration
+                            <li><b style="color:#0000E3">[<i>WWW'26</i>]</b> <b><i>PIXEL: Adaptive Steering Via Position-wise Injection with eXact Estimated Levels under a Subspace Calibration
                                 </i> <a href="papers/WWW26_PIXEL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#WWW26_PIXEL" id="145_arrows" class="arrows" onclick="expand_collapse('145');">&#9660</a>
                                 <div id="145" style="display:none;"><p>
 Reliable behavior control is central to deploying Large Language Models (LLMs) on the web. Activation steering offers a tuning-free route to align attributes (e.g., truthfulness) that ensure trustworthy generation. Prevailing approaches rely on coarse heuristics and lack a principled account of where to steer and how strongly to intervene. To this end, we propose \underline{P}osition-wise \underline{I}njection with e\underline{X}act \underline{E}stimated \underline{L}evels (PIXEL), a position-wise activation steering framework that, in contrast to prior work, learns a property-aligned subspace from dual views (tail-averaged and end-token) and selects intervention strength via a constrained geometric objective with a closed-form solution, thereby adapting to token-level sensitivity without global hyperparameter tuning. PIXEL further performs sample-level orthogonal residual calibration to refine the global attribute direction and employs a lightweight position-scanning routine to identify receptive injection sites. We additionally provide representation-level guarantees for the minimal-intervention rule, supporting reliable alignment. Across diverse models and evaluation paradigms, PIXEL consistently improves attribute alignment while preserving model general capabilities, offering a practical and principled method for LLMs' controllable generation. Our code is available at 
    </p></div> </br> 
                               Manjiang Yu, Hongji Li, Priyanka Singh, Xue Li, <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
-                    ACM Web Conference (WWW 2026)
+                    The ACM Web Conference
                                  </b>
 
                                 </li>
@@ -588,7 +588,7 @@ Reliable behavior control is central to deploying Large Language Models (LLMs) o
 Large Language Model (LLM) agents that can gather knowledge by browsing the internet are becoming increasingly useful and important. However, how effectively do these agents utilize web tools, and what happens when they become overly dependent on external search capabilities? We introduce BrowseBench and present the first systematic investigation into the over-reliance patterns of browsing agents on web tools. Through controlled experiments across multiple domains and query types, we identify three critical failure modes that characterize this dependency. Our investigation reveals the failure modes in LLM agent behavior: First, agents exhibit excessive conservatism toward their training knowledge, unnecessarily searching for well-established information they already possess rather than relying on their internal knowledge. Second, agents apply inconsistent information standards, questioning their own reliable training data while uncritically accepting web-retrieved content as long as it appears internally coherent, regardless of potential inconsistencies or biases. Third, agents demonstrate overconfidence in web tool capabilities, attempting to compress complex multi-step queries into single search operations that systematically fail, revealing a lack of proper search planning and decomposition strategies. These contradictions result in inefficient information processing that wastes resources while potentially generating erroneous conclusions. To address these challenges, we propose three mitigation strategies: Direct Preference Optimization to enable models to learn nuanced search decision boundaries, Attention Refinement to help agents focus on relevant information within retrieved content, and Hierarchical Query Decomposition to improve multi-round tool coordination and query decomposition. Our experiments show that these interventions significantly reduce over-reliance behaviors. These results reveal that while current browsing agents' over-reliance on web tools may amplify errors, carefully designed training strategies can substantially improve their tool usage patterns, with important implications for deploying tool-augmented LLMs in real-world applications.
    </p></div> </br> 
                                Jiawei Guo, Hongjie Nie, Qianbo Zang, Shu Yang, Shuodi Liu, Yiwei Ru, Liuyu Xiang, <u><strong>Di Wang</strong></u>, Zhaofeng He </br> 
-                        International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026, Extended Abstract Track)
+                        International Conference on Autonomous Agents and Multiagent Systems (Extended Abstract Track)
                                  </b>
 
                                 </li>
@@ -596,18 +596,18 @@ Large Language Model (LLM) agents that can gather knowledge by browsing the inte
 
 
 
-                            <li><b style="color:#0000E3">[<i>AAMAS</i>]</b> <b><i>Differentially Private Non-convex Learning: From Generalized Linear Models to Multi-layer Neural Networks
+                            <li><b style="color:#0000E3">[<i>AAMAS'26 (EA Track)</i>]</b> <b><i>Differentially Private Non-convex Learning: From Generalized Linear Models to Multi-layer Neural Networks
                                 </i> <a href="papers/AAMAS26_sycophacy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#AAMAS26_sycophacy" id="143_arrows" class="arrows" onclick="expand_collapse('143');">&#9660</a>
                                 <div id="143" style="display:none;"><p>
 This paper focuses on the problem of Differentially Private Stochastic Optimization for (multi-layer) fully connected neural networks with a single output node. In the first part, we examine cases with no hidden nodes, i.e., Generalized Linear Models (GLMs). We investigate the well-specific model where the random noise possesses a zero mean, and the link (activation) function is both bounded and Lipschitz. We propose several algorithms and our analysis demonstrates the feasibility of achieving an excess population risk that remains invariant to the data dimension. We then delve into the scenario involving the ReLU link function, and our findings mirror those of the bounded link function. Moreover, we extend our ideas to two-layer neural networks with sigmoid or ReLU activation functions in the well-specified model. We conclude this section by contrasting well-specified and misspecified models, using ReLU regression as a representative example. In the second part, we study the theoretical guarantees of DP-SGD in Abadi et al. (2016) for multi-layer neural networks. By utilizing recent advances in Neural Tangent Kernel theory, we provide the first excess population risk when both the sample size and the width of the network are sufficiently large. Additionally, we discuss the role of some parameters in DP-SGD regarding their utility, both theoretically and empirically.
    </p></div> </br> 
                                Hanpu Shen<sup><span>&#9733;</span>*</sup>, Cheng-Long Wang<sup><span>&#9733;</span>*</sup>, Zihang Xiang, Yiming Ying, <u><strong>Di Wang</strong></u></br>
-                        International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026, Extended Abstract Track)
+                        International Conference on Autonomous Agents and Multiagent Systems (Extended Abstract Track)
                                  </b>
 
                                 </li>
      </br> 
-                               <li><b style="color:#0000E3">[<i>NDSS</i>]</b> <b><i>	Revisiting Differentially Private Hyper-parameter Tuning 
+                               <li><b style="color:#0000E3">[<i>NDSS'26</i>]</b> <b><i>	Revisiting Differentially Private Hyper-parameter Tuning 
                                 </i> <a href="papers/NDSS2026_DP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NDSS2026_DP" id="124_arrows" class="arrows" onclick="expand_collapse('124');">&#9660</a>
                                 <div id="124" style="display:none;"><p>We investigate the application of differential privacy in hyper-parameter tuning, a process involving selecting the best run from several candidates. Unlike many private learning algorithms, including the prevalent DP-SGD, the privacy implications of selecting the best are often overlooked. While recent works propose a generic private selection solution for the tuning process, an open question persists: is such privacy upper bound tight?
 
@@ -616,7 +616,7 @@ This paper provides both empirical and theoretical examinations of this question
 This gap motivates our subsequent theoretical investigations, which provide improved privacy upper bound for private hyper-parameter tuning due to its distinct properties. Our improved bound leads to better utility. Our analysis also demonstrates broader applicability compared to prior analyses, which are limited to specific parameter configurations. Overall, we contribute to a better understanding of how privacy degrades due to selection.
                                 </p></div> </br> 
                                Zihang Xiang<sup><span>&#9733;</span></sup>, Tianhao Wang, Cheng-Long Wang<sup><span>&#9733;</span></sup>, <u><strong>Di Wang</strong></u>                     </br>
-                            Network and Distributed System Security Symposium (NDSS 2026) 
+                            Network and Distributed System Security Symposium
                                  </b>
 
                                 </li>
@@ -624,22 +624,22 @@ This gap motivates our subsequent theoretical investigations, which provide impr
 
 
 
-                               <li><b style="color:#0000E3">[<i>ICSE</i>]</b> <b><i>	 Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning
+                               <li><b style="color:#0000E3">[<i>ICSE'26</i>]</b> <b><i>	 Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning
                                 </i> <a href="papers/ICSE2026_MU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICSE2026_MU" id="122_arrows" class="arrows" onclick="expand_collapse('122');">&#9660</a>
                                 <div id="122" style="display:none;"><p>While Code Language Models (CLMs) have demonstrated superior performance in software engineering tasks such as code generation and code summarization, recent empirical studies reveal a critical privacy vulnerability: these models exhibit unintended memorization of sensitive training data, enabling verbatim reproduction of confidential information when specifically prompted. To address this issue, several approaches, including dataset deduplication and differential privacy augmentation, have been proposed. However, these methods require full-model retraining for deployed CLMs, which incurs substantial computational costs. In this paper, we aim to answer the following research question: Can sensitive information memorized by CLMs be erased effectively and efficiently? We conduct a pioneering investigation into erasing sensitive memorization in CLMs through machine unlearning—a post hoc modification approach that removes specific information from trained models without requiring full retraining. Specifically, we first quantify the memorization risks of sensitive data within CLM training datasets and curate a high-risk dataset of 50,000 sensitive memorization samples by identifying and selecting vulnerable elements as unlearning targets. We investigate two widely-used gradient ascent-based unlearning approaches: the vanilla method and the constraint-based method, and introduce an advanced variant, termed CodeEraser, which selectively unlearns sensitive memorization elements in code while preserving the structural integrity and functional correctness of the surrounding code. Extensive experiments on three families of CLMs, i.e., CodeParrot, CodeGen-Mono and Qwen2.5-Coder, validate the effectiveness and efficiency of CodeEraser in erasing targeted sensitive memorization while maintaining model utility.
                                 </p></div> </br> 
                              Zhaoyang Chu, Yao Wan, Zhikun Zhang,  <u><strong>Di Wang</strong></u> , Zhou Yang, Hongyu Zhang, Pan Zhou, Xuanhua Shi, Hai Jin, David Lo.            </br>
-                             International Conference on Software Engineering (ICSE 2026) 
+                             International Conference on Software Engineering
                                  </b>
                                 </li>
      </br> 
-                              <li><b style="color:#0000E3">[<i>AAAI</i>]</b> <b><i>When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models
+                              <li><b style="color:#0000E3">[<i>AAAI'26</i>]</b> <b><i>When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models
                                 </i> <a href="papers/AAAI26_sycophacy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#AAAI26_sycophacy" id="142_arrows" class="arrows" onclick="expand_collapse('142');">&#9660</a>
                                 <div id="142" style="display:none;"><p>
                                     Large Language Models (LLMs) often exhibit sycophantic behavior, agreeing with user-stated opinions even when those contradict factual knowledge. While prior work has documented this tendency, the internal mechanisms that enable such behavior remain poorly understood. In this paper, we provide a mechanistic account of how sycophancy arises within LLMs. We first systematically study how user opinions induce sycophancy across different model families. We find that simple opinion statements reliably induce sycophancy, whereas user expertise framing has a negligible impact. Through logit-lens analysis and causal activation patching, we identify a two-stage emergence of sycophancy: (1) a late-layer output preference shift and (2) deeper representational divergence. We also verify that user authority fails to influence behavior because models do not encode it internally. In addition, we examine how grammatical perspective affects sycophantic behavior, finding that first-person prompts (“I believe...”) consistently induce higher sycophancy rates than third-person framings (“They believe...”) by creating stronger representational perturbations in deeper layers. These findings highlight that sycophancy is not a surface-level artifact but emerges from a structural override of learned knowledge in deeper layers, with implications for alignment and truthful AI systems.
    </p></div> </br> 
                                Keyu Wang<sup><span>&#9733;</span>*</sup>, Jin Li<sup><span>&#9733;</span>*</sup>, Shu Yang, Zhuoran Zhang, <u><strong>Di Wang</strong></u></br>
-                        AAAI Conference on Artificial Intelligence (AAAI 2026)
+                        AAAI Conference on Artificial Intelligence
                                  </b>
 
                                 </li>
