@@ -803,7 +803,7 @@ Large Reasoning Models (LRMs), capable of reasoning through complex problems, ha
 Drug-drug interaction (DDI) can significantly impact the safety and efficacy of treatments, particularly in cases where multiple diseases are managed with drug combinations. These interactions may alter the pharmacological activity of drugs, posing challenges for effective therapeutic interventions. While graph-based learning methods have gained prominence for DDI prediction, they predominantly focus on drug-drug network structures, often neglecting the rich information contained in auxiliary drug-centric networks. To overcome this limitation, it is crucial to adopt more hierarchical strategies that incorporate both drug-drug and auxiliary drug-centric networks to capture nuanced drug representations. In this research, we construct a hierarchical network to incorporate both drug-drug and auxiliary networks as distinct layers and propose a drug-centric hierarchical augmentation method (DCHA) for DDI prediction. DCHA encompasses three core components: a hierarchical learner, a layer discriminator, and a DDI predictor. The hierarchical learner employs a fusion gate to compute augmented drug representations by integrating core drug representations from the drug-drug network and auxiliary representations from other auxiliary drug-centric networks. The layer discriminator helps the hierarchical learner in capturing auxiliary drug representations. With the help of the hierarchical learner and layer discriminator, the DDI predictor finally augments the performance of DDI prediction. Extensive experimentation demonstrates that DCHA outperforms existing state-of-the-art methods in DDI prediction.
    </p></div> </br> 
                                Ziwen Cui, Muhammad Asif Ali, Ruigang Liu, Wen Zhang, Huan Wang<sup><span>&#9733;</span></sup>, <u><strong>Di Wang</strong></u> </br>
-                         IEEE International Conference on Bioinformatics and Biomedicine (Regular Paper)
+                         IEEE International Conference on Bioinformatics and Biomedicine
                                  </b>
 
                                 </li>
@@ -1565,7 +1565,7 @@ For the Lipschitz case with $\theta\geq 2$, we first propose an $(\epsilon, \del
                                 <h2>2024</h2>
                                 <h4><i>Conference Papers</i></h4>
 
-                                <li><b style="color:#0000E3">[<i>IEEE S&P</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>IEEE S&P'24</i>]</b> <i><b>	
                                     Preserving Node-level Privacy in Graph Neural Networks
 </i><a href="papers/Oakland2024_heter.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#Oakland2024_heter" id="80_arrows" class="arrows" onclick="expand_collapse('80');">&#9660</a>
                                     <div id="80" style="display:none;"><p> 
@@ -1577,13 +1577,13 @@ For the Lipschitz case with $\theta\geq 2$, we first propose an $(\epsilon, \del
                                     </p></div> </br>
                                   Zihang Xiang<sup><span>&#9733;</span></sup>, Tianhao Wang, <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 45th IEEE Symposium on Security and Privacy (IEEE S&P 2024). </br></b>
+                                    The IEEE Symposium on Security and Privacy  </br></b>
                                 </li>
                                 </br>   
 
                                 
 
-                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
+                                <li><b style="color:#0000E3">[<i>VLDB'24</i>]</b> <b><i>
                                     Privacy Amplification via Shuffling: Unified, Simplified, and Tightened  </i><a href="papers/VLDB2024_SDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_SDP" id="67_arrows" class="arrows" onclick="expand_collapse('67');">&#9660</a>
                                  <div id="67" style="display:none;"><p> 
                                     The shuffle model of differential privacy provides promising privacy-utility balances in decentralized, privacy-preserving data analysis. However, the current analyses of privacy amplification via shuffling lack both tightness and generality. To address this issue, we propose the \emph{variation-ratio reduction} as a comprehensive framework for privacy amplification in both single-message and multi-message shuffle protocols. It leverages two new parameterizations: the total variation bounds of local messages and the probability ratio bounds of blanket messages, to determine indistinguishability levels. Our theoretical results demonstrate that our framework provides tighter bounds, especially for local randomizers with extremal probability design, where our bounds are exactly tight. Additionally, variation-ratio reduction complements parallel composition in the shuffle model, yielding enhanced privacy accounting for popular sampling-based randomizers employed in statistical queries (e.g., range queries, marginal queries, and frequent itemset mining). Empirical findings demonstrate that our numerical amplification bounds surpass existing ones, conserving up to $30\%$ of the budget for single-message protocols, $75\%$ for multi-message ones, and a striking $75\%$-$95\%$ for parallel composition. Our bounds also result in a remarkably efficient $\tilde{O}(n)$ algorithm that numerically amplifies privacy in less than $10$ seconds for $n=10^8$ users.
@@ -1591,23 +1591,23 @@ For the Lipschitz case with $\theta\geq 2$, we first propose an $(\epsilon, \del
 
 </br>
 
-                               International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
+                               International Conference on Very Large Data Bases</br></b>
                              </li>
                             </br>     
 
 
-                                <li><b style="color:#0000E3">[<i>VLDB</i>]</b> <b><i>
+                                <li><b style="color:#0000E3">[<i>VLDB'24</i>]</b> <b><i>
                                     Communication Efficient and Provable Federated Unlearning  </i><a href="papers/VLDB2024_FU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  Abstract<a href="#VLDB2024_FU" id="57_arrows" class="arrows" onclick="expand_collapse('57');">&#9660</a>
                                  <div id="57" style="display:none;"><p> 
                                     We investigate the problem of federated unlearning, which aims to erase the influence of requested clients or data samples on the global model trained via federated learning (FL). This problem arises from the increasing demand for the right to be forgotten as well as various privacy threats in FL. We propose a novel exact federated unlearning framework that satisfies two crucial desiderata: \textit{communication efficiency} and \textit{exact unlearning provability}. To the best of our knowledge, our work is the first to address both aspects in a unified manner. We first introduce a rigorous definition of \textit{exact} federated unlearning, which ensures that the unlearned model is statistically indistinguishable from the one trained without the removed data. We then identify the key property to enable rapid exact federated unlearning: total variation (TV) stability, which captures the sensitivity of the model parameters to small changes in the dataset. Based on this insight, we design a TV-stable FL algorithm called \texttt{FATS}, which adapts the classical \texttt{\underline{F}ed\underline{A}vg} algorithm for \underline{T}V \underline{S}tability and incorporates local SGD with periodic averaging to reduce the communication round. We also devise efficient unlearning algorithms for \texttt{FATS} under two scenarios: client-level and sample-level unlearning. We provide theoretical guarantees for our learning and unlearning algorithms, showing that they achieve exact federated unlearning with reasonable convergence rates for both the original and unlearned models. We empirically evaluate our framework on 6 benchmark datasets, and demonstrate its superiority over state-of-the-art baselines in terms of accuracy, communication cost, computation cost, and unlearning effectiveness.
     </p></div> </br>     Youming Tao<sup><span>&#9733;</span>*</sup>, Chenglong Wang<sup><span>&#9733;</span>*</sup>, Miao Pan,  Dongxiao Yu, Xiuzhen Cheng, and <u><strong>Di Wang</strong></u>
 </br>
-                                 International Conference on Very Large Data Bases  (VLDB 2024)</br></b>
+                                 International Conference on Very Large Data Bases</br></b>
                              </li>
 
                             </br>                                
 
-                            <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>NeurIPS'24</i>]</b> <i><b>	
                                 	
 Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024_ReLU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#NeurIPS2024_ReLU" id="96_arrows" class="arrows" onclick="expand_collapse('96');">&#9660</a>
                                   <div id="96" style="display:none;"><p> 
@@ -1618,11 +1618,11 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                   </p></div> </br>
                                   Meng Ding, Mingxi Lei, Liyang Zhu, Shaowei Wang, <u><strong>Di Wang</strong></u>, Jinhui Xu. 
                                   </br>
-                                  The Conference on Neural Information Processing Systems (NeurIPS 2024)</br></b>
+                                  The Conference on Neural Information Processing Systems</br></b>
                               
                               </br>
 
-                            <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>NeurIPS'24</i>]</b> <i><b>	
                                 Truthful High Dimensional Sparse Linear Regression</i><a href="papers/NeurIPS2024_truthful.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#NeurIPS2024_truthful" id="95_arrows" class="arrows" onclick="expand_collapse('95');">&#9660</a>
                                   <div id="95" style="display:none;"><p> 
                                     We study the problem of fitting the high dimensional sparse linear regression model with sub-Gaussian covariates and responses, where the data are provided by strategic or self-interested agents (individuals) who prioritize their privacy of data disclosure. In contrast to the classical setting, our focus is on designing mechanisms that can effectively incentivize most agents to truthfully report their data while preserving the privacy of individual reports. Simultaneously, we seek an estimator which should be close to the underlying parameter. 
@@ -1631,63 +1631,63 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                   </p></div> </br>
                                   Liyang Zhu, Amina Manseur, Meng Ding, Jinyan Liu, Jinhui Xu, <u><strong>Di Wang</strong></u>. 
                                   </br>
-                                  The Conference on Neural Information Processing Systems (NeurIPS 2024)</br></b>
+                                  The Conference on Neural Information Processing Systems</br></b>
                               
                               </br>
 
 
-                            <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>NeurIPS'24</i>]</b> <i><b>	
                                 Perplexity-aware Correction for Robust Alignment with Noisy Preferences</i><a href="papers/NeurIPS2024_noisy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#NeurIPS2024_noisy" id="94_arrows" class="arrows" onclick="expand_collapse('94');">&#9660</a>
                                   <div id="94" style="display:none;"><p> 
                                     Alignment techniques are critical in ensuring that large language models (LLMs) output helpful and harmless content by enforcing the LLM-generated content to align with preferences. However, the existence of noisy preferences (NPs), where the responses are mistakenly labelled as chosen or rejected, could deteriorate the alignment, thus making the LLMs generate useless and even malicious content. Existing methods mitigate the issue of NPs from the loss perspective by adjusting the alignment loss based on a clean validation dataset. Orthogonal to these loss-oriented methods, we propose perplexity-aware correction (PerpCorrect) from the data perspective for robust alignment which detects and corrects NPs based on the differences between the perplexity of the chosen and rejected responses (dubbed as PPLDiff). Intuitively, a higher PPLDiff indicates a higher probability of the NP because a rejected/chosen response which is mistakenly labelled as chosen/rejected is less preferable to be generated by an aligned LLM, thus having a higher/lower perplexity. PerpCorrect works in three steps: (1) PerpCorrect aligns a surrogate LLM using the clean validation data to make the PPLDiff able to distinguish clean preferences (CPs) and NPs. (2) PerpCorrect further aligns the surrogate LLM by incorporating the reliably clean training data whose PPLDiff is extremely small and reliably noisy training data whose PPLDiff is extremely large after correction to boost the discriminatory power. (3) Detecting and correcting NPs according to the PPLDiff obtained by the aligned surrogate LLM to obtain a denoised training dataset for robust alignment. Comprehensive experiments validate that our proposed PerpCorrect can achieve state-of-the-art alignment performance under NPs. Notably, PerpCorrect demonstrates practical utility by requiring only a modest number of validation data and being compatible with various alignment techniques. 
                                   </p></div> </br>
                                   Keyi Kong, Xilie Xu, <u><strong>Di Wang</strong></u>, Jingfeng Zhang, Mohan Kankanhalli. 
                                   </br>
-                                  The Conference on Neural Information Processing Systems (NeurIPS 2024)</br></b>
+                                  The Conference on Neural Information Processing Systems</br></b>
                               
                               </br>
 
 
                         
-                            <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>NeurIPS'24</i>]</b> <i><b>	
                                 Towards Multi-dimensional Explanation Alignment for Medical Classification</i><a href="papers/NeurIPS2024_multi.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#NeurIPS2024_multi" id="93_arrows" class="arrows" onclick="expand_collapse('93');">&#9660</a>
                                   <div id="93" style="display:none;"><p> 
                                     The lack of interpretability in the field of medical image analysis has significant ethical and legal implications. Existing interpretable methods in this domain encounter several challenges, including dependency on specific models, difficulties in understanding and visualization, and issues related to efficiency. To address these limitations, we propose a novel framework called Med-MICN (Medical Multi-dimensional Interpretable Concept Network). Med-MICN provides interpretability alignment for various angles, including neural symbolic reasoning, concept semantics, and saliency maps, which are superior to current interpretable methods. Its advantages include high prediction accuracy, interpretability across multiple dimensions, and automation through an end-to-end concept labeling process that reduces the need for extensive human training effort when working with new datasets. To demonstrate the effectiveness and interpretability of Med-MICN, we apply it to four benchmark datasets and compare it with baselines. The results clearly demonstrate the superior performance and interpretability of our Med-MICN.
                                   </p></div> </br>
                                   Lijie Hu, Songning Lai, Wenshuo Chen, Hongru Xiao, Hongbin Lin, Lu Yu, Jingfeng Zhang, <u><strong>Di Wang</strong></u>.
                                   </br>
-                                  The Conference on Neural Information Processing Systems (NeurIPS 2024)</br></b>
+                                  The Conference on Neural Information Processing Systems</br></b>
                               
                               </br>
 
 
-                            <li><b style="color:#0000E3">[<i>ICML</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>ICML'24</i>]</b> <i><b>	
                                Improving Interpretation Faithfulness for Vision Transformers</i><a href="papers/ICML2024_FVIT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2311.17983">Link</a>]  Abstract<a href="#ICML2024_FVIT" id="86_arrows" class="arrows" onclick="expand_collapse('86');">&#9660</a>
                                 <div id="86" style="display:none;"><p> 
                                    Vision Transformers (ViTs) have achieved state-of-the-art performance for various vision tasks. One reason behind the success lies in their ability to provide plausible innate explanations for the behavior of neural architectures. However, ViTs suffer from issues with explanation faithfulness, as their focal points are fragile to adversarial attacks and can be easily changed with even slight perturbations on the input image. In this paper, we propose a rigorous approach to mitigate these issues by introducing Faithful ViTs (FViTs). Briefly speaking, an FViT should have the following two properties: (1) The top-k indices of its self-attention vector should remain mostly unchanged under input perturbation, indicating stable explanations; (2) The prediction distribution should be robust to perturbations. To achieve this, we propose a new method called Denoised Diffusion Smoothing (DDS), which adopts randomized smoothing and diffusion-based denoising. We theoretically prove that processing ViTs directly with DDS can turn them into FViTs. We also show that Gaussian noise is nearly optimal for both ℓ2 and ℓ∞-norm cases. Finally, we demonstrate the effectiveness of our approach through comprehensive experiments and evaluations. Specifically, we compare our FViTs with other baselines through visual interpretation and robustness accuracy under adversarial attacks. Results show that FViTs are more robust against adversarial attacks while maintaining the explainability of attention, indicating higher faithfulness.
                                 </p></div> </br>
                                 Lijie Hu<sup><span>&#9733;</span>*</sup>, Yixin Liu<sup>*</sup>, Ninghao Liu, Mengdi Huai, Lichao Sun, and <u><strong>Di Wang</strong></u>
                                 </br>
-                                The 41st International Conference on Machine Learning (ICML 2024)</br>
+                                The 41st International Conference on Machine Learning</br>
                                 <b style="color: red"><strong> Selected as a spotlight paper </strong></b>   </br> </b>
                             </br>
 
                             
                             
                             
-                            <li><b style="color:#0000E3">[<i>ICML</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>ICML'24</i>]</b> <i><b>	
                               Understanding Forgetting in Continual Learning with Linear Regression</i><a href="papers/ICML2024_CL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICML2024_CL" id="88_arrows" class="arrows" onclick="expand_collapse('88');">&#9660</a>
                                 <div id="88" style="display:none;"><p> 
                                   Continual learning, focused on sequentially learning multiple tasks, has gained significant attention recently. Despite the tremendous progress made in the past, the theoretical understanding, especially factors contributing to catastrophic forgetting
 , remains relatively unexplored. In this paper, we provide a general theoretical analysis of forgetting in the linear regression model via Stochastic Gradient Descent (SGD) applicable to both under-parameterized and overparameterized regimes. Our theoretical framework reveals some interesting insights into the intricate relationship between task sequence and algorithmic parameters, an aspect not fully captured in previous studies due to their restrictive assumptions. Specifically, {we demonstrate that, given a sufficiently large data size, the arrangement of tasks in a sequence—where tasks with larger eigenvalues in their population data covariance matrices are trained later—tends to result in increased forgetting.} Additionally, our findings highlight that an appropriate choice of step size will help mitigate forgetting in both under-parameterized and overparameterized settings. To validate our theoretical analysis, we conducted simulation experiments on both linear regression models and Deep Neural Networks (DNNs). Results from these simulations substantiate our theoretical findings.
                                 </p></div> </br>
-                              Meng Ding, Kaiyi Ji, <u><strong>Di Wang</strong></u>, and Jinhui Xu
+                              Meng Ding, Kaiyi Ji, <u><strong>Di Wang</strong></u>, Jinhui Xu
                                 </br>
-                                The 41st International Conference on Machine Learning (ICML 2024)</br></b>
+                              International Conference on Machine Learning</br></b>
                             
                             </br>
 
-                          <li><b style="color:#0000E3">[<i>ICML</i>]</b> <i><b>	
+                          <li><b style="color:#0000E3">[<i>ICML'24</i>]</b> <i><b>	
                               Closing the Gap: Achieving Global Convergence (Last Iterate) of Actor-Critic under Markovian Sampling with Neural Network Parametrization</i><a href="papers/ICML2024_Actor-Critic.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICML2024_Actor-Critic" id="89_arrows" class="arrows" onclick="expand_collapse('89');">&#9660</a>
                                 <div id="89" style="display:none;"><p> 
                                   The current state-of-the-art theoretical analysis of Actor-Critic (AC) algorithms significantly lags in addressing the practical aspects of AC implementations. This crucial gap needs bridging to bring the analysis in line with practical implementations of AC. To address this, we advocate for considering the MMCLG criteria: Multi-layer neural network parametrization for actor/critic, Markovian sampling, Continuous state-action spaces, the performance of the Last iterate, and Global optimality. These aspects are practically significant and have been largely overlooked in existing theoretical analyses of AC algorithms. In this work, we address these gaps by providing the first comprehensive theoretical analysis of AC algorithms that encompasses all five crucial practical aspects (covers MMCLG criteria). We establish global convergence sample complexity bounds of  $O(\epsilon^{-3})$
@@ -1695,7 +1695,7 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                 </p></div> </br>
                               Mudit Gaur, Amrit Bedi, <u><strong>Di Wang</strong></u>, Vaneet Aggarwal 
                                 </br>
-                                The 41st International Conference on Machine Learning (ICML 2024)</br>
+                                International Conference on Machine Learning</br>
                                 <b style="color: red"><strong> Selected as a spotlight paper </strong></b>   </br> </b>
                             
                             </br>
@@ -1703,18 +1703,18 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
 
   
   
-                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ICLR'24</i>]</b> <i><b>	
                                     Faithful Vision-Language Interpretation via Concept Bottleneck Models</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="71_arrows" class="arrows" onclick="expand_collapse('71');">&#9660</a>
                                     <div id="71" style="display:none;"><p> 
                                         The demand for transparency in healthcare and finance has led to interpretable machine learning (IML) models, notably the concept bottleneck models (CBMs), valued for its potential in performance and insights into deep neural networks. However, CBM's reliance on manually annotated data poses challenges. Label-free CBM has emerged to address this, but they remain unstable, affecting their faithfulness as explanatory tools. To address this inherent instability issue, we introduce a formal definition for an alternative concept called the Faithful Vision-Language Concept (FVLC) models. We present a methodology for constructing an FVLC that satisfies four critical properties. Our extensive experimentation, conducted on four benchmark datasets using Label-free CBM model architectures, demonstrates that our FVLC outperforms other baselines in terms of stability against input and concept set perturbations. Our approach incurs minimal accuracy degradation compared to the vanilla CBM, making it a promising solution for reliable and faithful model interpretation.
                                     </p></div> </br>
                                     Songning Lai<sup><span>&#9733;</span>*</sup>, Lijie Hu<sup><span>&#9733;</span>*</sup>, Junxiao Wang,  Laure Berti-Equille, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                  International Conference on Learning Representations</br></b>
                                 </li>
                                 </br>   
 
-                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ICLR'24</i>]</b> <i><b>	
                                     Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</i><a href="papers/ICLR2024_LDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.07367">Link</a>]  Abstract<a href="#ICLR2024_LDP" id="70_arrows" class="arrows" onclick="expand_collapse('70');">&#9660</a>
                                     <div id="70" style="display:none;"><p> 
                                         In this paper, we revisit 
@@ -1725,33 +1725,33 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                     </p></div> </br>
                                     Liyang Zhu<sup><span>&#9733;</span>*</sup>, Meng Ding<sup><span>&#9733;</span>*</sup>, Vaneet Aggarwal, Jinhui Xu, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                    International Conference on Learning Representations</br></b>
                                 </li>
                                 </br>                              
 
                                 
-                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ICLR'24</i>]</b> <i><b>	
                                     Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach</i><a href="papers/ICLR2024_NTK.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.06112">Link</a>]  Abstract<a href="#ICLR2024_NTK" id="69_arrows" class="arrows" onclick="expand_collapse('69');">&#9660</a>
                                     <div id="69" style="display:none;"><p> 
                                         Adversarial training (AT) is a canonical method for enhancing the robustness of deep neural networks (DNNs). However, recent studies empirically demonstrated that it suffers from robust overfitting, i.e., a long time AT can be detrimental to the robustness of DNNs. This paper presents a theoretical explanation of robust overfitting for DNNs. Specifically, we non-trivially extend the neural tangent kernel (NTK) theory to AT and prove that an adversarially trained wide DNN can be well approximated by a linearized DNN. Moreover, for squared loss, closed-form AT dynamics for the linearized DNN can be derived, which reveals a new AT degeneration phenomenon: a long-term AT will result in a wide DNN degenerates to that obtained without AT and thus cause robust overfitting. Based on our theoretical results, we further design a method namely Adv-NTK, the first AT algorithm for infinite-width DNNs. Experiments on real-world datasets show that Adv-NTK can help infinite-width DNNs enhance comparable robustness to that of their finite-width counterparts, which in turn justifies our theoretical findings.
                                     </p></div> </br>
                                     Shaopeng Fu<sup><span>&#9733;</span></sup> and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                   International Conference on Learning Representations</br></b>
                                 </li>
                                 </br>
 
-                                <li><b style="color:#0000E3">[<i>ICLR</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ICLR'24</i>]</b> <i><b>	
                                     An LLM can Fool Itself: A Prompt-Based Adversarial Attack</i><a href="papers/ICLR2024_PromptAttack.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2310.13345">Link</a>]  Abstract<a href="#ICLR2024_PromptAttack" id="64_arrows" class="arrows" onclick="expand_collapse('64');">&#9660</a>
                                     <div id="64" style="display:none;"><p> 
                                         The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack (PromptAttack). PromptAttack converts adversarial textual attacks into an attack prompt that can cause the victim LLM to output the adversarial sample to fool itself. The attack prompt is composed of three important components: (1) original input (OI) including the original sample and its ground-truth label, (2) attack objective (AO) illustrating a task description of generating a new sample that can fool itself without changing the semantic meaning, and (3) attack guidance (AG) containing the perturbation instructions to guide the LLM on how to complete the task by perturbing the original sample at character, word, and sentence levels, respectively. Besides, we use a fidelity filter to ensure that PromptAttack maintains the original semantic meanings of the adversarial examples. Further, we enhance the attack power of PromptAttack by ensembling adversarial examples at different perturbation levels. Comprehensive empirical results using Llama2 and GPT-3.5 validate that PromptAttack consistently yields a much higher attack success rate compared to AdvGLUE and AdvGLUE++. Interesting findings include that a simple emoji can easily mislead GPT-3.5 to make wrong predictions.
                                     </p></div> </br>
                                     Xilie Xu, Keyi Kong, Ning Liu, Lizhen Cui, <u><strong>Di Wang</strong></u>, Jingfeng Zhang, and Mohan Kankanhalli
                                     </br>
-                                    The 12th International Conference on Learning Representations (ICLR 2024)</br></b>
+                                    International Conference on Learning Representations</br></b>
                                 </li>
                                 </br>
-                                <li><b style="color:#0000E3">[<i>CoLM</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>CoLM'24</i>]</b> <i><b>	
                                     Multi-hop Question Answering under Temporal Knowledge Editing
                                 </i><a href="papers/Arxiv_PPLoRA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#Arxiv_MQA" id="81_arrows" class="arrows" onclick="expand_collapse('81');">&#9660</a>
                                     <div id="81" style="display:none;"><p> 
@@ -1759,37 +1759,37 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                     </p></div> </br>
                                     Keyuan Cheng<sup><span>&#9733;</span>*</sup>, Gang Lin<sup><span>&#9733;</span>*</sup>, Haoyang Fei<sup><span>&#9733;</span>*</sup>, Yuxuan Zhai, Lu Yu, Muhammad Asif Ali<sup><span>&#9733;</span></sup>, Lijie Hu<sup><span>&#9733;</span></sup>, <u><strong>Di Wang</strong></u>. 
                                     </br>
-                                    The 1st Conference on Language Modeling (COLM 2024)</br></b>
+                                    Conference on Language Modeling</br></b>
                                 </li>
                                 </br>                  
                                            
-                                <li><b style="color:#0000E3">[<i>CoLM</i>]</b> <i><b>	
-                                   	
+                                <li><b style="color:#0000E3">[<i>CoLM'24</i>]</b> <i><b>	
+                                    
                                     Model Autophagy Analysis to Explicate Self-consumption within Human-AI Interactions</i><a href="papers/Arxiv_Local.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://arxiv.org/abs/2402.11271">Link</a>]  Abstract<a href="#CoLM2024_Local" id="76_arrows" class="arrows" onclick="expand_collapse('76');">&#9660</a>
                                                                         <div id="76" style="display:none;"><p> 
                                                                             The increasing significance of large models and their multi-modal variants in societal information processing has ignited debates on social safety and ethics. However, there exists a paucity of comprehensive analysis for (i) the interactions between human and artificial intelligence systems, and (ii) understanding and addressing the associated limitations. To bridge this gap, we propose Model AutOphagy ANALysis (MONAL) for self-consumption explanation. MONAL employs two distinct autophagous loops (referred to as “self-consumption loops”) to elucidate the suppression of human-generated information in the exchange between human and AI systems. Through comprehensive experiments on diverse datasets, we evaluate the capacities of generated models as both creators and disseminators of information. Our key findings reveal (i) A progressive prevalence of model-generated synthetic information over time within training datasets compared to human-generated information; (ii) The discernible tendency of large models, when acting as information transmitters across multiple iterations, to selectively modify or prioritize specific contents; and (iii) The potential for a reduction in the diversity of socially or human-generated information, leading to bottlenecks in the performance enhancement of large models and confining them to local optima.
                                                                         </p></div> </br>
                                                                         Shu Yang<sup><span>&#9733;</span>*</sup>, Muhammad Asif Ali<sup><span>&#9733;</span>*</sup>, Lu Yu<sup><span>&#9733;</span></sup>, Lijie Hu, and <u><strong>Di Wang</strong></u>
                                                                         </br>
-                                                                        The 1st Conference on Language Modeling (COLM 2024) </br></b>
+                                                                        Conference on Language Modeling </br></b>
                                                                     </li>
                                                                     </br>
 
-                                                                    <li><b style="color:#0000E3">[<i>EMNLP</i>]</b> <i><b>	                                                                     	Dissecting Fine-Tuning Unlearning in Large Language Models
+                                                                    <li><b style="color:#0000E3">[<i>EMNLP'24</i>]</b> <i><b>	                                                                     	Dissecting Fine-Tuning Unlearning in Large Language Models
                                                                     </i><a href="papers/EMNLP2024_MU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#EMNLP2024_MU" id="92_arrows" class="arrows" onclick="expand_collapse('92');">&#9660</a>
                                                                                                                 <div id="92" style="display:none;"><p> 
                                                                                                                     Fine-tuning-based unlearning methods prevail for erasing targeted harmful, sensitive, or copyrighted information within large language models while preserving overall capabilities. However, the true effectiveness of the methods is unclear. In this paper, we delve into the limitations of fine-tuning-based unlearning through activation patching and parameter restoration experiments. Our findings reveal that these methods alter the model's knowledge retrieval process, rather than genuinely erasing the problematic knowledge embedded in the model parameters. Furthermore, behavioral tests demonstrate that the unlearning mechanisms inevitably impact the global behavior of the models, affecting unrelated knowledge or capabilities. Our work advocates the development of more resilient unlearning techniques for truly erasing knowledge.
                                                                                                                 </p></div> </br>
                                                                                                                 Yihuai Hong, Yuelin Zou, Lijie Hu<sup><span>&#9733;</span></sup>, Ziqian Zeng, <u><strong>Di Wang</strong></u>, Haiqin Yang. 
                                                                                                                 </br>
-                                                                                                                Conference on Empirical Methods in Natural Language Processing (EMNLP 2024) </br></b>
+                                                                                                                Conference on Empirical Methods in Natural Language Processing  </br></b>
                                                                                                                 <b style="color: red"> <strong>Selected as an oral paper</stong></b> </strong>  </br> 
                                                                                                             </li>
                                                                                                             </br>
                                         
 
 
-                               <li><b style="color:#0000E3">[<i>EMNLP</i>]</b> <i><b>	
+                               <li><b style="color:#0000E3">[<i>EMNLP'24</i>]</b> <i><b>	
                                 Private Language Models via Truncated Laplacian Mechanism
                             </i><a href="papers/EMNLP2024_Laplcian.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#EMNLP2024_Laplcian" id="91_arrows" class="arrows" onclick="expand_collapse('91');">&#9660</a>
                                                                         <div id="91" style="display:none;"><p> 
@@ -1798,28 +1798,28 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
 
                                                                         Tianhao Huang<sup><span>&#9733;</span>*</sup>, Tao Yang<sup><span>&#9733;</span>*</sup>, Ivan Habernal, Lijie Hu<sup><span>&#9733;</span></sup>, <u><strong>Di Wang</strong></u>
                                                                         </br>
-                                                                       Conference on Empirical Methods in Natural Language Processing (EMNLP 2024) </br></b>
+                                                                       Conference on Empirical Methods in Natural Language Processing  </br></b>
                                                                         <b style="color: red"> <strong>Selected as an oral paper</stong></b> </strong>  </br> 
                                         
                                                                     </li>
                                                                     </br>
 
 
-                                <li><b style="color:#0000E3">[<i>ACL</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ACL Findings'24</i>]</b> <i><b>	
                                     Autonomous Workflow for Multimodal Fine-Grained Training Assistants Towards Mixed Reality</i><a href="papers/ACL2024_Multimodal.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ACL2024_Multimodal" id="90_arrows" class="arrows" onclick="expand_collapse('90');">&#9660</a>
                                     <div id="90" style="display:none;"><p> 
                                         Autonomous artificial intelligence (AI) agents have emerged as promising protocols for automatically understanding the language-based environment, particularly with the exponential development of large language models (LLMs). However, a fine-grained, comprehensive understanding of multimodal environments remains under-explored. This work designs an autonomous workflow tailored for integrating AI agents seamlessly into extended reality (XR) applications for fine-grained training. We present a demonstration of a multimodal fine-grained training assistant for LEGO brick assembly in a pilot XR environment. Specifically, we design a cerebral language agent that integrates LLM with memory, planning, and interaction with XR tools and a vision-language agent, enabling agents to decide their actions based on past experiences. Furthermore, we introduce LEGO-MRTA, a multimodal fine-grained assembly dialogue dataset synthesized automatically in the workflow served by a commercial LLM. This dataset comprises multimodal instruction manuals, conversations, XR responses, and vision question answering. Last, we present several prevailing open-resource LLMs as benchmarks, assessing their performance with and without fine-tuning on the proposed dataset. We anticipate that the broader impact of this workflow will advance the development of smarter assistants for seamless user interaction in XR environments, fostering research in both AI and HCI communities.
                                     </p></div> </br>
                                     Jiahuan Pei, Haochen Huang, Junxiao Wang, Moonisa Ahsan, Fanghua Ye, Jiang Yiming, Yao Sai, <u><strong>Di Wang</strong></u>, Zhumin Chen, Pengjie Ren, Irene Viola, Pablo Cesar
                                     </br>
-                                    The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024 Findings).</br></b>
+                                    Findings of the Annual Meeting of the Association for Computational Linguistics</br></b>
                                 </li>
                                 </br>   
 
 
 
 
-                                <li><b style="color:#0000E3">[<i>EACL</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>EACL Findings'24</i>]</b> <i><b>	
                                     Antonym vs Synonym Distinction using InterlaCed Encoder NETworks (ICE-NET)</i><a href="papers/ICLR2024_FVLC.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#ICLR2024_FVLC" id="73_arrows" class="arrows" onclick="expand_collapse('73');">&#9660</a>
                                     <div id="73" style="display:none;"><p> 
                                         Antonyms vs synonyms distinction is a core challenge in lexico-semantic analysis and automated lexical resource construction. These pairs share a similar distributional context which makes it harder to distinguish them. Leading research in this regard attempts to capture the properties of the relation pairs, i.e., symmetry, transitivity, and trans-transitivity. However, the inability of existing research to appropriately model the relation-specific properties limits their end performance. In this paper, we propose InterlaCed Encoder NETworks (i.e., ICE-NET) for antonym vs synonym distinction, that aim to capture and model the relation-specific properties of the antonyms and synonyms pairs in order to perform the classification task in a performance-enhanced manner. Experimental evaluation using the benchmark datasets shows that ICE-NET outperforms the existing research by a relative score of upto 1.8% in F1-measure.
@@ -1827,11 +1827,11 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                     </p></div> </br>
                                     Muhammad Asif Ali<sup><span>&#9733;</span></sup>, Yan Hu<sup><span>&#9733;</span></sup>, Jianbin Qin, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2024 Findings)</br></b>
+                                    Findings of the European Chapter of the Association for Computational Linguistics</br></b>
                                 </li>
                                 </br>   
 
-                                <li><b style="color:#0000E3">[<i>EACL</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>EACL Findings'24</i>]</b> <i><b>	
                                     Differentially Private Natural Language Models: Recent Advances and Future Directions</i><a href="papers/EACL2024_DP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>]  Abstract<a href="#EACL2024_DP" id="72_arrows" class="arrows" onclick="expand_collapse('72');">&#9660</a>
                                     <div id="72" style="display:none;"><p> 
                                         Recent developments in deep learning have led to great success in various natural language processing (NLP) tasks. However, these applications may involve data that contain sensitive information. Therefore, how to achieve good performance while also protect privacy of sensitive data is  a crucial challenge in NLP. To preserve privacy, Differential Privacy (DP), which can prevent reconstruction attacks and protect against potential side knowledge, is becoming a de facto technique for private data analysis. In recent years, NLP in DP models (DP-NLP) has been studied from different perspectives, which deserves a comprehensive review. In this paper, we provide the first systematic review of recent advances on DP deep learning models in NLP. In particular, we first discuss some differences and additional challenges of DP-NLP compared with the standard DP deep learning. Then we investigate some existing work on DP-NLP and
@@ -1839,7 +1839,7 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                     </p></div> </br>
                                      Lijie Hu<sup><span>&#9733;</span></sup>,  Ivan Habernal, Lei Shen, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2024 Findings)</br></b>
+                                     Findings of the European Chapter of the Association for Computational Linguistics</br></b>
                                 </li>
                                 </br>   
    
@@ -1946,17 +1946,17 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                 <h4>Conference Papers</h4>
 
 
-                                <li><b style="color:#0000E3">[<i>USENIX</i>]</b> <i><b> Inductive Graph Unlearning</i><a href="papers/USENIX2023_GUIDE.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.usenix.org/conference/usenixsecurity23/presentation/wang-cheng-long">Link</a>] [<a href="https://github.com/Happy2Git/GUIDE">Code</a>] Abstract<a href="#USENIX2023_GUIDE" id="46_arrows" class="arrows" onclick="expand_collapse('46');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>USENIX'23</i>]</b> <i><b> Inductive Graph Unlearning</i><a href="papers/USENIX2023_GUIDE.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.usenix.org/conference/usenixsecurity23/presentation/wang-cheng-long">Link</a>] [<a href="https://github.com/Happy2Git/GUIDE">Code</a>] Abstract<a href="#USENIX2023_GUIDE" id="46_arrows" class="arrows" onclick="expand_collapse('46');">&#9660</a>
                                     <div id="46" style="display:none;"><p> 
                                         As a way to implement the "right to be forgotten" in machine learning, \textit{machine unlearning} aims to completely remove the contributions and information of the samples to be deleted from a trained model without affecting the contributions of other samples.  Recently, many frameworks for machine unlearning have been proposed, and most of them focus on image and text data. To extend machine unlearning to graph data, \textit{GraphEraser} has been proposed. However, a critical issue is that \textit{GraphEraser} is specifically designed for the transductive graph setting, where the graph is static and attributes and edges of test nodes are visible during training. {\color{blue}It is unsuitable for the inductive setting, where the graph could be dynamic and the test graph information is invisible in advance. Such inductive capability is essential for production machine learning systems with evolving graphs like social media and transaction networks.} To fill this gap, we propose the \underline{{\bf G}}\underline{{\bf U}}ided Guided Inductive Graph Unlearning framework (GUIDE). GUIDE consists of three components: guided graph partitioning with fairness and balance, efficient subgraph repair, and similarity-based aggregation. Empirically, we evaluate our method on several inductive benchmarks and evolving transaction graphs. Experimental results demonstrate the efficiency and practicality of GUIDE for inductive graph unlearning. In particular, GUIDE achieves faster implementation compared to \textit{GraphEraser} and outperforms the existing state-of-the-art methods on inductive graph learning tasks.
                                     </p></div> </br>  Cheng-Long Wang<sup><span>&#9733;</span></sup>, Mengdi Huai, and <u><strong>Di Wang</strong></u> </br>
-                                     The 32nd USENIX Security Symposium (USENIX 2023)</br></b>
+                                     The USENIX Security Symposium </br></b>
                                 </li>
                                 </br>
 
 
 
-                                <li><b style="color:#0000E3">[<i>IEEE S&P</i>]</b> <i><b> A Theory to Instruct Differentially-Private Learning via Clipping Bias Reduction</i><a href="papers/Oakland2023_DPSGD.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.computer.org/csdl/proceedings-article/sp/2023/933600c170/1NrbZvmFiw0">Link</a>] [<a href="https://github.com/zihangxiang/A-Theory-to-Instruct-Differentially-Private-Learning-via-Clipping-Bias-Reduction">Code</a>] Abstract<a href="#Oakland2023_DPSGD" id="45_arrows" class="arrows" onclick="expand_collapse('45');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>IEEE S&P'23</i>]</b> <i><b> A Theory to Instruct Differentially-Private Learning via Clipping Bias Reduction</i><a href="papers/Oakland2023_DPSGD.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.computer.org/csdl/proceedings-article/sp/2023/933600c170/1NrbZvmFiw0">Link</a>] [<a href="https://github.com/zihangxiang/A-Theory-to-Instruct-Differentially-Private-Learning-via-Clipping-Bias-Reduction">Code</a>] Abstract<a href="#Oakland2023_DPSGD" id="45_arrows" class="arrows" onclick="expand_collapse('45');">&#9660</a>
                                     <div id="45" style="display:none;"><p> 
                                         We study the bias introduced in Differentially-Private Stochastic Gradient Descent (DP-SGD) with clipped or normalized per-sample gradient. As one of the most popular but artificial operations to ensure bounded sensitivity, gradient clipping enables composite privacy analysis of many iterative optimization methods without additional assumptions on either learning models or input data. Despite its wide applicability, gradient clipping presents theoretical challenges in systematically instructing improvement of privacy or utility. In general, without an assumption on globally-bounded gradient, classic convergence analyses do not apply to clipped gradient descent. Further, given limited understanding of the utility loss, many existing improvements upon DP-SGD are heuristic, especially in the applications of private deep learning. 
 
@@ -1964,11 +1964,11 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                         
                                         Putting these systematic improvements together, private deep learning via DP-SGD can be significantly strengthened in many tasks. For example, in computer vision applications, with (\epsilon=8, \delta=10^{-5}) DP guarantee, we successfully train Resnet20 on CIFAR10 with accuracy 74.5%; for natural language processing, with (\epsilon=4, \delta=10^{-5}), we successfully train recurrent neural network on IMDb data with accuracy 77.5%.
                                     </p></div> </br> Hanshen Xiao<sup>*</sup>, Zihang Xiang<sup>*<span>&#9733;</span></sup>, <u><strong>Di Wang</strong></u>, and Srini Devadas (* equal contribution)</br>
-                                    The 44th IEEE Symposium on Security and Privacy (IEEE S&P 2023)</br></b>
+                                   IEEE Symposium on Security and Privacy</br></b>
                                 </li>
                                 </br>
 
-                                <li><b style="color:#0000E3">[<i>SIGMOD</i>]</b> <i><b>On Practical Differentially Private and Byzantine-resilient Federated Learning</i><a href="papers/SIGMOD2023_Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3589264">Link</a>] [<a href="https://github.com/zihangxiang/Practical-Differentially-Private-and-Byzantine-resilient-Federated">Code</a>] Abstract<a href="#SIGMOD2023_Byzantine" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>SIGMOD'23</i>]</b> <i><b>On Practical Differentially Private and Byzantine-resilient Federated Learning</i><a href="papers/SIGMOD2023_Byzantine.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3589264">Link</a>] [<a href="https://github.com/zihangxiang/Practical-Differentially-Private-and-Byzantine-resilient-Federated">Code</a>] Abstract<a href="#SIGMOD2023_Byzantine" id="43_arrows" class="arrows" onclick="expand_collapse('43');">&#9660</a>
                                     <div id="43" style="display:none;"><p> 
                                         Privacy and Byzantine resilience are two indispensable requirements for a federated learning (FL) system. Although there have been extensive studies on privacy and Byzantine security in their own track, solutions that consider both remain sparse. This is due to difficulties in reconciling privacy-preserving and Byzantine-resilient algorithms.
                                 
@@ -1976,34 +1976,34 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                                         
                                         We provide both theoretical proof and empirical experiments to show our protocol is effective: retaining high accuracy while preserving the DP guarantee and Byzantine resilience. Compared with the previous work, our protocol 1) achieves significantly higher accuracy even in a high privacy regime; 2) works well even when up to 90% distributive workers are Byzantine.
                                     </p></div> </br> Zihang Xiang<sup><span>&#9733;</span></sup>, <a href="https://tianhao.wang/" style="color:#000">Tianhao Wang </a>,  <a href="https://wanyu-lin.github.io/", style="color:#000">Wanyu Lin</a>,  and  <u><strong>Di Wang</strong></u></br>
-                                    International Conference on Management of Data (SIGMOD 2023)</br></b>
+                                    International Conference on Management of Data</br></b>
                                 </li>
                             </br>
 
 
-                            <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <i><b>	
+                            <li><b style="color:#0000E3">[<i>NeurIPS'23</i>]</b> <i><b>	
                                 On Private and Robust Bandits</i><a href="papers/NIPS2023_Bandit.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2302.02526">Link</a>]  Abstract<a href="#NIPS2023_Bandit" id="58_arrows" class="arrows" onclick="expand_collapse('58');">&#9660</a>
                                 <div id="58" style="display:none;"><p> 
                                     We study private and robust multi-armed bandits (MABs), where the agent receives Huber's contaminated heavy-tailed rewards and meanwhile needs to ensure differential privacy. We consider both the finite $k$-th raw moment and the finite $k$-th central moment settings for heavy-tailed rewards distributions with $k\ge 2$. We first present its minimax lower bound, characterizing the information-theoretic limit of regret with respect to privacy budget, contamination level, and heavy-tailedness. Then, we propose a meta-algorithm that builds on a private and robust mean estimation sub-routine \texttt{PRM} that essentially relies on reward truncation and the Laplace mechanism.  For the above two different heavy-tailed settings, we give corresponding schemes of \texttt{PRM}, which enable us to achieve nearly-optimal regrets.  Moreover, our two proposed truncation-based or histogram-based \texttt{PRM} schemes achieve the optimal trade-off between estimation accuracy, privacy and robustness. Finally, we support our theoretical results and show the effectiveness of our algorithms with experimental studies.
                                 </p></div> </br>
                                Yulian Wu<sup><span>&#9733;</span>*</sup>, Xingyu Zhou<sup>*</sup>, Youming Tao and <u><strong>Di Wang</strong></u>
                                 </br>
-                                2023 Conference on Neural Information Processing Systems (NeurIPS 2023)</br></b>
+                                Conference on Neural Information Processing Systems</br></b>
                             </li>
                             </br>
 
-                            <li><b style="color:#0000E3">[<i>ICML</i>]</b> <i><b>Differentially Private Episodic Reinforcement Learning with Heavy-tailed Rewards</i><a href="papers/ICML2023_HeavyRL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v202/wu23aa">Link</a>] Abstract<a href="#ICML2023_HeavyRL" id="47_arrows" class="arrows" onclick="expand_collapse('47');">&#9660</a>
+                            <li><b style="color:#0000E3">[<i>ICML'23</i>]</b> <i><b>Differentially Private Episodic Reinforcement Learning with Heavy-tailed Rewards</i><a href="papers/ICML2023_HeavyRL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v202/wu23aa">Link</a>] Abstract<a href="#ICML2023_HeavyRL" id="47_arrows" class="arrows" onclick="expand_collapse('47');">&#9660</a>
                                 <div id="46" style="display:none;"><p> 
                                     In this paper we study the problem of (finite horizon tabular) Markov decision processes (MDPs) with heavy-tailed rewards under the constraint of differential privacy (DP). Compared with the previous studies for private reinforcement learning that typically assume rewards are sampled from some bounded or sub-Gaussian distributions to ensure DP, we consider the setting where reward distributions have only finite (1+v)-th moments with some 
                                     $v\in (0, 1]$. By resorting to robust mean estimators for rewards, we first propose two frameworks for heavy-tailed MDPs, i.e., one is for value iteration and another is for policy optimization. Under each framework, we consider both joint differential privacy (JDP) and local differential privacy (LDP) models. Based on our frameworks, we provide regret upper bounds for both JDP and LDP cases, and show that the moment of distributions and privacy budget have significant impact on regrets. Finally, we establish a lower bound of regret minimization for heavy-tailed MDPs in JDP model by reducing it to the instance-independent lower bound of heavy-tailed multi-armed bandits in DP model. We also show the lower bound for the problem in LDP by adopting some private minimax methods. Our results reveal that there are fundamental differences between the problem of private RL with sub-Gaussian and that with heavy-tailed rewards.
                                     
                                 </p></div> </br>Yulian Wu<sup><span>&#9733;</span></sup>, Xingyu Zhou,  Sayak Ray Chowdhury and <u><strong>Di Wang</strong></u> </br>
-                                The 40th International Conference on Machine Learning (ICML 2023)</br></b>
+                              International Conference on Machine Learning</br></b>
                             </li>
                             </br>
 
                              
-                            <li><b style="color:#0000E3">[<i>AISTATS</i>]</b><i>
+                            <li><b style="color:#0000E3">[<i>AISTATS'23</i>]</b><i>
                                 <b> Privacy-preserving Sparse Generalized Eigenvalue Problem</i><a href="papers/AISTATS2023_GEP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v206/hu23a.html">Link</a>] Abstract<a href="#AISTATS2023_GEP" id="42_arrows" class="arrows" onclick="expand_collapse('42');">&#9660</a>
                                       <div id="42" style="display:none;"><p> 
                                          In this paper we study the (sparse) Generalized Eigenvalue Problem (GEP), which arises in a
@@ -2011,67 +2011,67 @@ Revisiting Differentially Private ReLU Regression</i><a href="papers/NeurIPS2024
                          memorize the details of sensitive information. 
                          To address this issue, we provide the first study on GEP in the differential privacy (DP) model under both deterministic and stochastic settings. In the low dimensional case, we provide a $\rho$-Concentrated DP (CDP) method namely DP-Rayleigh Flow and show if the initial vector is close enough to the optimal vector, its output has an $\ell_2$-norm estimation error of $\tilde{O}(\frac{d}{n}+\frac{d}{n^2\rho})$ (under some mild assumptions), where $d$ is the dimension and $n$ is the sample size. Next, we discuss how to find such a initial parameter privately. In the high dimensional sparse case where $d\gg n$, we propose the DP-Truncated Rayleigh Flow method whose output could achieve an error of $\tilde{O}(\frac{s\log d}{n}+\frac{s\log d}{n^2\rho})$ for various statistical models, where $s$ is the sparsity of the underlying parameter. Moreover, we show that these errors in the stochastic setting are  optimal up to a factor of $\text{Poly}(\log n)$ by providing the lower bounds of PCA and SIR under statistical setting and in the CDP model. Finally, to give a separation between $\epsilon$-DP and $\rho$-CDP for GEP, we also provide the lower bound  $\Omega(\frac{d}{n}+\frac{d^2}{n^2\epsilon^2})$ and  $\Omega(\frac{s\log d}{n}+\frac{s^2\log^2 d}{n^2\epsilon^2})$ of private minimax risk for PCA, under the statistical setting and $\epsilon$-DP model, in low and high dimensional sparse case respectively. Experiments on both synthetic and real-world data also support our theoretical analysis. 
                                       </p></div> </br> Lijie Hu<sup>*<span>&#9733;</span></sup>, Zihang Xiang<sup>*<span>&#9733;</span></sup>,  <a href="https://dblp.org/pid/32/2360.html">Jiabin Liu</a>,  and   <u><strong>Di Wang</strong></u> (* equal contribution) </br>
-                                      The 26th International Conference on Artificial Intelligence and Statistics (AISTATS 2023)</br></b>
+                                      International Conference on Artificial Intelligence and Statistics</br></b>
                                   </li>
                                    </br> 
  
                 
  
-                             <li><b style="color:#0000E3">[<i>AAAI</i>]</b>  <b><i>
+                             <li><b style="color:#0000E3">[<i>AAAI'23</i>]</b>  <b><i>
                                  SEAT: Stable and Explainable Attention</i><a href="papers/AAAI2023_SEAT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26517">Link</a>] Abstract<a href="#2023AAAI_SEAT" id="41_arrows" class="arrows" onclick="expand_collapse('41');">&#9660</a>
                                       <div id="41" style="display:none;"><p> 
                                          Currently, attention mechanism becomes a standard fixture in most state-of-the-art natural language processing (NLP) models, not only due to outstanding performance it could gain, but also due to plausible innate explanation for the behaviors of neural architectures it provides, which is notoriously difficult to analyze. However, recent studies show that attention is unstable against randomness and perturbations during training or testing, such as random seeds and slight perturbation of embedding vectors, which impedes it from becoming a faithful explanation tool. Thus, a natural question is whether we can find some substitute of the current attention which is more stable and could keep the most important characteristics on explanation and prediction of attention. In this paper, to resolve the problem, we provide a first rigorous definition of such alternate namely SEAT (Stable and Explainable Attention). Specifically, a SEAT should has the following three properties: (1) Its prediction distribution is enforced to be close to the distribution based on the vanilla attention; (2) Its top-$k$ indices have large overlaps with those of the vanilla attention; (3) It is robust w.r.t perturbations, i.e., any slight perturbation on SEAT will not change the prediction distribution too much, which implicitly indicates that it is stable to randomness and perturbations. Moreover we propose a method to get a SEAT, which could be considered as an ad hoc modification for the canonical attention. Finally, through intensive experiments on various datasets, we compare our SEAT with other baseline methods using RNN, BiLSTM and BERT architectures via six different evaluation metrics for model interpretation, stability and accuracy.  Results show that SEAT is more stable against different perturbations and randomness while also keeps the explainability of attention, which indicates it is a more faithful explanation. 
                                          Moreover, compared with vanilla attention, there is almost no utility (accuracy) degradation for SEAT. 
                                       </p></div> </br> Lijie Hu<sup>*<span>&#9733;</span></sup>, <a href="https://www.csyixinliu.com/">Yixin Liu</a> <sup>*</sup>,  <a href="https://cobweb.cs.uga.edu/~ninghaoliu/">Ninghao Liu</a> , Mengdi Huai, <a href="https://lichao-sun.github.io/">Lichao Sun</a>,   and   <u><strong>Di Wang</strong></u> (* equal contribution) </br>
-                                     The 37th AAAI Conference on Artificial Intelligence (AAAI 2023)</br>
+                                     AAAI Conference on Artificial Intelligence</br>
                                     <b style="color: red"><strong> Selected as an Oral paper </strong></b>   </br> </b>
                                   </li>
                                    </br> 
 
-                                   <li><b style="color:#0000E3">[<i>UAI</i>]</b> <i><b>Differentially Private Stochastic Convex Optimization in  (Non)-Euclidean Space Revisited</i><a href="papers/UAI2023_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v216/su23b.html">Link</a>] Abstract<a href="#UAI2023_DPSCO" id="48_arrows" class="arrows" onclick="expand_collapse('48');">&#9660</a>
+                                   <li><b style="color:#0000E3">[<i>UAI'23</i>]</b> <i><b>Differentially Private Stochastic Convex Optimization in  (Non)-Euclidean Space Revisited</i><a href="papers/UAI2023_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v216/su23b.html">Link</a>] Abstract<a href="#UAI2023_DPSCO" id="48_arrows" class="arrows" onclick="expand_collapse('48');">&#9660</a>
                                     <div id="48" style="display:none;"><p> 
                                         In this paper, we revisit the problem of Differentially Private Stochastic Convex Optimization (DP-SCO) in Euclidean and general $\ell_p^d$ spaces. Specifically, we focus on three settings that are still far from well understood:  (1) DP-SCO over a  constrained and bounded (convex) set in Euclidean space; (2) unconstrained DP-SCO in $\ell_p^d$ space; (3) DP-SCO with heavy-tailed data over a  constrained and bounded set in $\ell_p^d$ space. For problem (1), for both convex and strongly convex loss functions, we propose methods whose outputs could achieve (expected) excess population risks that are only dependent on the Gaussian width of the constraint set rather than the dimension of the space. Moreover, we also show the bound for strongly convex functions is optimal up to a logarithmic factor. For problems (2) and (3), we propose several novel  algorithms and provide the first theoretical results for both cases. 
                                     </p></div> </br>Jinyan Su<sup><span>&#9733;</span></sup>, <a href="https://www.ie.cuhk.edu.hk/people/chzhao.shtml">Changhong Zhao</a> and <u><strong>Di Wang</strong></u> </br>
-                                    The 39th Conference on Uncertainty in Artificial Intelligence (UAI 2023)</br></b>
+                                    Conference on Uncertainty in Artificial Intelligence</br></b>
                                 
                                 </br>
 
-                                <li><b style="color:#0000E3">[<i>MobiSys</i>]</b> <i><b> High-Speed Wireless Communications Inspired Energy  Efficient Federated Learning over Mobile Devices</i><a href="papers/MobiSys2023_FL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3581791.3596865">Link</a>] Abstract<a href="#MobiSys2023_FL" id="44_arrows" class="arrows" onclick="expand_collapse('44');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>MobiSys'23</i>]</b> <i><b> High-Speed Wireless Communications Inspired Energy  Efficient Federated Learning over Mobile Devices</i><a href="papers/MobiSys2023_FL.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3581791.3596865">Link</a>] Abstract<a href="#MobiSys2023_FL" id="44_arrows" class="arrows" onclick="expand_collapse('44');">&#9660</a>
                                     <div id="44" style="display:none;"><p> 
                                          Energy efficiency is essential for federated learning (FL) over mobile devices and its potential prosperous applications. Different from existing communication efficient FL research efforts, which regard communication energy consumption as the bottleneck, we have observed that with ever increasing wireless transmission speed (e.g., Wi-Fi 5 or 5G), the energy consumption of wireless communications for model updates in FL is significantly reduced and sometimes is smaller than that of local on-device training. Motivated by such observations, in this paper, we propose a high-speed wireless communications inspired energy efficient federated learning
                                          over mobile devices (EEFL), whose goal is to reduce the overall energy consumption (computing + communication). In particular, we design a novel energy-aware adaptive local update policy for mobile devices by jointly considering FL performance and energy saving of high-speed wireless transmissions. Furthermore, given the device's local update policy in each FL global round, we advance the dynamic voltage and frequency scaling (DVFS) strategy to minimize local training's energy consumption by keeping GPU and CPU working at appropriate frequencies without triggering thermal throttling. Extensive experimental results with various learning models, datasets, and wireless transmission environments demonstrate the proposed EEFL's superiority over the peer designs in terms of energy efficiency.
                                     </p></div> </br> Rui Chen, Qiyu Wan, Xinyue Zhang, Xiaoqi Qin, <u><strong>Di Wang</strong></u>, Xin Fu, and Miao Pan</br>
-                                    The 21st ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2023)</br></b>
+                                    ACM International Conference on Mobile Systems, Applications, and Services</br></b>
                                 
                                 </br>
 
-                                <li><b style="color:#0000E3">[<i>EMNLP</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>EMNLP Findings'23</i>]</b> <i><b>	
                                     GRI: Graph-based Relative Isomorphism of Word Embedding Spaces</i><a href="papers/EMNLP2023_GRI.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="">Link</a>]  Abstract<a href="#EMNLP2023_GRI" id="60_arrows" class="arrows" onclick="expand_collapse('60');">&#9660</a>
                                     <div id="60" style="display:none;"><p> 
                                         Automated construction of bi-lingual dictionaries using monolingual embedding spaces is a core challenge in machine translation. The end performance of these dictionaries relies on the geometric similarity of individual spaces, i.e., their degree of isomorphism. Existing attempts aimed at controlling the relative isomorphism of different spaces fail to incorporate the impact of lexically different but semantically related words in the training objective. To address this, we propose GRI that combines the distributional training objectives with attentive graph convolutions to unanimously consider the impact of lexical variations of semantically similar words required to define/compute the relative isomorphism of multiple spaces. Exper imental evaluation shows that GRI outperforms the existing research by improving the average P@1 by a relative score of upto 63.6%.
                                     </p></div> </br>
                                     Muhammad Asif Ali<sup><span>&#9733;</span></sup>, Yan Hu<sup><span>&#9733;</span></sup>, Jianbin Qin, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings)</br></b>
+                                    Findings of The 2023 Conference on Empirical Methods in Natural Language Processing</br></b>
                                 
                                 </br>
 
 
-                                <li><b style="color:#0000E3">[<i>EMNLP</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>EMNLP Findings'23</i>]</b> <i><b>	
                                     DetectLLM: Leveraging Log Rank Information for Zero-Shot Detection of Machine-Generated Text</i><a href="papers/EMNLP2023_DetectLLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2306.05540">Link</a>]  Abstract<a href="#EMNLP2023_DetectLLM" id="59_arrows" class="arrows" onclick="expand_collapse('59');">&#9660</a>
                                     <div id="59" style="display:none;"><p> 
                                         With the rapid progress of Large language models (LLMs) and the huge amount of text they generated, it becomes impractical to manually distinguish whether a text is machine-generated. Given the growing use of LLMs in social media and education, it prompts us to develop methods to detect machine-generated text, preventing malicious use such as plagiarism, misinformation, and propaganda. In this paper, we introduce two novel zero-shot methods for detecting machine-generated text by leveraging the log rank information. One is called DetectLLM-LRR, which is fast and efficient, and the other is called DetectLLM-NPR, which is more accurate, but slower due to the need for perturbations. Our experiments on three datasets and seven language models show that our proposed methods improve over the state of the art by 3.9 and 1.75 AUROC points absolute. Moreover, DetectLLM-NPR needs fewer perturbations than previous work to achieve the same level of performance, which makes it more practical for real-world use. We also investigate the efficiency–performance trade-off based on users' preference on these two measures and provide intuition for using them in practice effectively.
                                     </p></div> </br>
                                     Jinyan Su, Terry Yue Zhuo, <u><strong>Di Wang</strong></u>, and Preslav Nakov
                                     </br>
-                                    Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings)</br></b>
+                                    Findings of The 2023 Conference on Empirical Methods in Natural Language Processing</br></b>
                                 
                                 </br>
 
 
 
  
-                                <li><b style="color:#0000E3">[<i>ECAI</i>]</b> <i><b>Finite Sample Guarantees of Differentially Private Expectation Maximization Algorithm</i><a href="papers/ECAI2023_DPEM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2010.13520">Link</a>]  Abstract<a href="#ECAI2023_DPEM" id="55_arrows" class="arrows" onclick="expand_collapse('55');">&#9660</a>
+                                <li><b style="color:#0000E3">[<i>ECAI'23</i>]</b> <i><b>Finite Sample Guarantees of Differentially Private Expectation Maximization Algorithm</i><a href="papers/ECAI2023_DPEM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://arxiv.org/abs/2010.13520">Link</a>]  Abstract<a href="#ECAI2023_DPEM" id="55_arrows" class="arrows" onclick="expand_collapse('55');">&#9660</a>
                                     <div id="55" style="display:none;"><p> 
                                         (Gradient) Expectation Maximization (EM) is a widely used algorithm for estimating the maximum likelihood of mixture models or incomplete data problems. A major challenge facing this popular technique is how to effectively preserve the privacy of sensitive data.
 Previous research on this problem has already lead to the discovery of some Differentially Private (DP) algorithms for (Gradient) EM. However, unlike in the non-private case, existing techniques are not yet able to provide
@@ -2079,20 +2079,20 @@ finite sample statistical guarantees. To address this issue, we propose in this 
                                     </p></div> </br>
                                     <strong><u><strong>Di Wang</strong></u><sup>*</sup></strong>, Jiahao Ding<sup>*</sup>, Lijie Hu, Zejun Xie, Miao Pan, and Jinhui Xu
                                     </br>
-                                    The 26th European Conference on Artificial Intelligence (ECAI 2023)</br></b>
+                                    European Conference on Artificial Intelligence </br></b>
                                 
                                 </br>
                               
 
                                 
-                                <li><b style="color:#0000E3">[<i>ArabicNLP</i>]</b> <i><b>	
+                                <li><b style="color:#0000E3">[<i>ArabicNLP'23</i>]</b> <i><b>	
                                     GARI: Graph Attention for Relative Isomorphism of Arabic Word Embeddings.</i><a href="papers/GeoPrivacy2023_XAI.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="">Link</a>]  Abstract<a href="#ArabicNLP2023_GRAI" id="62_arrows" class="arrows" onclick="expand_collapse('62');">&#9660</a>
                                     <div id="62" style="display:none;"><p> 
                                         Bilingual Lexical Induction (BLI) is a core challenge in NLP, it relies on the relative isomorphism of individual embedding spaces. Existing attempts aimed at controlling the relative isomorphism of different embedding spaces fail to incorporate the impact of semantically related words in the model training objective. To address this, we propose GARI that combines the distributional training objectives with multiple isomorphism losses guided by the graph attention network. GARI considers the impact of semantical variations of words in order to define the relative isomorphism of the embedding spaces. Experimental evaluation using the Arabic language data set shows that GARI outperforms the existing research by improving the average P@1 by a relative score of up to 40.95% and 76.80% for in-domain and domain mismatch settings respectively.
                                     </p></div> </br>
                                     Muhammad Asif Ali<sup><span>&#9733;</span></sup>, Maha Alshmrani<sup><span>&#9733;</span></sup>, Jianbin Qin, Yan Hu<sup><span>&#9733;</span></sup>, and <u><strong>Di Wang</strong></u>
                                     </br>
-                                    The First Arabic Natural Language Processing Conference (ArabicNLP 2023)</br></b>
+                                   Arabic Natural Language Processing Conference</br></b>
                                 
                                 </br>
 
@@ -2221,87 +2221,87 @@ For the high dimensional case, we first show that by measuring the utility with 
                             <h4>Conference Papers</h4>
 
  
-                            <li><b style="color:#0000E3">[<i>PODS</i>]</b> <b><i>
+                            <li><b style="color:#0000E3">[<i>PODS'22</i>]</b> <b><i>
                                 High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data</i><a href="papers/PODS2022_SCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://dl.acm.org/doi/10.1145/3517804.3524144">Link</a>] Abstract<a href="#HighDim_DPSCO" id="33_arrows" class="arrows" onclick="expand_collapse('33');">&#9660</a>
                             <div id="33" style="display:none;"><p> 
                                     As one of the most fundamental problems in machine learning, statistics and differential privacy, Differentially Private Stochastic Convex Optimization (DP-SCO) has been extensively studied in recent years. However, most of the previous work can only handle either regular data distribution or irregular data in the low dimensional space case. To better understand the challenges arising from irregular data distribution, in this paper we provide the first study on the problem of DP-SCO with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint (such as the $\ell_1$-norm ball). We show that if the loss function is smooth and its gradient has bounded second order moment, it is possible to get an error bound of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimensionality of the underlying space. Next, for LASSO,  if the data  distribution that has bounded fourth-order moments, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP model.  In the second part of the paper, we study DP-SCO for sparse learning with heavy-tailed data. We first revisit the sparse linear regression and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*2}\log d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study a more general problem over the sparsity ({\em i.e.,} $\ell_0$-norm) constraint, and show that it is possible to achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, which is also near optimal up to a factor of $\tilde{O}{(\sqrt{s^*})}$,  if the loss function is smooth and strongly convex. 
                             </p></div> </br> Lijie Hu<sup><span>&#9733;</span></sup>, Shuo Ni<sup><span>&#9733;</span></sup>, Hanshen Xiao, and <u><strong>Di Wang</strong></u></br>
-                           The 41st ACM Symposium on Principles of Database Systems (PODS 2022)</br>
+                          ACM Symposium on Principles of Database Systems</br>
                            <b style="color: red"><strong>Invited to The ACM Transactions on Database Systems special issue on Best of PODS 2022</strong></b></br>
                            ACM CCS 2021 Workshop on  Privacy Preserving Machine Learning</br></b>
                         </li>
                     </br>                            
 
 
-                            <li><b style="color:#0000E3">[<i>WINE</i>]</b> <b><i>
+                            <li><b style="color:#0000E3">[<i>WINE'22</i>]</b> <b><i>
                                 Truthful Generalized Linear Models</i><a href="papers/WINE2022_TrustfulGLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://link.springer.com/content/pdf/bbm:978-3-031-22832-2/1?pdf=chapter%20toc">Link</a>] Abstract<a href="#TrustfulGLM" id="40_arrows" class="arrows" onclick="expand_collapse('40');">&#9660</a>
                                      <div id="40" style="display:none;"><p> 
                                         In this paper we study estimating Generalized Linear Models (GLMs) in the case where the agents (individuals) are strategic or self-interested and they concern about their privacy when reporting data. Compared with the classical setting, here we aim to  design mechanisms that can both incentivize most agents to truthfully report their data and preserve the privacy of individuals' reports, while their outputs should also close to the underlying parameter. In the first part of the paper, we consider the case where the covariates are sub-Gaussian and the responses are heavy-tailed where they only have the finite fourth moments. First, motivated by the stationary condition of the 
                                         maximizer of the likelihood function, we derive a novel private and closed form estimator. Based on the estimator, we propose a mechanism which has the following properties via some appropriate design of the computation and payment scheme for several canonical models such as linear regression, logistic regression and Poisson regression:  (1) the mechanism is $o(1)$-jointly differentially private (with probability at least $1-o(1)$); (2) it is an $o(\frac{1}{n})$-approximate Bayes Nash equilibrium for a $(1-o(1))$-fraction of agents to truthfully report their data, where $n$ is the number of agents; (3) the output could achieve an error of $o(1)$ to the underlying parameter; (4) it is individually rational for a $(1-o(1))$ fraction of agents in the mechanism ; (5) the payment budget required from the analyst to run the mechanism
                                         is $o(1)$. In the second part, we consider the linear regression model under more general setting where both covariates and responses are heavy-tailed and only have finite fourth moments. By using an $\ell_4$-norm shrinkage operator, we propose a private estimator and payment scheme which have similar properties as in the sub-Gaussian case.  
                                      </p></div> </br> Yuan Qiu<sup><span>&#9733;</span></sup>, <a href="https://dblp.org/pid/149/9402.html">Jinyan Liu</a>,  and   <u><strong>Di Wang</strong></u></br>
-                                     The 18th Conference on Web and Internet Economics (WINE 2022) </b>
+                              Conference on Web and Internet Economics </b>
                                  </li>
                                   </br> 
-                                  <li><b style="color:#0000E3">[<i>ALT</i>]</b> <b><i>
+                                  <li><b style="color:#0000E3">[<i>ALT'22</i>]</b> <b><i>
                                     Faster Rates of  Private Stochastic Convex Optimization</i><a href="papers/ALT2022_SCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v167/su22a.html">Link</a>]   Abstract<a href="#fasterdpsco" id="36_arrows" class="arrows" onclick="expand_collapse('36');">&#9660</a>
                                  <div id="36" style="display:none;"><p> 
                                    In this paper, we revisit the problem of Differentially Private Stochastic Convex Optimization (DP-SCO) and provide excess population risks for some special classes of functions that are faster than the previous results of general convex and strongly convex functions. In the first part of the paper, we study the case where the population risk function satisfies the Tysbakov Noise Condition (TNC) with some parameter $\theta>1$. Specifically, we first show that under some mild assumptions on the loss functions, there is an algorithm whose output could achieve an upper bound of $\tilde{O}((\frac{1}{\sqrt{n}}+\frac{d}{n\epsilon})^\frac{\theta}{\theta-1}) $ and $\tilde{O}((\frac{1}{\sqrt{n}}+\frac{\sqrt{d\log(1/\delta)}}{n\epsilon})^\frac{\theta}{\theta-1})$ for $\epsilon$-DP and $(\epsilon, \delta)$-DP, respectively when $\theta\geq 2$, here $n$ is the sample size and $d$ is the dimension of the space. Then we address the inefficiency issue, improve the upper bounds by $\text{Poly}(\log n)$ factors and extend to the case where $\theta\geq \bar{\theta}>1$ for some known $\bar{\theta}$. Next we show that the excess population risk of population functions satisfying TNC with parameter $\theta\geq 2$ is always lower bounded by  $\Omega((\frac{d}{n\epsilon})^\frac{\theta}{\theta-1}) $ and $\Omega((\frac{\sqrt{d\log(1/\delta)}}{n\epsilon})^\frac{\theta}{\theta-1})$ for $\epsilon$-DP and $(\epsilon, \delta)$-DP, respectively, which matches our upper bounds. In the second part, we focus on a special case where the population risk function is strongly convex. Unlike the previous studies, here we assume the loss function is {\em non-negative} and {\em the optimal value of population risk is sufficiently small}. With these additional assumptions, we propose a new method whose output could achieve an upper bound of $O(\frac{d\log(1/\delta)}{n^2\epsilon^2}+\frac{1}{n^{\tau}})$ and $O(\frac{d^2}{n^2\epsilon^2}+\frac{1}{n^{\tau}})$ for any $\tau> 1$ in $(\epsilon,\delta)$-DP and $\epsilon$-DP model respectively if the sample size $n$ is sufficiently large. These results circumvent their corresponding lower bounds in \cite{feldman2020private} for general strongly convex functions.   Finally, we conduct experiments of our new methods on real world data. Experimental results also provide new insights into established theories.
                                  </p></div> </br> <a href="https://jinyansu1.github.io/">Jinyan Su<sup><span>&#9733;</span></sup></a>, Lijie Hu<sup><span>&#9733;</span></sup>, and <u><strong>Di Wang</strong></u></br>
-                                The 33rd International Conference on Algorithmic Learning Theory (ALT 2022)  </b>
+                               International Conference on Algorithmic Learning Theory  </b>
                              </li>
                             </br> 
                                   
 
-                            <li><b style="color:#0000E3">[<i>AISTATS</i>]</b> <b><i>
+                            <li><b style="color:#0000E3">[<i>AISTATS'22</i>]</b> <b><i>
                                 Optimal Rates of (Locally) Differentially Private Heavy-tailed 
                                 Multi-Armed Bandits</i><a href="papers/AISTATS2022_MAB.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> [<a href="https://proceedings.mlr.press/v151/tao22a">Link</a>] </a> Abstract<a href="#heavytailMAB" id="35_arrows" class="arrows" onclick="expand_collapse('35');">&#9660</a>
                          <div id="35" style="display:none;"><p> 
                                 In this paper we study the problem of stochastic multi-armed bandits (MAB) in the (local) differential privacy (DP/LDP) model. Unlike the previous results which need to assume bounded reward distributions, here we mainly focus on the case the reward distribution of each arm only has $(1+v)$-th moment with some $v\in (0, 1]$. In the first part, we study the problem in the central $\epsilon$-DP model. We first provide a near-optimal result by developing a private and robust Upper Confidence Bound (UCB) algorithm. Then, we improve the result via a private and robust version of the Successive Elimination (SE) algorithm. Finally, we show that the instance-dependent regret bound of our improved algorithm is optimal by showing its lower bound. In the second part of the paper, we study the problem in the $\epsilon$-LDP model. We propose an algorithm which could be seen as locally private and robust version of the SE algorithm,  and show it could achieve  (near) optimal rates for both  instance-dependent and instance-independent regrets. All of the above results can also reveal the differences between the problem of private MAB with bounded rewards and heavy-tailed rewards.  To achieve these (near) optimal rates, we develop several new hard instances and private robust estimators as byproducts, which might could be used to other related problems. Finally, experimental results also support our theoretical analysis and show the effectiveness of our algorithms.
                         
-                         </p></div> </br> Youming Tao<sup>*<span>&#9733;</span></sup>, Yulian Wu<sup>*<span>&#9733;</span></sup>, <a href="http://www.lamda.nju.edu.cn/zhaop/">Peng Zhao</a>, and <u><strong>Di Wang</strong></u> (* equal contribution) </br> The 25th International Conference on Artificial Intelligence and Statistics (AISTATS 2022) </br> 
+                         </p></div> </br> Youming Tao<sup>*<span>&#9733;</span></sup>, Yulian Wu<sup>*<span>&#9733;</span></sup>, <a href="http://www.lamda.nju.edu.cn/zhaop/">Peng Zhao</a>, and <u><strong>Di Wang</strong></u> (* equal contribution) </br> International Conference on Artificial Intelligence and Statistics  </br> 
                          <b style="color: red"> <strong>Selected as an Oral paper (Acceptance Rate: 44/1685=2.6%)</stong></b> </strong>  </br> 
                          ACM CCS 2021 Workshop on  Privacy Preserving Machine Learning</br> 
                          ICML 2022 Workshop on  Responsible Decision Making in Dynamic Environments (Selected as Contributed Talk) </br>  </b>
                         </li>
                         </br>
 
-                            <li><b style="color:#0000E3">[<i>AISTATS</i>]</b> <b><i>
+                            <li><b style="color:#0000E3">[<i>AISTATS'22</i>]</b> <b><i>
                                 On Facility Location Problem in Local Differential Privacy Model</i><a href="papers/AISTATS2022_Facility.pdf"><img src="pdf_icon.gif" class="smallpadleft"/> </a> [<a href="https://proceedings.mlr.press/v151/cohen-addad22a.html">Link</a>] Abstract<a href="#LocalFacility" id="34_arrows" class="arrows" onclick="expand_collapse('34');">&#9660</a>
                             <div id="34" style="display:none;"><p> 
                                  This paper studies the facility location problem, where the given input is combined of (1) a metric space (V, d), (2) facility cost f_i for each facility, We study the uncapacitated facility location (UFL) problem under the constraints imposed by the local differential privacy (LDP). Recently, Gupta et al. (2009) and Esencayi et al. (2019) proposed lower and upper bounds for the UFL problem on the central differential privacy (DP) model where a curator first collects all data before being processed. In this paper, we focus on the LDP model, where we protect a client's participation in the facility location instance. Under the HST metric, we show that there is a non-interactive $\epsilon$-LDP algorithm achieving $O(n^{1/4}/\epsilon^2)$-approximation ratio, where n is the size of the metric. On the negative side, we show a lower bound of $\Omega(n^{1/4}/\sqrt{\epsilon})$ on the approximation ratio for any non-interactive $\epsilon$-LDP algorithm. Thus, our results are tight up to a factor of $\epsilon$. Moreover, unlike previous results, our results generalize for non-uniform facility costs.
                             </p></div> </br>[<strong>alphabetic order</strong>] <a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a>, Yunus Esencayi,  <a href="https://dblp.org/pid/76/8243.html">Chenglin Fan</a>, Marco Gaboradi, Shi Li,
                             and <u><strong>Di Wang</strong></u></br> 
-                            The 25th International Conference on Artificial Intelligence and Statistics (AISTATS 2022)</b>
+                           International Conference on Artificial Intelligence and Statistics </b>
                             </li>
                             
                             
                             </br>
 
-                            <li><b style="color:#0000E3">[<i>IJCAI</i>]</b>
+                            <li><b style="color:#0000E3">[<i>IJCAI'22</i>]</b>
                                 <b>  <i>
                                     Private Stochastic Convex Optimization and Sparse Learning with Heavy-tailed Data Revisited</i><a href="papers/IJCAI2022_HeavyDPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/proceedings/2022/548">Link</a>] Abstract<a href="#heavysparseDPSCO" id="37_arrows" class="arrows" onclick="expand_collapse('37');">&#9660</a>
                                      <div id="37" style="display:none;"><p> 
                                         In this paper, we revisit the problem of Differentially Private Stochastic Convex Optimization (DP-SCO) with heavy-tailed data, where the gradient of the loss function has bounded moments. Instead of the case where the loss function is Lipschitz or each coordinate of the gradient has bounded second moment studied previously, we consider a relaxed scenario where each coordinate of the gradient only has bounded $(1+v)$-th moment with some $v\in (0, 1]$. Firstly, we start from the one dimensional private mean estimation for heavy-tailed distributions. We propose a novel robust and private mean estimator which is optimal. Based on its idea, we then extend to the general $d$-dimensional space and use it to DP-SCO with general convex and strongly convex loss functions. We also provide lower bounds for these two classes of loss under our setting and show that our upper bounds are optimal up to a factor of $O(\text{Poly}(d))$. To address the high dimensionality issue, we also study DP-SCO with heavy-tailed gradient under some sparsity constraint (DP sparse learning). We propose a new method and show it is also optimal up to a factor of $O(s^*)$, where $s^*$ is the underlying sparsity of the constraint.
                                      </p></div> </br>   Youming Tao<sup><span>&#9733;</span></sup>, Yulian Wu<sup><span>&#9733;</span></sup>, <a href="https://scholar.google.com/citations?user=O1yGhH0AAAAJ&hl=en">Xiuzhen Cheng</a>, and <u><strong>Di Wang</strong></u></br>
-                                   The 31st International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2022)</b>
+                                 International Joint Conference on Artificial Intelligence</b>
                                  </li>
                                 
                                 
                                 </br>                            
 
-                            <li><b style="color:#0000E3">[<i>ACML</i>]</b> <b><i>
+                            <li><b style="color:#0000E3">[<i>ACML'22</i>]</b> <b><i>
                                 On PAC Learning Halfspaces in Non-interactive Local Privacy Model with Public
                             Unlabeled Data</i><a href="papers/ACML2022_halfspace.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://proceedings.mlr.press/v189/su23a.html">Link</a>] Abstract<a href="#NLDPhalf" id="39_arrows" class="arrows" onclick="expand_collapse('39');">&#9660</a>
                                  <div id="39" style="display:none;"><p> 
                                     In this paper, we study the problem of PAC learning halfspaces in the non-interactive local differential privacy model (NLDP).  To breach the barrier of exponential sample complexity, previous results studied a relaxed setting where the server has access to some additional public but unlabeled data. We continue along this direction. Specifically, we consider the  problem under the standard setting instead of the large margin setting studied before. Under different mild assumptions on the underlying data distribution, we propose two approaches that are based on the Massart noise model and self-supervised learning, and show that it is possible to achieve sample complexities that are only linear in the dimension and polynomial in other terms for both private and public data, which significantly improve the previous results. Our methods  might could also be used to other private PAC learning problems.  
                                  </p></div> </br> Jinyan Su<sup><span>&#9733;</span></sup>, Jinhui Xu, and <u><strong>Di Wang</strong></u>.  </br>
-                                The 14th Asian Conference on Machine Learning (ACML 2022)</br> 
+                               Asian Conference on Machine Learning</br> 
                                 <b style="color: red"> <strong>Best Paper Award</strong></b> </b>
                              </li>
                             </br>
                            
-                            <li><b style="color:#0000E3">[<i>ISIT</i>]</b> 
+                            <li><b style="color:#0000E3">[<i>ISIT'22</i>]</b> 
                                 <b>   <i>
                                     Differentially Private $\ell_1$-norm Linear Regression with Heavy-tailed Data</i><a href="papers/ISIT2022_ell1heavy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/9834670/">Link</a>] Abstract<a href="#ell1heavy" id="38_arrows" class="arrows" onclick="expand_collapse('38');">&#9660</a>
                                      <div id="38" style="display:none;"><p> 
@@ -2310,7 +2310,7 @@ For the high dimensional case, we first show that by measuring the utility with 
                                         be extended to more relaxed cases where only each coordinate
                                         of the data has bounded moments. 
                                      </p></div> </br> <u><strong>Di Wang</strong></u> and Jinhui Xu</br>
-                                     2022 IEEE International Symposium on Information Theory (ISIT 2022)  </b>
+                                    IEEE International Symposium on Information Theory </b>
                                  </li>
                                 </br>
                                 
@@ -2320,7 +2320,7 @@ For the high dimensional case, we first show that by measuring the utility with 
                             <h2><i>2021</i></h2>
                             <h4><i>Conference Papers</i></h4>
 
-                            <li><b style="color:#0000E3">[<i>ALT</i>]</b> <b> <i>Estimating Smooth GLM in Non-interactive Local Differential Privacy Model with Public Unlabeled Data</i><a href="papers/ALT2021_GLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [<a href="http://proceedings.mlr.press/v132/wang21a.html">Link</a>] Abstract<a href="#ALT2021_GLM" id="29_arrows" class="arrows" onclick="expand_collapse('29');">&#9660</a>
+                            <li><b style="color:#0000E3">[<i>ALT'21</i>]</b> <b> <i>Estimating Smooth GLM in Non-interactive Local Differential Privacy Model with Public Unlabeled Data</i><a href="papers/ALT2021_GLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a>  [<a href="http://proceedings.mlr.press/v132/wang21a.html">Link</a>] Abstract<a href="#ALT2021_GLM" id="29_arrows" class="arrows" onclick="expand_collapse('29');">&#9660</a>
                                 <div id="29" style="display:none;"><p>  
                             
                                     In this paper, we study the problem of estimating smooth Generalized Linear Models (GLM) in the Non-interactive Local Differential Privacy (NLDP) model. 
@@ -2338,18 +2338,18 @@ For the high dimensional case, we first show that by measuring the utility with 
                             in the NLDP model with public unlabeled data.
                             </br>    
                                 </p></div> </br> <strong><u><strong>Di Wang</strong></u><sup>*</sup></strong>,  <a href="https://huanyuzhang.github.io/"><strong>Huanyu Zhang</strong></a><sup>*</sup>, Marco Gaboardi and Jinhui Xu (* equal contribution) </br>
-                                The 32nd International Conference on Algorithmic Learning Theory (ALT 2021) </br>
+                               International Conference on Algorithmic Learning Theory </br>
                                 NeurIPS 2019 Workshop on Privacy in Machine Learning </b>
                             </li>
                         </br>
 
-                             <li><b style="color:#0000E3">[<i>IJCAI</i>]</b> <b><i>Differentially Private Pairwise Learning Revisited</i><a href="papers/IJCAI2021_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/proceedings/2021/0446">Link</a>] Abstract<a href="#IJCAI2021_pairwise" id="30_arrows" class="arrows" onclick="expand_collapse('30');">&#9660</a>
+                             <li><b style="color:#0000E3">[<i>IJCAI'21</i>]</b> <b><i>Differentially Private Pairwise Learning Revisited</i><a href="papers/IJCAI2021_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/proceedings/2021/0446">Link</a>] Abstract<a href="#IJCAI2021_pairwise" id="30_arrows" class="arrows" onclick="expand_collapse('30');">&#9660</a>
                                 <div id="30" style="display:none;"><p>  
                                         Instead of learning with pointwise loss functions, learning with pairwise loss functions (pairwise learning) has received much attention recently as it is more capable of modeling the relative relationship between pairs of samples.   However, most of the existing algorithms for pairwise learning fail to take into consideration the privacy issue in their design.  To address this  issue, previous work studied pairwise learning in the Differential Privacy (DP) model. However, their utilities (population errors) are far from optimal. To address the sub-optimal utility issue, in this paper, we proposed new $(\epsilon, \delta)$ or $\epsilon$-DP algorithms for pairwise learning. Specifically, when the loss functions are Lipschitz, smooth and strongly convex, we show that the output of our algorithm achieves an expected population error of $O(\frac{1}{n}+\frac{d\log\frac{1}{\delta}}{n^2\epsilon^2})$ and $O(\frac{1}{n}+\frac{d^2}{n^2\epsilon^2})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively, where $n$ is the sample size and $d$ is the dimension of the underlying space. 
                                         Moreover, for general convex case,  the output of our algorithm achieves an expected population error  of $O(\frac{1}{\sqrt{n}}+\frac{\sqrt{d \log\frac{1}{\delta}}}{n\epsilon})$ and $O(\frac{1}{\sqrt{n}}+\frac{d}{n\epsilon})$ for $(\epsilon, \delta)$-DP and $\epsilon$-DP, respectively. It is also notable that these upper bounds are {\bf optimal} ({\em i.e.,} match the lower bounds). We also conduct extensive experiments on real-world datasets to evaluate the proposed algorithms, experimental results support our theoretical analysis and show the priority of our algorithms. 
                             </br>    
                                 </p></div> </br> Zhiyu Xue<sup>*</sup><sup><span>&#9733;</span></sup>, Shaoyang Yang<sup>*</sup><sup><span>&#9733;</span></sup>, Mengdi Huai and <u><strong>Di Wang</strong></u> (* equal contribution) </br>
-                                The 30th International Joint Conference on Artificial Intelligence (IJCAI 2021) </b>
+                               International Joint Conference on Artificial Intelligence  </b>
                             </li>
                             </br> 
                         <h4><i>Journal Papers</i></h4>
@@ -2387,43 +2387,43 @@ For the high dimensional case, we first show that by measuring the utility with 
                         <h2><i>2020</i></h2>
                         <h4><i>Conference Papers</i></h4>
 
-                        <li><b style="color:#0000E3">[<i>ICML</i>]</b> <b><i>On Differentially Private Stochastic Convex Optimization with Heavy-tailed Data</i><a href="papers/ICML2020_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v119/wang20y.html">Link</a>] Abstract<a href="#ICML2020_heavy" id="23_arrows" class="arrows" onclick="expand_collapse('23');">&#9660</a>
+                        <li><b style="color:#0000E3">[<i>ICML'20</i>]</b> <b><i>On Differentially Private Stochastic Convex Optimization with Heavy-tailed Data</i><a href="papers/ICML2020_DPSCO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v119/wang20y.html">Link</a>] Abstract<a href="#ICML2020_heavy" id="23_arrows" class="arrows" onclick="expand_collapse('23');">&#9660</a>
                             <div id="23" style="display:none;"><p> 
                                 In this paper, we consider the problem of designing Differentially Private (DP) algorithms for Stochastic Convex Optimization (SCO) on heavy-tailed data. The irregularity of such data violates some key assumptions used in almost all existing DP-SCO and DP-ERM methods, resulting in failure to provide the DP guarantees. To better understand this type of challenges, we provide in this paper a comprehensive study of DP-SCO under various settings. First, we consider the case where the loss function is strongly convex and smooth. For this case, we propose a method based on the sample-and-aggregate framework, which has an excess population risk of $\tilde{O}(\frac{d^3}{n\epsilon^4})$ (after omitting other factors), where $n$ is the sample size and $d$ is the dimensionality of the data. Then, we show that with some additional assumptions on the loss functions, it is possible to reduce the \textit{expected} excess population risk to $\tilde{O}(\frac{ d^2}{ n\epsilon^2 })$. To lift these additional conditions, we also provide a gradient smoothing and trimming based scheme to achieve excess population risks of $\tilde{O}(\frac{ d^2}{n\epsilon^2})$ and $\tilde{O}(\frac{d^\frac{2}{3}}{(n\epsilon^2)^\frac{1}{3}})$ for strongly convex and general convex loss functions, respectively, \textit{with high probability}. Experiments on both synthetic and real-world datasets suggest that our algorithms can effectively deal with the challenges caused by data irregularity.
                             </p></div> </br> <strong><u><strong>Di Wang</strong></u><sup>*</sup></strong>, <a href="https://dblp.org/pers/x/Xiao:Hanshen.html"><strong>Hanshen Xiao</strong></a><sup>*</sup>, <a href="https://people.csail.mit.edu/devadas/">Srini Devadas</a> and Jinhui Xu (* equal contribution)</br>
-                           The 37th International Conference on Machine Learning (ICML 2020) </b>
+                   International Conference on Machine Learning  </b>
                         </li>
                     </br>                        
 
                     
                         
-                    <li><b style="color:#0000E3">[<i>AAAI</i>]</b> <b><i>Scalable Estimating Stochastic Linear Combination of Non-linear Regressions</i><a href="papers/AAAI2020_scalable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6078">Link</a>] Abstract<a href="#AAAI2020_scalable" id="22_arrows" class="arrows" onclick="expand_collapse('22');">&#9660</a> 
+                    <li><b style="color:#0000E3">[<i>AAAI'20</i>]</b> <b><i>Scalable Estimating Stochastic Linear Combination of Non-linear Regressions</i><a href="papers/AAAI2020_scalable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6078">Link</a>] Abstract<a href="#AAAI2020_scalable" id="22_arrows" class="arrows" onclick="expand_collapse('22');">&#9660</a> 
                         <div id="22" style="display:none;"><p>   In this paper we study the problem of estimating stochastic linear combination of non-linear regressions, which has a closed connection with many machine learning and statistical models such as non-linear regressions,  Single Index Models, Multi-index Models, Varying Coefficient Index Models and Two-layer Neural Networks. Specifically, we first show that under some mild assumptions, if the variates are multivariate Gaussian, then there is an algorithm whose outputs have  $\ell_2$-norm estimation error of $O(\sqrt{\frac{p}{n}})$ with high probability, where $p$ is the dimensionality and $n$ is the size of samples. Moreover, we extend to the bounded sub-Gaussian case by using the zero-bias transformation, which could be seen as a generalization of the classical Stein's lemma. We show that with some additional assumptions there is an algorithm whose outputs have $\ell_\infty$-norm estimation error of $O(\frac{1}{\sqrt{p}}+\sqrt{\frac{p}{n}})$ with high probability. Finally, for both Gaussian and sub-Gaussian cases we propose a scalable algorithm based on sub-sampling method and show that when the sub-sample size is large enough the estimation errors will be almost the same as previous ones. Experimental results for both Gaussian and sub-Gaussian cases support our theoretical results. To our best knowledge, this is the first paper study and provide theoretical guarantees of the stochastic linear combination of non-linear regressions model. 
                           
                         </p></div> </br> <strong><u><strong>Di Wang</strong></u><sup>*</sup> </strong>, <a href="https://www.acsu.buffalo.edu/~xiangyug/"> <strong> Xiangyu Guo</strong></a><sup>*</sup>, <a href="https://dblp.org/pers/g/Guan:Chaowen.html">Chaowen Guan</a>,  Shi Li and Jinhui Xu (* equal contribution)</br>
-                        The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020)</br></b>
+                       AAAI Conference on Artificial Intelligence</br></b>
                     </li>
             
                 </br>
 
                      
-                    <li><b style="color:#0000E3">[<i>AAAI</i>]</b> <b><i>Pairwise Learning with Differential Privacy Guarantees</i><a href="papers/AAAI2020_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5411">Link</a>] Abstract<a href="#AAAI2020_pairwise" id="21_arrows" class="arrows" onclick="expand_collapse('21');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>AAAI'20</i>]</b> <b><i>Pairwise Learning with Differential Privacy Guarantees</i><a href="papers/AAAI2020_pairwise.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5411">Link</a>] Abstract<a href="#AAAI2020_pairwise" id="21_arrows" class="arrows" onclick="expand_collapse('21');">&#9660</a>
                         <div id="21" style="display:none;"><p> 
                                 Pairwise learning has received much attention recently as it is more capable of modeling the relative relationship between pairs of samples. Many machine learning tasks can be categorized as pairwise learning, such as AUC maximization and metric learning. Existing techniques for pairwise learning all fail to take into consideration a critical issue in their design, i.e., the protection of sensitive information in the training set. Models learned by such algorithms can implicitly memorize the details of sensitive information, which offers opportunity for malicious parties to infer it from the learned models. To address this challenging issue, in this paper, we propose several differentially private pairwise learning algorithms for both online and offline settings. Specifically, for the online setting, we first introduce a differentially private algorithm (called OnPairStrC) for strongly convex loss functions. Then, we extend this algorithm to general convex loss functions and give another differentially private algorithm (called OnPairC). For the offline setting, we also present two differentially private algorithms (called OffPairStrC and OffPairC) for strongly and general convex loss functions, respectively. These proposed algorithms can not only learn the model effectively from the data but also provide strong privacy protection guarantee for sensitive information in the training set. Extensive experiments on real-world datasets are conducted to evaluate the proposed algorithms and the experimental results support our theoretical analysis.
                         </p></div> </br> <strong>Mengdi Huai<sup>*</sup></strong>, <strong><u><strong>Di Wang</strong></u><sup>*</sup></strong>, Chenglin Miao, Jinhui Xu and Aidong Zhang (* equal contribution)</br>
-                        Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020) </br></b>
+                      AAAI Conference on Artificial Intelligence </br></b>
                     </li>
                 </br>      
 
-                    <li><b style="color:#0000E3">[<i>AAAI</i>]</b> <b><i>Towards Interpretation of Pairwise Learning</i><a href="papers/AAAI2020_interpretable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5837">Link</a>] Abstract<a href="#AAAI2020_interpretable" id="20_arrows" class="arrows" onclick="expand_collapse('20');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>AAAI'20</i>]</b> <b><i>Towards Interpretation of Pairwise Learning</i><a href="papers/AAAI2020_interpretable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/5837">Link</a>] Abstract<a href="#AAAI2020_interpretable" id="20_arrows" class="arrows" onclick="expand_collapse('20');">&#9660</a>
                         <div id="20" style="display:none;"><p> 
                                 Recently, there are increasingly more attentions paid to an important family of learning problems called pairwise learning, in which the associated loss functions depend on pairs of instances. Despite the tremendous success of pairwise learning in many real-world applications, the lack of transparency behind the learned pairwise models makes it difficult for users to understand how particular decisions are made by these models, which further impedes users from trusting the predicted results. To tackle this problem, in this paper, we study feature importance scoring as a specific approach to the problem of interpreting the predictions of black-box pairwise models. Specifically, we first propose a novel adaptive Shapley-value-based interpretation method, based on which a vector of importance scores associated with the underlying features of a testing instance pair can be adaptively calculated with the consideration of feature correlations, and these scores can be used to indicate which features make key contributions to the final prediction. Considering that Shapley-value-based methods are usually computationally challenging, we further propose a novel robust approximation interpretation method for pairwise models. This method is not only much more efficient but also robust to data noise. To the best of our knowledge, we are the first to investigate how to enable interpretation in pairwise learning. Theoretical analysis and extensive experiments demonstrate the effectiveness of the proposed methods.
                         </p></div> </br> Mengdi Huai, <u><strong>Di Wang</strong></u>, Chenglin Miao and Aidong Zhang </br>
-                        The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020) </b>
+                    AAAI Conference on Artificial Intelligence  </b>
                     </li> 
                 </br>
 
-                <li><b style="color:#0000E3">[<i>ECML-PKDD</i>]</b> <b><i> Escaping Saddle Points  of Empirical Risk Privately and Scalably via DP-Trust Region Method</i><a href="papers/ECML2020_saddle.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-67664-3_6">Link</a>] Abstract<a href="#ECML2020_saddle" id="24_arrows" class="arrows" onclick="expand_collapse('24');">&#9660</a>
+                <li><b style="color:#0000E3">[<i>ECML-PKDD'20</i>]</b> <b><i> Escaping Saddle Points  of Empirical Risk Privately and Scalably via DP-Trust Region Method</i><a href="papers/ECML2020_saddle.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-67664-3_6">Link</a>] Abstract<a href="#ECML2020_saddle" id="24_arrows" class="arrows" onclick="expand_collapse('24');">&#9660</a>
                     <div id="24" style="display:none;"><p> 
                         It has been shown recently that many non-convex objective/loss functions in machine learning and deep learning are known to be strict saddle. This means that finding a second-order stationary point (i.e., approximate local minimum) and thus escaping saddle points are sufficient for such functions to obtain a classifier with good generalization performance. Existing algorithms for escaping saddle points, however, all fail to take into consideration a critical issue in their designs, that is, the protection of sensitive information in the training set. Models learned by such algorithms can often implicitly memorize the details of sensitive information, and thus offer opportunities for malicious parties to infer it from the learned models. In this paper, we investigate the problem of privately escaping saddle points and finding a second-order stationary point of the empirical risk of non-convex loss function.
                         Previous result on this problem is mainly of theoretical importance and has several issues ({e.g., high sample complexity and non-scalable) which hinder its applicability, especially, in big data.  
@@ -2431,16 +2431,15 @@ For the high dimensional case, we first show that by measuring the utility with 
                         we propose in this paper a new method called Differentially Private Trust Region, and show that it outputs a second-order stationary point with high probability and less sample complexity, compared to the existing one. Moreover, we also provide a stochastic version of our method (along with some theoretical guarantees) to make it faster and more scalable. 
                         Experiments on benchmark datasets suggest that our methods are indeed more efficient and practical than the previous one. 
                     </p></div> </br> <u><strong>Di Wang</strong></u>  and Jinhui Xu</br>
-                The 2020 European Conference on Machine Learning  (ECML-PKDD 2020) </b>
+               European Conference on Machine Learning</b>
                 </li>
             </br>
 
-                            <li><b style="color:#0000E3">[<i>BIBM</i>]</b> <b><i>  Global Interpretation for Patient Similarity Learning</i><a href="papers/BIBM20_interpretable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/9313255/">Link</a>] Abstract<a href="#BIBM20_interpretable" id="25_arrows" class="arrows" onclick="expand_collapse('25');">&#9660</a>
+                            <li><b style="color:#0000E3">[<i>BIBM'20</i>]</b> <b><i>  Global Interpretation for Patient Similarity Learning</i><a href="papers/BIBM20_interpretable.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/9313255/">Link</a>] Abstract<a href="#BIBM20_interpretable" id="25_arrows" class="arrows" onclick="expand_collapse('25');">&#9660</a>
                                 <div id="25" style="display:none;"><p> 
                                     As an important family of learning problems, pairwise learning has received much attention in recent years. Since pairwise learning involves pairs of instances in its loss function, it is more capable of modeling the relative relationships between instances compared with traditional pointwise learning (e.g., classification). In practice, many machine learning and data mining tasks can be categorized as pairwise learning. Although pairwise learning has achieved tremendous success in many real-world applications, the lack of transparency behind the behavior of the learned pairwise model impedes users from trusting the predicted results, which hampers its further applications in the real world. To tackle this problem, in this paper, we investigate how to enable interpretation in pairwise learning and propose a global interpretation method for pairwise learning. Based on the proposed global interpretation method, we can identify a minimal sufficient subset of data features that are sufficient in themselves to justify the global predictions made by the pairwise model. The identified minimal sufficient feature subset can help us better understand the overall behaviors of the learned pairwise model across different subpopulations of instance pairs. To the best of our knowledge, this is the first work that provides global interpretation for pairwise learning. We also conduct extensive experiments on real-world datasets to evaluate the performance of the proposed global interpretation method.
                                 </p></div> </br> Mengdi Huai,  Chenglin Miao,  <a href="https://dblp.org/pers/l/Liu:Jinduo.html">Jinduo Liu</a>, <u><strong>Di Wang</strong></u>, Jingyuan Chou and Aidong Zhang. </br>
-                                The 2020 IEEE International Conference on Bioinformatics and Biomedicine (IEEE BIBM 2020)</br>
-                                <b><strong>Selected as Regular Paper (Acceptance Rate: 19.4%)</strong></b> </b>
+                             IEEE International Conference on Bioinformatics and Biomedicine </b>
                             </li>
                         </br>
 
@@ -2504,7 +2503,7 @@ For the high dimensional case, we first show that by measuring the utility with 
                 <h2><i>2019</i></h2>
                 <h4><i>Conference Papers</i></h4>
 
-                <li><b style="color:#0000E3">[<i>ICML</i>]</b> <b><i> Differentially Private Empirical Risk Minimization with Non-convex Loss Functions</i><a href="papers/ICML2019_nonconvex.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19c.html">Link</a>] Abstract<a href="#ICML2019_nonconvex" id="10_arrows" class="arrows" onclick="expand_collapse('10');">&#9660</a>
+                <li><b style="color:#0000E3">[<i>ICML'19</i>]</b> <b><i> Differentially Private Empirical Risk Minimization with Non-convex Loss Functions</i><a href="papers/ICML2019_nonconvex.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19c.html">Link</a>] Abstract<a href="#ICML2019_nonconvex" id="10_arrows" class="arrows" onclick="expand_collapse('10');">&#9660</a>
                     <div id="10" style="display:none;"><p> 
                             We study the problem of Empirical Risk Minimization (ERM) with (smooth) non-convex loss functions under the differential-privacy (DP) model. Existing approaches for this problem mainly adopt gradient norms to measure the error, which in general cannot guarantee the quality of the solution. To address this issue, 
                             we first study the expected excess empirical (or population) risk, which was primarily used as the utility to measure the quality for convex loss functions. Specifically, we show that
@@ -2514,21 +2513,21 @@ For the high dimensional case, we first show that by measuring the utility with 
                             Particularly, we show that when the size $n$ is large enough, there are $(\epsilon, \delta)$-DP algorithms which can find an approximate local minimum of the empirical risk with high probability in both the constrained and non-constrained settings. 
                             These results indicate that one can escape saddle points privately.
                     </p></div> </br> <u><strong>Di Wang</strong></u>, <a href="https://cse.buffalo.edu/~changyou/">Changyou Chen</a> and  Jinhui Xu</br>
-                    The 36th International Conference on Machine Learning (ICML 2019) </b>
+                 International Conference on Machine Learning  </b>
                     </li>
                 </br>
-                <li><b style="color:#0000E3">[<i>ICML</i>]</b> <b><i> On Sparse Linear Regression in the Local Differential Privacy Model</i> <a href="papers/ICML2019_regression.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19m.html">Link</a>] Abstract<a href="#ICML2019_regression" id="9_arrows" class="arrows" onclick="expand_collapse('9');">&#9660</a>
+                <li><b style="color:#0000E3">[<i>ICML'19</i>]</b> <b><i> On Sparse Linear Regression in the Local Differential Privacy Model</i> <a href="papers/ICML2019_regression.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v97/wang19m.html">Link</a>] Abstract<a href="#ICML2019_regression" id="9_arrows" class="arrows" onclick="expand_collapse('9');">&#9660</a>
                     <div id="9" style="display:none;"><p> In this paper, we study the sparse linear regression problem under the Local Differential Privacy (LDP) model. We first show that polynomial dependency on the dimensionality $p$ of the space is unavoidable for the estimation error in both non-interactive and sequential interactive local models, if the privacy of the whole dataset needs to be preserved.  Similar limitations also exist for other types of error measurements and in the relaxed local models. This indicates that differential privacy in high dimensional space is unlikely achievable for the problem. With the understanding of this limitation, we then present two algorithmic results. The first one is 
                         a sequential interactive LDP algorithm for the low dimensional sparse case, called Locally Differentially Private Iterative Hard Thresholding (LDP-IHT), which achieves a near optimal upper bound. This algorithm is actually rather general and can be used to solve quite a few other problems, such as (Local) DP-ERM with sparsity constraints and sparse regression with non-linear measurements.  The second one is for the restricted (high dimensional) case where only  the privacy  of the responses (labels) needs to be preserved. For this case, 
                         we show that the optimal rate of the error estimation can be made logarithmically depending on $p$ (i.e., $\log p$) in the local model, 
                         where an upper bound is obtained by a label-privacy version of LDP-IHT. Experiments on real world and synthetic datasets confirm our theoretical analysis. 
                     </p></div> </br> <u><strong>Di Wang</strong></u> and  Jinhui Xu</br> 
-                   The 36th International Conference on Machine Learning (ICML 2019)</br>
+                 International Conference on Machine Learning</br>
                    <b style="color: red"> <strong>Selected as Long Talk (Acceptance Rate: 140/3424= 4.1%)</strong></b> </br>
                     NeurIPS 2018 Workshop on Privacy Preserving Machine Learning </br> </b>
                     </li>
                 </br>                  
-                    <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>Facility Location Problem in Differential Privacy Model Revisited</i><a href="papers/NeurIPS2019_facility.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/9056-facility-location-problem-in-differential-privacy-model-revisited">Link</a>] Abstract<a href="#NeurIPS2019_facility" id="14_arrows" class="arrows" onclick="expand_collapse('14');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>NeurIPS'19</i>]</b> <b><i>Facility Location Problem in Differential Privacy Model Revisited</i><a href="papers/NeurIPS2019_facility.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/9056-facility-location-problem-in-differential-privacy-model-revisited">Link</a>] Abstract<a href="#NeurIPS2019_facility" id="14_arrows" class="arrows" onclick="expand_collapse('14');">&#9660</a>
                         <div id="14" style="display:none;"><p> 
                             In this paper we study the uncapacitated facility location problem in the
                             model of differential privacy (DP) with uniform facility
@@ -2539,28 +2538,27 @@ For the high dimensional case, we first show that by measuring the utility with 
                             approximation ratio for the general metric case, where $n$ is the size of the input metric. These bounds improve
                             the best-known results given by (Gupta et al 2010).  In particular, our approximation ratio for HST-metrics is independent of $n$, and the ratio for general metrics is independent of the aspect ratio of the input metric. On the negative side, we show that the approximation ratio of any $\epsilon$-DP algorithm is lower bounded by $\Omega(\frac{1}{\sqrt{\epsilon}})$, even for instances on HST metrics with uniform facility cost, under the super-set output setting. The lower bound shows that the dependence of the approximation ratio for HST metrics on $\epsilon$ can not be removed or greatly improved. Our novel methods and techniques for both the upper and lower bound may find additional applications.
                         </p></div> </br>[<strong>alphabetic order</strong>] <a href="https://www.acsu.buffalo.edu/~yunusese/"> <strong>Yunus Esencayi</strong></a>,  <strong>Marco Gaboardi</strong>, <a href="https://cse.buffalo.edu/~shil/"><strong>Shi Li</strong></a> and <u><strong>Di Wang</strong></u>  </br>
-            
-                        Conference on Neural Information Processing Systems (NIPS/NeurIPS), 2019 </b>
+                        Conference on Neural Information Processing Systems  </b>
                     </li>
 
                 </br>  
-                    <li><b style="color:#0000E3">[<i>ALT</i>]</b> <b><i> Noninteractive Locally Private Learning of Linear Models via Polynomial Approximations</i> <a href="papers/ALT2019_NLDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v98/wang19c.html">Link</a>] Abstract<a href="#ALT2019_NLDP" id="7_arrows" class="arrows" onclick="expand_collapse('7');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>ALT'19</i>]</b> <b><i> Noninteractive Locally Private Learning of Linear Models via Polynomial Approximations</i> <a href="papers/ALT2019_NLDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://proceedings.mlr.press/v98/wang19c.html">Link</a>] Abstract<a href="#ALT2019_NLDP" id="7_arrows" class="arrows" onclick="expand_collapse('7');">&#9660</a>
                         <div id="7" style="display:none;"><p>In this paper, we study the Empirical Risk Minimization problem in the non-interactive Local Differential Privacy (LDP) model. First, we show that for the hinge loss function, there is an $(\epsilon, \delta)$-LDP algorithm whose sample complexity for achieving an error of $\alpha$ is only linear in the dimensionality $p$ and quasi-polynomial in other terms. Then, we extend the result to any $1$-Lipschitz generalized linear convex loss functions by showing that every such function can be approximated by a linear combination of hinge loss functions and some linear functions. Finally, we apply our technique to the Euclidean median problem and show that its sample complexity needs only to be quasi-polynomial in $p$, which is the first result with a sub-exponential sample complexity in $p$ for non-generalized linear loss functions. Our results are based on a technique, called polynomial of inner product approximation, which may be applicable to other problems.
             
                         
                         </p></div> </br> <u><strong>Di Wang</strong></u>, <a href="http://www.cse.psu.edu/~ads22/">Adam Smith</a>  and  Jinhui Xu</br>
-                        The 30th International Conference on Algorithmic Learning Theory (ALT 2019) </b>
+                      International Conference on Algorithmic Learning Theory  </b>
                         </li>
                     </br>
-                    <li><b style="color:#0000E3">[<i>AAAI</i>]</b> <b><i> Differentially Private Empirical Risk Minimization with Smooth Non-convex Loss Functions: A Non-stationary View</i> <a href="papers/AAAI2019_nonconvex.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/3912">Link</a>] Abstract<a href="#AAAI2019_nonconvex" id="6_arrows" class="arrows" onclick="expand_collapse('6');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>AAAI'19</i>]</b> <b><i> Differentially Private Empirical Risk Minimization with Smooth Non-convex Loss Functions: A Non-stationary View</i> <a href="papers/AAAI2019_nonconvex.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/3912">Link</a>] Abstract<a href="#AAAI2019_nonconvex" id="6_arrows" class="arrows" onclick="expand_collapse('6');">&#9660</a>
                         <div id="6" style="display:none;"><p>			In this paper, we study the Differentially Private Empirical Risk Minimization (DP-ERM) problem with non-convex loss functions and  give several upper bounds for the utility in different settings. We  first consider the problem in low-dimensional space. For DP-ERM with non-smooth regularizer, we generalize an existing work by measuring the utility using $\ell_2$ norm of the projected gradient. Also, we extend the error bound measurement, for the first time, from empirical risk to population risk by using the expected $\ell_2$ norm of the gradient. We then investigate the problem in high dimensional space, and show that by measuring the utility with Frank-Wolfe gap, it is possible to bound the utility by the Gaussian Width of the constraint set, instead of the dimensionality $p$ of the underlying space. We further demonstrate that the advantages of this result can be achieved by the measure of $\ell_2$ norm of the projected gradient. A somewhat surprising discovery is that although the two kinds of measurements are quite different, their induced utility upper bounds are asymptotically the same under some assumptions. We also show that the utility of some special non-convex loss functions can be reduced to a level  (i.e., depending only on $\log p$) similar to that of  convex loss functions. Finally, we test our proposed algorithms on both synthetic and real world datasets and the experimental results confirm our theoretical analysis.
                         </p></div></br> 
                         <u><strong>Di Wang</strong></u>  and  Jinhui Xu</br>
-                        The Thirty-Third AAAI Conference on Artificial Intelligence (AAAI 2019)</br>
+                      AAAI Conference on Artificial Intelligence </br>
                         <b style="color: red"> <strong>Selected as Oral Presentation (Acceptance Rate: 460/7095=6.5%)</strong></b></b>
                         </li>
                     </br>
-                <li><b style="color:#0000E3">[<i>IJCAI</i>]</b> <b><i>Lower Bound of Locally Differentially Private Sparse Covariance Matrix Estimation</i><a href="papers/IJCAI2019_lower.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/665">Link</a>] Abstract<a href="#IJCAI2019_lower" id="13_arrows" class="arrows" onclick="expand_collapse('13');">&#9660</a>
+                <li><b style="color:#0000E3">[<i>IJCAI'19</i>]</b> <b><i>Lower Bound of Locally Differentially Private Sparse Covariance Matrix Estimation</i><a href="papers/IJCAI2019_lower.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/665">Link</a>] Abstract<a href="#IJCAI2019_lower" id="13_arrows" class="arrows" onclick="expand_collapse('13');">&#9660</a>
                     <div id="13" style="display:none;"><p> In this paper, we study the sparse covariance matrix
                         estimation problem in the local differential privacy
                         model, and give a non-trivial lower bound on the
@@ -2577,7 +2575,7 @@ For the high dimensional case, we first show that by measuring the utility with 
         
                         
                     </p></div> </br> <u><strong>Di Wang</strong></u> and  Jinhui Xu</br>
-                    The 28th International Joint Conference on Artificial Intelligence (IJCAI 2019) </b>
+                   International Joint Conference on Artificial Intelligence  </b>
                
                
         
@@ -2585,7 +2583,7 @@ For the high dimensional case, we first show that by measuring the utility with 
                 </li>
             </br>                   
 
-                        <li><b style="color:#0000E3">[<i>IJCAI</i>]</b> <b><i>Principal Component Analysis in the Local Differential Privacy Model</i> <a href="papers/IJCAI2019_PCA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/666">Link</a>] Abstract<a href="#IJCAI2019_PCA" id="12_arrows" class="arrows" onclick="expand_collapse('12');">&#9660</a>
+                        <li><b style="color:#0000E3">[<i>IJCAI'19</i>]</b> <b><i>Principal Component Analysis in the Local Differential Privacy Model</i> <a href="papers/IJCAI2019_PCA.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/666">Link</a>] Abstract<a href="#IJCAI2019_PCA" id="12_arrows" class="arrows" onclick="expand_collapse('12');">&#9660</a>
                             <div id="12" style="display:none;"><p> 
                                 In this paper, we study the Principal Component
                                 Analysis (PCA) problem under the (distributed)
@@ -2601,28 +2599,28 @@ For the high dimensional case, we first show that by measuring the utility with 
                                 world datasets confirm the theoretical guarantees of
                                 our algorithms.
                             </p></div> </br> <u><strong>Di Wang</strong></u> and  Jinhui Xu</br>
-                            The 28th International Joint Conference on Artificial Intelligence (IJCAI 2019) </b>
+                           International Joint Conference on Artificial Intelligence </b>
                        
                             </li>
                 
                         </br>
                 
-                        <li><b style="color:#0000E3">[<i>IJCAI</i>]</b> <b><i>Privacy-aware Synthesizing for Crowdsourced Data</i> <a href="papers/IJCAI2019_crowdsourcing.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/353">Link</a>] Abstract<a href="#IJCAI2019_crowdsourcing" id="11_arrows" class="arrows" onclick="expand_collapse('11');">&#9660</a>
+                        <li><b style="color:#0000E3">[<i>IJCAI'19</i>]</b> <b><i>Privacy-aware Synthesizing for Crowdsourced Data</i> <a href="papers/IJCAI2019_crowdsourcing.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.ijcai.org/Proceedings/2019/353">Link</a>] Abstract<a href="#IJCAI2019_crowdsourcing" id="11_arrows" class="arrows" onclick="expand_collapse('11');">&#9660</a>
                             <div id="11" style="display:none;"><p> 
                                     The prevalence of the World Wide Web enables the data collectors to easily share their data that are collected from a large crowd of users with the public. Although releasing crowdsourced data on the web brings many benefits to the data analyzers to conduct statistical analysis, it may violate crowd users' data privacy, which has been a major obstacle to release the crowdsourced data. A potential way to address this problem is to employ the traditional differential privacy-based mechanisms and perturb the data with some noise before publishing them. However, such noise perturbation mechanisms offer little data utility because crowdsourced datasets contain massive amounts of conflicting data records with large domains. In particular, this degraded utility results from two respects: firstly, the originally collected crowdsourced data usually contain conflicting data; secondly, the noise needed to guarantee differential privacy  may be proportional to the number of data records or the domain of the input data, which renders the released crowdsourced data useless. To address the above challenges, we propose a novel privacy-aware synthesizing method for crowdsourced data. In this method, the data collectors first learn the underlying distributions of the crowdsourced data through taking each user's fine grained reliability degrees into account. Then, a set of candidate synthetics are sampled from the learned distributions. Finally, these sampled candidate synthetics are subjected to privacy tests, and only those candidate synthetics which pass privacy tests are allowed to be safely released. The proposed method not only provides strong privacy protection for individual users but also generates high utility synthetic data. The desirable performance of the proposed method is verified via theoretical analysis and extensive experiments conducted on both real-world and synthetic datasets.
                 
                             </p></div> </br> Mengdi Huai, <u><strong>Di Wang</strong></u>, <a href="https://www.acsu.buffalo.edu/~cmiao/" >Chenglin Miao</a>,   Jinhui Xu, <a href="https://engineering.virginia.edu/faculty/aidong-zhang">Aidong Zhang</a></br>
-                            The 28th International Joint Conference on Artificial Intelligence (IJCAI 2019)</b>
+                           International Joint Conference on Artificial Intelligence</b>
                             
                         </li>
                     </br>
 
-                        <li><b style="color:#0000E3">[<i>CISS</i>]</b> <b><i> Estimating Sparse Covariance Matrix Under Differential Privacy via Thresholding</i> <a href="papers/CISS2019_covariance.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/8692905/">Link</a>] Abstract<a href="#CISS2019_covariance" id="8_arrows" class="arrows" onclick="expand_collapse('8');">&#9660</a>
+                        <li><b style="color:#0000E3">[<i>CISS'19</i>]</b> <b><i> Estimating Sparse Covariance Matrix Under Differential Privacy via Thresholding</i> <a href="papers/CISS2019_covariance.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/8692905/">Link</a>] Abstract<a href="#CISS2019_covariance" id="8_arrows" class="arrows" onclick="expand_collapse('8');">&#9660</a>
                             <div id="8" style="display:none;"><p> In this paper, we study the problem of estimating the covariance matrix under differential privacy, where the underlying covariance matrix is assumed to be sparse and of high dimensions. We propose a new method, called DP-Thresholding, to achieve a non-trivial $\ell_2$-norm based error bound, 
                                     which is significantly better than the existing ones from adding noise directly to the empirical covariance matrix.  Experiments on the synthetic datasets show consistent results with our theoretical claims.
                 
                             </p></div> </br> <u><strong>Di Wang</strong></u>, Jinhui Xu and Yang He</br>
-                           The 53rd Annual Conference on Information Sciences and Systems (CISS 2019)</b>
+                           Annual Conference on Information Sciences and Systems</b>
                             </li>
                         </br>
 
@@ -2637,7 +2635,7 @@ For the high dimensional case, we first show that by measuring the utility with 
                         </br>
                         <h2><i>2018</i></h2>
                         <h4><i>Conference Papers</i></h4>
-                        <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i> Empirical Risk Minimization in Non-interactive Local Differential Privacy Revisited</i> <a href="papers/NeurIPS2018_NLDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/7375-empirical-risk-minimization-in-non-interactive-local-differential-privacy-revisited">Link</a>] 
+                        <li><b style="color:#0000E3">[<i>NeurIPS'18</i>]</b> <b><i> Empirical Risk Minimization in Non-interactive Local Differential Privacy Revisited</i> <a href="papers/NeurIPS2018_NLDP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/7375-empirical-risk-minimization-in-non-interactive-local-differential-privacy-revisited">Link</a>] 
                             Abstract<a href="#NeurIPS2018_NLDP" id="4_arrows" class="arrows" onclick="expand_collapse('4');">&#9660</a>
                             <div id="4" style="display:none;"><p>In this paper, we revisit the Empirical Risk Minimization problem in the non-interactive local model of differential privacy. In the case of constant or low dimensions ($p\ll n$), we first show that if the  loss function is $(\infty, T)$-smooth,  we can avoid a dependence of the  sample complexity, to achieve error $\alpha$, on the exponential of the dimensionality $p$ with base $1/\alpha$  (i.e., $\alpha^{-p}$),
                                 which answers a question in (Smith et al 2017).  Our approach is based on polynomial approximation. Then, we propose player-efficient algorithms with $1$-bit communication complexity and $O(1)$ computation cost for each player. The error bound is asymptotically the same as the original one. With some additional assumptions, we also give an efficient algorithm for the server. 
@@ -2647,39 +2645,39 @@ For the high dimensional case, we first show that by measuring the utility with 
                                  Our techniques can be extended to some related problems, such as $k$-way marginal queries and smooth queries. </p></div> </br> 
                                  <u><strong>Di Wang</strong></u>, <a href="http://www.acsu.buffalo.edu/~gaboardi/">Marco Gaboardi</a> and Jinhui Xu</br>
                                  
-                            Conference on Neural Information Processing Systems (NIPS/NeurIPS), 2018 </b>
+                            Conference on Neural Information Processing Systems  </b>
                             
                             </li></br>
 
-                            <li><b style="color:#0000E3">[<i>AAAI </i>]</b> <b><i>Large Scale Constrained Linear Regression Revisited: Faster Algorithms  via Preconditioning</i> <a href="papers/AAAI2018_linear.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16338">Link</a>] Abstract<a href="#AAAI2018_linear" id="2_arrows" class="arrows" onclick="expand_collapse('2');">&#9660</a>
+                            <li><b style="color:#0000E3">[<i>AAAI'18</i>]</b> <b><i>Large Scale Constrained Linear Regression Revisited: Faster Algorithms  via Preconditioning</i> <a href="papers/AAAI2018_linear.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16338">Link</a>] Abstract<a href="#AAAI2018_linear" id="2_arrows" class="arrows" onclick="expand_collapse('2');">&#9660</a>
                                 <div id="2" style="display:none;"><p>In this paper, we revisit the large-scale constrained linear regression problem and	propose faster methods based on some recent developments in sketching and optimization. 
                                     Our algorithm combines mini-batch SGD with a new method called two-step preconditioning to achieve an $\epsilon$-accuracy solution for the low precision case, and has a lower time complexity than the state-of-the-art techniques. Our idea can also be extended to the high precision case, which gives an alternative implementation to the Iterative Hessian Sketch (IHS) method with significantly improved time complexity. 
                                     Experiments on benchmark and synthetic datasets suggest that our methods indeed outperform existing ones considerably in both the low and high precision cases.
                                 </p></div> </br> 
                                 <u><strong>Di Wang</strong></u>   and  Jinhui Xu</br>
-                            The Thirty-Second AAAI Conference on Artificial Intelligence (AAAI 2018)</br>
+                           AAAI Conference on Artificial Intelligence </br>
                             <b style="color: red"><strong>Selected as Oral Presentation (Acceptance Rate: 411/3800=10.8%)</strong></b> </b>
                             </li>
                         </br>
                                                    
-                        <li><b style="color:#0000E3">[<i>GlobalSip</i>]</b> <b><i>Differentially Private Sparse Inverse Covariance Estimation</i> <a href="papers/GlobalSip2018_inverse.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/8646444">Link</a>] Abstract<a href="#GlobalSip2018_inverse" id="3_arrows" class="arrows" onclick="expand_collapse('3');">&#9660</a>
+                        <li><b style="color:#0000E3">[<i>GlobalSip'18</i>]</b> <b><i>Differentially Private Sparse Inverse Covariance Estimation</i> <a href="papers/GlobalSip2018_inverse.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="https://ieeexplore.ieee.org/document/8646444">Link</a>] Abstract<a href="#GlobalSip2018_inverse" id="3_arrows" class="arrows" onclick="expand_collapse('3');">&#9660</a>
                             <div id="3" style="display:none;"><p>In this paper, we give the first study of   sparse inverse covariance estimation problem under differential privacy. Firstly, we propose an $\epsilon$-differentially private algorithm via output perturbation, which is based on the sensitivity of the optimization problem and Wishart mechanism. Based on the idea of that, we propose a general covariance perturbation method, and then for $\epsilon$-differential privacy, we analyze Laplacian and Wishart mechanisms, for $(\epsilon,\delta)$-differential privacy we analyze Gaussian and Wishart mechanisms. Moreover, we extend the covariance perturbation algorithm to distributed setting and local differential privacy. Experiments on synthetic and benchmark datasets are also support our theoretical analysis.
                             </p></div> </br> 
                             <u><strong>Di Wang</strong></u>, <a href="https://dblp.org/pers/h/Huai:Mengdi.html">Mengdi Huai</a> and Jinhui Xu</br>
-                            2018 6th IEEE Global Conference on Signal and Information Processing (2018 GlobalSip) </br></b>
+                           IEEE Global Conference on Signal and Information Processing</br></b>
                             <b><strong>Selected as Oral Presentation</strong></b>
                             
                          </li></br>
 
                     <h2><i>2017</i></h2>
                     <h4><i>Conference Papers</i></h4>
-                    <li><b style="color:#0000E3">[<i>NeurIPS</i>]</b> <b><i>Differentially Private Empirical Risk Minimization Revisited: Faster and More General</i> <a href="papers/NeurIPS2017_DPERM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/6865-differentially-private-empirical-risk-minimization-revisited-faster-and-more-general">Link</a>] Abstract<a href="#NeurIPS2017_DPERM" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9660</a>
+                    <li><b style="color:#0000E3">[<i>NeurIPS'17</i>]</b> <b><i>Differentially Private Empirical Risk Minimization Revisited: Faster and More General</i> <a href="papers/NeurIPS2017_DPERM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href="http://papers.nips.cc/paper/6865-differentially-private-empirical-risk-minimization-revisited-faster-and-more-general">Link</a>] Abstract<a href="#NeurIPS2017_DPERM" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9660</a>
                         <div id="1" style="display:none;"><p>In this paper we study the differentially private Empirical Risk Minimization (ERM) problem in different settings. For smooth (strongly) convex loss function with or without (non)-smooth regularization, we give algorithms that achieve either optimal or near optimal utility bounds with less gradient complexity compared with previous work.  For ERM with smooth convex loss function in high-dimensional ($p\gg n$) setting, we give an algorithm which achieves the upper bound with less gradient complexity than previous ones. At last, we generalize the expected excess empirical risk from convex loss functions to non-convex ones satisfying the Polyak-Lojasiewicz condition and give a tighter upper bound on the utility than the one in (Zhang et al 2017).
                         </p></div> </br> 
                         <u><strong>Di Wang</strong></u>, <a href="https://dblp.org/pers/y/Ye:Minwei.html">Minwei Ye</a> and <a href="
                         https://www.cse.buffalo.edu//~jinhui/">Jinhui Xu</a></br>
                         Conference on Neural
-                        Information Processing Systems (NIPS/NeurIPS), 2017 </b>
+                        Information Processing Systems  </b>
                 
                         
                         </li>
