@@ -325,6 +325,153 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 <h2><i>2026</i></h2>
                                 <h4><i>Conference Papers</i></h4>
 
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Finding Differentially Private Second Order Stationary Points in Stochastic Minimax Optimization
+                                </i> <a href="papers/ICML26_SOSP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_SOSP" id="176_arrows" class="arrows" onclick="expand_collapse('176');">&#9660</a>
+                                <div id="176" style="display:none;"><p>
+We provide the first study of the problem of finding differentially private (DP) second-order stationary points (SOSP) in stochastic (non-convex) minimax optimization. Existing literature either focuses only on first-order stationary points for minimax problems or on SOSP for classical stochastic minimization problems. This work provides, for the first time, a unified and detailed treatment of both empirical and population risks. Specifically, we propose a purely first-order method that combines a nested gradient descent--ascent scheme with SPIDER-style variance reduction and Gaussian perturbations to ensure privacy. A key technical device is a block-wise (
+-period) analysis that controls the accumulation of stochastic variance and privacy noise without summing over the full iteration horizon, yielding a unified treatment of both empirical-risk and population formulations. Under standard smoothness, Hessian-Lipschitzness, and strong concavity assumptions, we establish high-probability guarantees for reaching an 
+-approximate second-order stationary point with 
+ empirical risk objectives and  population objectives, matching the best known rates for private first-order stationarity.
+   </p></div> </br> 
+                      Difei Xu, Youming Tao, Meng Ding, Chenglin Fan,  <u><strong>Di Wang</strong></u> </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Real-Time Monitoring and Calibration of Chain-of-Thought Sycophancy in Large Reasoning Models
+                                </i> <a href="papers/ICML26_monica.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_monica" id="175_arrows" class="arrows" onclick="expand_collapse('175');">&#9660</a>
+                                <div id="175" style="display:none;"><p>
+Large Reasoning Models (LRMs) suffer from sycophantic behavior, where models tend to agree with users' incorrect beliefs and follow misinformation rather than maintain independent reasoning. This behavior undermines model reliability and poses societal risks. Mitigating LRM sycophancy requires monitoring how this sycophancy emerges during the reasoning trajectory; however, current methods mainly focus on judging based on final answers and correcting them, without understanding how sycophancy develops during reasoning processes. To address this limitation, we propose MONICA, a novel Monitor-guided Calibration framework that monitors and mitigates sycophancy during model inference at the level of reasoning steps, without requiring the model to finish generating its complete answer. MONICA integrates a sycophantic monitor that provides real-time monitoring of sycophantic drift scores during response generation with a calibrator that dynamically suppresses sycophantic behavior when scores exceed predefined thresholds. Extensive experiments across 12 datasets and 3 LRMs demonstrate that our method effectively reduces sycophantic behavior in both intermediate reasoning steps and final answers, yielding robust performance improvements.
+   </p></div> </br> 
+                      Jingyu Hu, Shu Yang, Xilin Gong, Hongming Wang, Weiru Liu, <u><strong>Di Wang</strong></u> </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Benign Overfitting in Adversarial Training for Vision Transformers
+                                </i> <a href="papers/ICML26_AT.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_AT" id="174_arrows" class="arrows" onclick="expand_collapse('174');">&#9660</a>
+                                <div id="174" style="display:none;"><p>
+Despite the remarkable success of Vision Transformers (ViTs) across a wide range of vision tasks, recent studies have revealed that they remain vulnerable to adversarial examples, much like Convolutional Neural Networks (CNNs). A common empirical defense strategy is adversarial training, yet the theoretical underpinnings of its robustness in ViTs remain largely unexplored. In this work, we present the first theoretical analysis of adversarial training under simplified ViT architectures. We show that, when trained under a signal-to-noise ratio that satisfies a certain condition and within a moderate perturbation budget, adversarial training enables ViTs to achieve nearly zero robust training loss and robust generalization error under certain regimes. Remarkably, this leads to strong generalization even in the presence of overfitting, a phenomenon known as \emph{benign overfitting}, previously only observed in CNNs (with adversarial training). Experiments on both synthetic and real-world datasets further validate our theoretical findings.
+   </p></div> </br> 
+                      Jiaming Zhang, Meng Ding, Shaopeng Fu, Jingfeng Zhang, <u><strong>Di Wang</strong></u> </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Understanding Private Learning From Feature Perspective
+                                </i> <a href="papers/ICML26_feature.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_feature" id="173_arrows" class="arrows" onclick="expand_collapse('173');">&#9660</a>
+                                <div id="173" style="display:none;"><p>
+Differentially private Stochastic Gradient Descent (DP-SGD) has become integral to privacy-preserving machine learning, ensuring robust privacy guarantees in sensitive domains. Despite notable empirical advances leveraging features from non-private, pre-trained models to enhance DP-SGD training, a theoretical understanding of feature dynamics in private learning remains underexplored. This paper presents the first theoretical framework to analyze private training through a feature learning perspective. Building on the multi-patch data structure from prior work, our analysis distinguishes between label-dependent feature signals and label-independent noise—a critical aspect overlooked by existing analyses in the DP community. Employing a two-layer CNN with polynomial ReLU activation, we theoretically characterize both feature signal learning and data noise memorization in private training via noisy gradient descent. Our findings reveal that (1) Effective private signal learning requires a higher signal-to-noise ratio (SNR) compared to non-private training, and (2) When data noise memorization occurs in non-private learning, it will also occur in private learning, leading to poor generalization despite small training loss. Our findings highlight the challenges of private learning and prove the benefit of feature enhancement to improve SNR. Experiments on synthetic and real-world datasets also validate our theoretical findings.
+   </p></div> </br> 
+                      Meng Ding, Mingxi Lei, Shaopeng Fu, Shaowei Wang, <u><strong>Di Wang</strong></u>, Jinhui Xu </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Algorithmic Recourse of In-Context Learning for Tabular Data
+                                </i> <a href="papers/ICML26_AR.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_AR" id="172_arrows" class="arrows" onclick="expand_collapse('172');">&#9660</a>
+                                <div id="172" style="display:none;"><p>
+As predictive models are increasingly deployed in high-stakes settings such as credit approval, there is a growing need for post-hoc methods that provide recourse to affected individuals. Many such models operate on tabular data, where features correspond to real-world attributes. Recently, in-context learning (ICL) has enabled large language models to perform tabular prediction by conditioning on labeled examples at inference time, without explicit training. However, algorithmic recourse for tabular decision-making under ICL remains largely unexplored. In this work, we present the first study of algorithmic recourse for tabular data under ICL. We carry out a theoretical analysis, showing that recourse remains well-defined and bounded, and we characterize how recourse converges toward classical solutions as the context size increases. In practice, we propose a novel zeroth-order recourse framework, Adaptive Subspace Recourse for In-Context Learning (ASR-ICL), that efficiently generates actionable and sparse recourse for black-box ICL models. The proposed framework naturally extends to multi-class tabular tasks. Experiments across multiple real-world datasets and models demonstrate that ASR-ICL achieves recourse quality comparable to existing methods with fewer queries and empirically confirm the predicted convergence behavior, supporting our theoretical analysis.
+   </p></div> </br> 
+                       Wenshuo Dong, Jiaming Zhang, Shaopeng Fu, Hongbin Lin, <u><strong>Di Wang</strong></u>, Lijie Hu  </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+
+                      <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Beyond Fixed Biases: Decoding the Role of Reasoning Uncertainty in MLLM Modality Conflicts
+                                </i> <a href="papers/ICML26_MLLM.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_MLLM" id="171_arrows" class="arrows" onclick="expand_collapse('171');">&#9660</a>
+                                <div id="171" style="display:none;"><p>
+Multimodal Large Language Models (MLLMs) must resolve conflicts when modalities provide contradictory information, a process we term "modality following". We propose a framework that deconstructs this behavior into case-specific relative reasoning uncertainty and a model's stable inherent preference. By evaluating diverse MLLMs, we establish a universal law: the probability of following a modality decreases monotonically as its relative reasoning uncertainty increases, which is robustly preserved across diverse uncertainty indices. This law allows us to quantify a "balance point" where uncertainties are subjectiveized, offering a principled measure of modality bias that is disentangled from unimodal capabilities. Probing the internal decision-making reveals that this conflict resolution is a high-level cognitive process: in ambiguous regions near the balance point, models exhibit significant "concept oscillations," where top predictions vacillate between modalities specifically within the middle-to-late layers. Finally, we demonstrate the framework's utility for preference steering through Supervised Fine-Tuning (SFT). We find that data efficiency is governed by reasoning uncertainty: training on easy samples (where one modality dominates) fails to generalize, whereas targeting the identified ``boundary cases" is essential for robust preference alignment and suppressing internal vacillation.
+   </p></div> </br> 
+                        Zhuoran Zhang, Tengyue Wang, Xilin Gong, Yang Shi, Haotian Wang, <u><strong>Di Wang</strong></u>, Lijie Hu  </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                         <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Trajectory-Aware Certified Decentralized Unlearning via SGD Stability
+                                </i> <a href="papers/ICML26_MU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_MU" id="170_arrows" class="arrows" onclick="expand_collapse('170');">&#9660</a>
+                                <div id="170" style="display:none;"><p>
+Decentralized Unlearning (DU) aims to remove the influence of specific clients from a collaboratively trained global model. However, existing methods suffer from strong reliance on static, problem-specific hyperparameters or restrictive convexity assumptions, limiting their general applicability. To overcome these limitations, we propose TRAjectory-aware CErtified Decentralized Unlearning (TRACE-DU), a generic unlearning framework for decentralized training. TRACE-DU introduces a fine-grained sensitivity analysis that leverages local SGD updates and decentralized training dynamics, thereby eliminating the need for convexity assumptions and reducing dependence on manually tuned parameters. By integrating strategic checkpoint selection with calibrated noise perturbation, the proposed framework enables efficient certified unlearning. Moreover, we exploit historical model trajectories to extend this framework, enabling it to naturally support sequential unlearning requests from an arbitrary number of clients. We provide theoretical guarantees for certified unlearning and derive sensitivity bounds under both convex and non-convex loss functions. Experimental results demonstrate that our framework outperforms state-of-the-art baselines across diverse metrics.
+   </p></div> </br> 
+                        Hengliang Wu, Jiale Yang, Youming Tao, Shuzhen Chen,  <u><strong>Di Wang</strong></u>,, Dongxiao Yu </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                         <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Trajectory-Aware Certified Decentralized Unlearning via SGD Stability
+                                </i> <a href="papers/ICML26_MU.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_MU" id="170_arrows" class="arrows" onclick="expand_collapse('170');">&#9660</a>
+                                <div id="170" style="display:none;"><p>
+Decentralized Unlearning (DU) aims to remove the influence of specific clients from a collaboratively trained global model. However, existing methods suffer from strong reliance on static, problem-specific hyperparameters or restrictive convexity assumptions, limiting their general applicability. To overcome these limitations, we propose TRAjectory-aware CErtified Decentralized Unlearning (TRACE-DU), a generic unlearning framework for decentralized training. TRACE-DU introduces a fine-grained sensitivity analysis that leverages local SGD updates and decentralized training dynamics, thereby eliminating the need for convexity assumptions and reducing dependence on manually tuned parameters. By integrating strategic checkpoint selection with calibrated noise perturbation, the proposed framework enables efficient certified unlearning. Moreover, we exploit historical model trajectories to extend this framework, enabling it to naturally support sequential unlearning requests from an arbitrary number of clients. We provide theoretical guarantees for certified unlearning and derive sensitivity bounds under both convex and non-convex loss functions. Experimental results demonstrate that our framework outperforms state-of-the-art baselines across diverse metrics.
+   </p></div> </br> 
+                        Hengliang Wu, Jiale Yang, Youming Tao, Shuzhen Chen,  <u><strong>Di Wang</strong></u>,, Dongxiao Yu </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                         <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
+Beyond Scalars: Evaluating and Understanding LLM Reasoning via Geometric Progress and Stability
+                                </i> <a href="papers/ICML26_geo.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_geo" id="169_arrows" class="arrows" onclick="expand_collapse('169');">&#9660</a>
+                                <div id="169" style="display:none;"><p>
+Evaluating LLM reliability via scalar probabilities often fails to capture the structural dynamics of reasoning. We introduce TRACED, a framework that assesses reasoning quality through theoretically grounded geometric kinematics. By decomposing reasoning traces into Progress (displacement) and Stability (curvature), we reveal a distinct topological divergence: correct reasoning manifests as high-progress, stable trajectories, whereas hallucinations are characterized by low-progress, unstable patterns (stalled displacement with high curvature fluctuations). Leveraging these signatures, our probabilistic framework achieves competitive performance and superior robustness across diverse benchmarks. Crucially, TRACED bridges geometry and cognition by mapping high curvature to "Hesitation Loops'' and displacement to ''Certainty Accumulation'', offering a physical lens to decode the internal dynamics of machine thought.
+   </p></div> </br> 
+                          Xinyan Jiang, Ninghao Liu, <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
+              International Conference on Machine Learning
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+
                          <li><b style="color:#0000E3">[<i>ACL Findings'26</i>]</b> <b><i>	
 AutoMonitor-Bench: Evaluating the Reliability of LLM-Based Misbehavior Monitor
                                 </i> <a href="papers/ACL26_AutoMonitor-Bench.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ACL26_AutoMonitor-Bench" id="165_arrows" class="arrows" onclick="expand_collapse('165');">&#9660</a>
