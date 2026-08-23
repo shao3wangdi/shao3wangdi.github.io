@@ -325,6 +325,99 @@ Large Models Achieving Local Optima</i><a href="papers/Arxiv_Local.pdf"><img src
                                 <h2><i>2026</i></h2>
                                 <h4><i>Conference Papers</i></h4>
 
+                      <li><b style="color:#0000E3">[<i>EMNLP Findings'26</i>]</b> <b><i>	
+SFAD: Speculative Factuality-Aware Decoding
+                                </i> <a href="papers/EMNLP26_SFAD.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_SFAD" id="183_arrows" class="arrows" onclick="expand_collapse('183');">&#9660</a>
+                                <div id="183" style="display:none;"><p>
+As one of the most critical challenges in large language models, contextual faithfulness directly determines their reliability in knowledge-intensive applications. This task is particularly challenging as it requires balancing factual consistency with generation efficiency. Contrastive decoding methods require dual forward passes (with and without context) to compare model outputs, doubling inference computational overhead, while post-training alignment demands extensive reinforcement learning with substantial computational overhead. To address this challenge, we present SFAD, a speculative decoding framework that enhances contextual faithfulness without inference degradation. We first construct ConFide, a preference dataset with fine-grained atomic perturbations, to train a context-faithful draft model via Direct Preference Optimization. During inference, Epistemic Friction detects potential hallucinations by quantifying distributional tension weighted by specialist certainty. When friction exceeds the threshold, Asymmetric Logit Steering refines the target distribution through residual-based logit injection; otherwise, standard speculation proceeds. Extensive experiments demonstrate that SFAD substantially improves faithfulness while achieving 2.48× speedup, offering a practical solution for efficient LLMs.
+   </p></div> </br> 
+                Guanqiao Chen, <u><strong>Di Wang</strong></u> , Lijie Hu </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+                      <li><b style="color:#0000E3">[<i>EMNLP Findings'26</i>]</b> <b><i>	
+	FedSubMuon: Communication-Efficient Federated LLM Fine-Tuning via Structured Subspace Muon
+                                </i> <a href="papers/EMNLP26_FedSubMuon.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_FedSubMuon" id="182_arrows" class="arrows" onclick="expand_collapse('182');">&#9660</a>
+                                <div id="182" style="display:none;"><p>
+Federated fine-tuning adapts large language models (LLMs) to decentralized client data, but its scalability in cross-device training is often limited by the high communication cost. Muon is an optimizer that improves optimization performance by orthogonalizing momentum for matrix-valued parameters. Existing federated Muon methods demonstrate the benefit of matrix-aware optimization in federated learning, but still require transmitting full layer-size updates and optimizer state. A natural way to reduce communication is to directly apply Muon to LoRA factors, but this changes the optimized object and weakens Muon's matrix-aware update geometry. We propose FedSubMuon, a communication-efficient federated Muon fine-tuning method that optimizes compact coefficient matrices within shared structured subspaces. This design keeps Muon on a single matrix-valued trainable object, while reducing the client upload to compact coefficient matrices. We further introduce FedSubMuon-GT, an accuracy-oriented extension that uses projected gradients to adapt tracked subspace bases toward task-relevant gradient directions. Experiments on instruction tuning and mathematical reasoning show that FedSubMuon-GT achieves the best overall accuracy on four of five dataset--model pairs, while FedSubMuon performs best under all matched communication budgets. On Dolly-15K, the closest communication baseline requires 
+ and 
+ more total communication on Llama-1B and Qwen-4B, respectively.
+   </p></div> </br> 
+                 Shaolong Chen, Youming Tao, Shuzhen Chen, Falko Dressler, Qingqing Ye,  <u><strong>Di Wang</strong></u> </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                                
+                      <li><b style="color:#0000E3">[<i>EMNLP Findings'26</i>]</b> <b><i>	
+STARS: Skill Triage via Activation Risk Scoring for LLM Agents
+                                </i> <a href="papers/EMNLP26_STARS.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_STARS" id="181_arrows" class="arrows" onclick="expand_collapse('181');">&#9660</a>
+                                <div id="181" style="display:none;"><p>
+
+Language-model agents call external skills—browsers, code interpreters, messaging tools—on behalf of users. The risk of a call depends not on the skill alone but on the invocation context: the same file-reading skill is benign when listing logs, yet dangerous when tainted content steers the agent toward secret exfiltration. We formalize invocation-time auditing: an auditor intercepts a proposed skill call before execution and produces a continuous risk score from the user request, the candidate skill, and the runtime context. STARS implements this idea as a three-stage pipeline that fuses a static capability prior with a request-conditioned invocation scorer and calibrates the result for review-budget triage. We evaluate on SIA-Bench, a 3,000-record benchmark with leakage-free source-group splits and a held-out indirect-prompt-injection split. On held-out data, STARS Fusion raises high-risk AUPRC by 12% over the strongest proxy baseline; on familiar in-distribution data, static priors remain competitive. Swapping the rule-based scorer for an LLM backend more than doubles retrieval on the locked split, showing that the discriminative signal resides in the invocation context itself. Static screening and request-conditioned scoring thus serve complementary roles: the former provides a reliable baseline; the latter adds value when threats depend on runtime context.
+   </p></div> </br> 
+                  Guijia Zhang, Shu Yang, Xilin Gong, <u><strong>Di Wang</strong></u> </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                      <li><b style="color:#0000E3">[<i>EMNLP Findings'26</i>]</b> <b><i>	
+Global Evolutionary Steering: Refining Activation Steering Control via Cross-Layer Consistency
+                                </i> <a href="papers/EMNLP26_GER.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_GER" id="180_arrows" class="arrows" onclick="expand_collapse('180');">&#9660</a>
+                                <div id="180" style="display:none;"><p>
+Activation engineering enables precise control over Large Language Models (LLMs) without the computational cost of fine-tuning. However, existing methods deriving vectors from static activation differences are susceptible to high-dimensional noise and layer-wise semantic drift, often capturing spurious correlations rather than the target intent. To address this, we propose Global Evolutionary Refined Steering (GER-steer), a training-free framework that grounded in the geometric stability of the network's representation evolution. GER-steer exploits this global signal to rectify raw steering vectors, effectively decoupling robust semantic intent from orthogonal artifacts. Extensive evaluations confirm that GER-steer consistently outperforms baselines, delivering superior efficacy and generalization without layer-specific tuning, establishing a universal solution for reliable model alignment.
+   </p></div> </br> 
+                   Xinyan Jiang, Wenjing Yu, <u><strong>Di Wang</strong></u>, Lijie Hu  </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+                      <li><b style="color:#0000E3">[<i>EMNLP'26</i>]</b> <b><i>	
+Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons
+                                </i> <a href="papers/EMNLP26_privacy.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_privacy" id="179_arrows" class="arrows" onclick="expand_collapse('179');">&#9660</a>
+                                <div id="179" style="display:none;"><p>
+Large Language Models (LLMs) trained on massive data capture rich information embedded in the training data. However, this also introduces the risk of privacy leakage, particularly involving personally identifiable information (PII). Although previous studies have shown that this risk can be mitigated through methods such as privacy neurons, they all assume that both the (sensitive) training data and user queries are in English. We show that they cannot defend against the privacy leakage in cross-lingual contexts: even if the training data is exclusively in one language, these (private) models may still reveal private information when queried in another language. In this work, we first investigate the information flow of cross-lingual privacy leakage to give a better understanding. We find that LLMs process private information in the middle layers, where representations are largely shared across languages. The risk of leakage peaks when converted to a language-specific space in later layers. Based on this, we identify privacy-universal neurons and language-specific privacy neurons. Privacy-universal neurons influence privacy leakage across all languages, while language-specific privacy neurons are only related to specific languages. By deactivating these neurons, the cross-lingual privacy leakage risk is reduced by 23.3%-31.6%.
+
+
+   </p></div> </br> 
+                    Wenshuo Dong, Qingsong Yang, Shu Yang, Lijie Hu, Meng Ding, Wanyu Lin, Tianhang Zheng, <u><strong>Di Wang</strong></u> </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                      <li><b style="color:#0000E3">[<i>EMNLP'26</i>]</b> <b><i>	
+LLMs Regret Before They Say It: Early Detection and Compositional Architecture of Regret in Hidden States
+                                </i> <a href="papers/EMNLP26_regret.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_regret" id="178_arrows" class="arrows" onclick="expand_collapse('178');">&#9660</a>
+                                <div id="178" style="display:none;"><p>
+Regret in large language models (LLMs) refers to their explicit expression of regret when confronted with evidence contradicting previously generated misinformation. Understanding the neural encoding of regret is crucial for advancing artificial metacognition and model reliability. However, three key gaps remain: the absence of specialized datasets for regret expressions, the lack of understanding of how early regret signals emerge in hidden states, and the unknown neuron-level architecture underlying regret encoding. To address these gaps, we make three contributions: (1) we propose a multi-stage workflow for constructing the first regret dataset and train probes achieving near-perfect accuracy across LLaMA-2-7B, Mistral-7B, and Vicuna-13B. (2) we discover that regret signals begin emerging in preceding hidden states before the regret token appears, and that probes generalize to semantically related keywords such as "incorrect" and "apologize." (3) at the neuron level, we introduce the Regret Dominance Score (RDS) and Group Impact Coefficient (GIC) to reveal a compositional regret architecture where cooperative neuron groups collectively encode regret, with larger models (70B) exhibiting more pronounced compositional effects. Targeted interventions on these neurons successfully suppress regret expression in generated text, validating our mechanistic understanding.
+   </p></div> </br> 
+                     Xiangxiang Cui, Shu Yang, Tianjin Huang, Wanyu Lin, Lijie Hu,   <u><strong>Di Wang</strong></u> </br> 
+              Conference on Empirical Methods in Natural Language Processing
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
                       <li><b style="color:#0000E3">[<i>ICML'26</i>]</b> <b><i>	
 Finding Differentially Private Second Order Stationary Points in Stochastic Minimax Optimization
                                 </i> <a href="papers/ICML26_SOSP.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#ICML26_SOSP" id="176_arrows" class="arrows" onclick="expand_collapse('176');">&#9660</a>
@@ -812,6 +905,17 @@ Microscale concave interfaces (MCIs) have opened new avenues for exploring innov
                                 
      </br> 
 
+                            <li><b style="color:#0000E3">[<i>IANDC</i>]</b> <b><i>Revisiting Sparse Linear Regression in Local Differential Privacy Model 
+                                </i> <a href="papers/IANDC26.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#IANDC26" id="184_arrows" class="arrows" onclick="expand_collapse('184');">&#9660</a>
+                                <div id="184" style="display:none;"><p>
+                                        In this paper, we revisit 
+                                        the problem of sparse linear regression in the local differential privacy (LDP) model. Existing research in the non-interactive and sequentially local models has focused on obtaining the lower bounds for the case where the underlying parameter is $1$-sparse, and extending such bounds to the more general $k$-sparse case has proven to be challenging. Moreover, it is unclear whether efficient non-interactive LDP (NLDP) algorithms exist. To address these issues, 
+                                        we first consider the problem in the $\epsilon$ non-interactive LDP model and provide a lower bound of $\Omega(\frac{\sqrt{dk\log d}}{\sqrt{n}\epsilon})$ on the $\ell_2$-norm estimation error for sub-Gaussian data, where $n$ is the sample size and $d$ is the dimension of the space. 
+                                        We propose an innovative NLDP algorithm, the very first of its kind for the problem. As a remarkable outcome, this algorithm also yields a novel and highly efficient estimator as a valuable by-product. Our algorithm achieves an upper bound of $\tilde{O}({\frac{d\sqrt{k}}{\sqrt{n}\epsilon}})$ for the estimation error when the data is sub-Gaussian, which can be further improved by a factor of  $O(\sqrt{d})$ if the server has additional public but unlabeled data. 
+                                        For the sequentially interactive LDP model, we show a similar lower bound of $\Omega({\frac{\sqrt{dk}}{\sqrt{n}\epsilon}})$. As for the upper bound, we rectify a previous method and show that it is possible to achieve a bound of $\tilde{O}(\frac{k\sqrt{d}}{\sqrt{n}\epsilon})$. Our findings reveal fundamental differences between the non-private case, central DP model, and local DP model in the sparse linear regression problem.
+                                    </p></div> </br>
+                                    Liyang Zhu<sup><span>&#9733;</span>*</sup>, Meng Ding<sup><span>&#9733;</span>*</sup>, Vaneet Aggarwal, Jinhui Xu, and <u><strong>Di Wang</strong></u>
+                                    </br>
 
 
                             <li><b style="color:#0000E3">[<i>IANDC</i>]</b> <b><i>Revisiting Differentially Private Stochastic Convex Optimization in  (Non)-Euclidean Space  
