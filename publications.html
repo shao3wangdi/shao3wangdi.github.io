@@ -342,6 +342,60 @@ We study the problem of privacy audit in one run and show that our method achiev
                                 <h2><i>2026</i></h2>
                                 <h4><i>Conference Papers</i></h4>
 
+
+
+                      <li><b style="color:#0000E3">[<i>NeurIPS'26</i>]</b> <b><i>	
+Differentially Private Sparse Reward Estimation with Preference Feedback
+                                </i> <a href="papers/NeurIPS26_RLHF.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS26_RLHF" id="189_arrows" class="arrows" onclick="expand_collapse('189');">&#9660</a>
+                                <div id="189" style="display:none;"><p>
+Reinforcement Learning with Human Feedback (RLHF) has become a central paradigm for aligning Large Language Models with human values. However, the reliance on sensitive preference data necessitates rigorous differential privacy (DP) guarantees to prevent user information leakage. Existing private alignment methods typically assume dense reward parameterizations, resulting in estimation error bounds that scale polynomially with the ambient {model size 
+}. Such dependence is prohibitive in modern {overparameterized models} where 
+ is vast. In this work, we study \emph{Private Sparse RLHF} problem to address this limitation, assuming that human preferences (reward model) are governed by a subset of 
+ relevant features. We provide the first comprehensive theoretical framework for differentially private sparse reward estimation from pairwise preference feedback under the Bradley-Terry-Luce model, and introduce efficient algorithms for both Sample-DP and Label-DP settings. Theoretically, under the squared 
+ parameter estimation error, we establish upper bounds of 
+ for  Sample-DP and 
+ for  Label-DP based on randomized response. For the lower bounds, we show that the Sample-DP rate is nearly optimal, and that the guarantee for our Label-DP method cannot be further improved within the randomized-response framework. We also provide a general lower bound for the problem with Label-DP. Empirically, our framework demonstrates superior efficacy over dense baselines across sentiment generation and safety alignment benchmarks, offering a significantly more favorable privacy-utility trade-off.
+   </p></div> </br> 
+       Meng Ding, Mingxi Lei, Jie Zhang, Jinyan Liu, 
+ <u><strong>Di Wang</strong></u> </br> 
+          Conference on Neural Information Processing Systems 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+                      <li><b style="color:#0000E3">[<i>NeurIPS'26</i>]</b> <b><i>	
+Ask in the Crowd: Differentially Private LLM Inference via Dummy-Augmented Shuffling
+                                </i> <a href="papers/NeurIPS26_inference.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS26_inference" id="188_arrows" class="arrows" onclick="expand_collapse('188');">&#9660</a>
+                                <div id="188" style="display:none;"><p>
+Audio Language Models (ALMs) have recently shown strong capabilities in unified reasoning over speech, sound, and natural language; yet we find that they can inherit sycophancy, the tendency to agree with user assertions even when they contradict objective evidence. This failure mode is especially concerning for audio-conditioned reasoning, where a model must preserve evidence from acoustic events, speaker characteristics, and speech rate while responding to potentially misleading user feedback. However, unlike text and vision-language sycophancy, ALM sycophancy has not been systematically studied. We therefore introduce SYAUDIO, the first benchmark dedicated to evaluating sycophancy in ALMs, consisting of 4,319 audio questions spanning Audio Perception, Audio Reasoning, Audio Math, and Audio Ethics. Built upon established audio benchmarks and augmented with TTS-generated arithmetic and moral reasoning tasks, SYAUDIO enables systematic evaluation across multiple domains and sycophancy types with carefully verified data quality, including a human-speaker validation of the TTS pipeline. Using this benchmark, we identify substantial and audio-specific sycophancy patterns under realistic conditions involving noise and speech rate, and further show that supervised fine-tuning reduces misleading susceptibility while decode-time steering reveals controllable hidden-state directions for both misleading susceptibility and correction receptiveness.
+   </p></div> </br> 
+        Zhihao Liu, Zixiong Guo, Shuo Shao, Yu He, Wenli Wang, Meihui Chen, <u><strong>Di Wang</strong></u>, Yuke Hu  </br> 
+          Conference on Neural Information Processing Systems 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
+
+                      <li><b style="color:#0000E3">[<i>NeurIPS'26</i>]</b> <b><i>	
+Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO 
+                                </i> <a href="papers/NeurIPS26_SYAUDIO.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#NeurIPS26_SYAUDIO" id="187_arrows" class="arrows" onclick="expand_collapse('187');">&#9660</a>
+                                <div id="187" style="display:none;"><p>
+Audio Language Models (ALMs) have recently shown strong capabilities in unified reasoning over speech, sound, and natural language; yet we find that they can inherit sycophancy, the tendency to agree with user assertions even when they contradict objective evidence. This failure mode is especially concerning for audio-conditioned reasoning, where a model must preserve evidence from acoustic events, speaker characteristics, and speech rate while responding to potentially misleading user feedback. However, unlike text and vision-language sycophancy, ALM sycophancy has not been systematically studied. We therefore introduce SYAUDIO, the first benchmark dedicated to evaluating sycophancy in ALMs, consisting of 4,319 audio questions spanning Audio Perception, Audio Reasoning, Audio Math, and Audio Ethics. Built upon established audio benchmarks and augmented with TTS-generated arithmetic and moral reasoning tasks, SYAUDIO enables systematic evaluation across multiple domains and sycophancy types with carefully verified data quality, including a human-speaker validation of the TTS pipeline. Using this benchmark, we identify substantial and audio-specific sycophancy patterns under realistic conditions involving noise and speech rate, and further show that supervised fine-tuning reduces misleading susceptibility while decode-time steering reveals controllable hidden-state directions for both misleading susceptibility and correction receptiveness.
+   </p></div> </br> 
+          Junchi Yao, Lokranjan Lakshmikanthan, Annie Zhao, Danielle Zhao, Shu Yang, Zikang Ding, <u><strong>Di Wang</strong></u>, Lijie Hu </br> 
+          Conference on Neural Information Processing Systems 
+                                 </b>
+
+                                </li>
+     </br> 
+
+
+
                       <li><b style="color:#0000E3">[<i>EMNLP Findings'26</i>]</b> <b><i>	
 SFAD: Speculative Factuality-Aware Decoding
                                 </i> <a href="papers/EMNLP26_SFAD.pdf"><img src="pdf_icon.gif" class="smallpadleft"/></a> [<a href=" ">Link</a>] Abstract<a href="#EMNLP26_SFAD" id="183_arrows" class="arrows" onclick="expand_collapse('183');">&#9660</a>
